@@ -5,34 +5,31 @@
 ## 📁 Structure
 
 ```
-├── 000-Resources/          # Course PDFs, cheat sheets, syllabus
-├── 001-Day-1-.../         # Daily folders (notes + code)
-├── 002-Day-2-.../
-│   ├── day-XXX.md          # Obsidian-style daily notes
-│   ├── *-project.py        # Main project/exercise
-│   └── *-practice.py       # Scratch / practice code
+├── 000-Resources/          # Course PDFs, cheat sheets, error log, syllabus
+├── 001-Day-1-.../         # Daily folders
+│   ├── day-XXX.md          # Daily notes (repo version)
+│   ├── *-practice.py       # Scratch / topic exercises
+│   └── Day-X-Projects/     # Main project(s) of the day
 ├── ...
-├── 100-Day-100-.../
-└── 101-Final-Stretch/
+└── README.md
 ```
 
 ## 📊 Progress
 
-| Status | Days |
-|--------|------|
-| ✅ Complete | Day 1 |
-| 🔄 In Progress | Day 2 |
-| ⏳ Upcoming | Days 3–100 |
+| Day | Topic | Status |
+|-----|-------|--------|
+| 1 | Variables, I/O & Band Name Generator | ✅ Complete |
+| 2 | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator | ✅ Complete |
+| 3–100 | *(upcoming)* | ⏳ |
 
 ## 🛠️ Tech Stack
 
-- **Python 3** (primary)
-- **Libraries** (as introduced): `random`, `pandas`, `numpy`, `matplotlib`, `flask`, `selenium`, `beautifulsoup4`, `tkinter`, `requests`, `smtplib`, ...
+- **Python 3**
+- **Libraries introduced so far:** *(none yet — pure Python Days 1–2)*
 
 ## 📝 Notes Format
 
-Daily notes follow an **Obsidian-ready** structure:
-- YAML front matter (`day`, `tags`, `status`)
+Daily notes follow an Obsidian-ready structure:
 - Core Concepts (3–6 bullets)
 - Syntax / Key Commands
 - Project Summary
