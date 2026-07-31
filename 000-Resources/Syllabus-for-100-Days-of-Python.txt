@@ -1,0 +1,102 @@
+001. Day 1 - Beginner - Working with Variables in Python to Manage Data
+002. Day 2 - Beginner - Understanding Data Types and How to Manipulate Strings
+003. Day 3 - Beginner - Control Flow and Logical Operators
+004. Day 4 - Beginner - Randomisation and Python Lists
+005. Day 5 - Beginner - Python Loops
+006. Day 6 - Beginner - Python Functions & Karel
+007. Day 7 - Beginner - Hangman
+008. Day 8 - Beginner - Function Parameters & Caesar Cipher
+009. Day 9 - Beginner - Dictionaries, Nesting and the Secret Auction
+010. Day 10 - Beginner - Functions with Outputs
+011. Day 11 - Beginner - The Blackjack Capstone Project
+012. Day 12 - Beginner - Scope & Number Guessing Game
+013. Day 13 - Beginner - Debugging How to Find and Fix Errors in your Code
+014. Day 14 - Beginner - Higher Lower Game Project
+015. Day 15 - Intermediate - Local Development Environment Setup & the Coffee Machine
+016. Day 16 - Intermediate - Object Oriented Programming (OOP)
+017. Day 17 - Intermediate - The Quiz Project & the Benefits of OOP
+018. Day 18 - Intermediate - Turtle & the Graphical User Interface (GUI)
+019. Day 19 - Intermediate - Instances, State and Higher Order Functions
+020. Day 20 - Intermediate - Build the Snake Game Part 1 Animation & Coordinates
+021. Day 21 - Intermediate - Build the Snake Game Part 2 Inheritance & List Slicing
+022. Day 22 - Intermediate - Build Pong The Famous Arcade Game
+023. Day 23 - Intermediate - The Turtle Crossing Capstone Project
+024. Day 24 - Intermediate - Files, Directories and Paths
+025. Day 25 - Intermediate - Working with CSV Data and the Pandas Library
+026. Day 26 - Intermediate - List Comprehension and the NATO Alphabet
+027. Day 27 - Intermediate - Tkinter, args, kwargs and Creating GUI Programs
+028. Day 28 - Intermediate - Tkinter, Dynamic Typing and the Pomodoro GUI Application
+029. Day 29 - Intermediate - Building a Password Manager GUI App with Tkinter
+030. Day 30 - Intermediate - Errors, Exceptions and JSON Data Improving the Password
+031. Day 31 - Intermediate - Flash Card App Capstone Project
+032. Day 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime)
+033. Day 33 - Intermediate+ API Endpoints & API Parameters - ISS Overhead Notifier
+034. Day 34 - Intermediate+ API Practice - Creating a GUI Quiz App
+035. Day 35 - Intermediate+ Keys, Authentication & Environment Variables Send SMS
+036. Day 36 - Intermediate+ Stock Trading News Alert Project
+037. Day 37 - Intermediate+ Habit Tracking Project API Post Requests & Headers
+038. Day 38 - Intermediate+ Workout Tracking Using Google Sheets
+039. Day 39 - Intermediate+ Capstone Part 1 Flight Deal Finder
+040. Day 40 - Intermediate+ Capstone Part 2 Flight Club
+041. Day 41 - Web Foundation - Introduction to HTML
+042. Day 42 - Web Foundation - Intermediate HTML
+043. Day 43 - Web Foundation - Introduction to CSS
+044. Day 44 - Web Foundation - Intermediate CSS
+045. Day 45 - Intermediate+ Web Scraping with Beautiful Soup
+046. Day 46 - Intermediate+ Create a Spotify Playlist using the Musical Time Machine
+047. Day 47 - Intermediate+ Create an Automated Amazon Price Tracker
+048. Day 48 - Intermediate+ Selenium Webdriver Browser and Game Playing Bot
+049. Day 49 - Intermediate+ Automating your Exercise Routine at the Gym
+050. Day 50 - Intermediate+ Auto Tinder Swiping Bot
+051. Day 51 - Intermediate+ Internet Speed X Complaint Bot
+052. Day 52 - Intermediate+ Instagram Follower Bot
+053. Day 53 - Intermediate+ Web Scraping Capstone - Data Entry Job Automation
+054. Day 54 - Intermediate+ Introduction to Web Development with Flask
+055. Day 55 - Intermediate+ HTML & URL Parsing in Flask and the Higher Lower Game
+056. Day 56 - Intermediate+ Rendering HTMLStatic files and Using Website Templates
+057. Day 57 - Intermediate+ Templating with Jinja in Flask Applications
+058. Day 58 - Web Foundation Bootstrap
+059. Day 59 - Advanced - Blog Capstone Project Part 2 - Adding Styling
+060. Day 60 - Advanced - Make POST Requests with Flask and HTML Forms
+061. Day 61 - Advanced - Building Advanced Forms with Flask-WTForms
+062. Day 62 - Advanced - Flask, WTForms, Bootstrap and CSV - Coffee & Wifi Project
+063. Day 63 - Advanced - Databases with SQLite and SQLAlchemy
+064. Day 64 - Advanced - My Top 10 Movies Website
+065. Day 65 - Web Design School - How to Create a Website that People will Love
+066. Day 66 - Advanced - Building Your Own API with RESTful Routing
+067. Day 67 - Advanced - Blog Capstone Project Part 3 - RESTful Routing
+068. Day 68 - Advanced - Authentication with Flask
+069. Day 69 - Advanced - Blog Capstone Project Part 4 - Adding Users
+070. Day 70 - Advanced - Git, Github and Version Control
+071. Day 71 - Advanced - Deploying Your Web Application
+072. Day 72 - Advanced - Data Exploration with Pandas College Major v.s. Your Salary
+073. Day 73 - Advanced - Data Visualisation with Matplotlib Programming Languages
+074. Day 74 - Advanced - Aggregate & Merge Data with Pandas Analyse the LEGO Dataset
+075. Day 75 - Advanced - Google Trends Data Resampling and Visualising Time Series
+076. Day 76 - Advanced - Beautiful Plotly Charts & Analysing the Android App Store
+077. Day 77 - Advanced - Computation with NumPy and N-Dimensional Arrays
+078. Day 78 - Advanced - Linear Regression and Data Visualisation with Seaborn
+079. Day 79 - Advanced - Analysing the Nobel Prize with Plotly, Matplotlib & Seaborn
+080. Day 80 - Advanced - The Tragic Discovery of Handwashing t-Tests & Distributions
+081. Day 81 - Advanced - Capstone Project  - Predict House Prices
+082. Day 82 - Professional Portfolio Project - Python Scripting
+083. Day 83 - Professional Portfolio Project - Python Web Development
+084. Day 84 - Professional Portfolio Project - Python Scripting
+085. Day 85 - Professional Portfolio Project - GUI
+086. Day 86 - Professional Portfolio Project - GUI
+087. Day 87 - Professional Portfolio Project - Game
+088. Day 88 - Professional Portfolio Project - Web Development
+089. Day 89 - Professional Portfolio Project - Web Development
+090. Day 90 - Professional Portfolio Project - GUI Desktop App
+091. Day 91 - Professional Portfolio Project - HTTP Requests & APIs
+092. Day 92 - Professional Portfolio Project - Image Processing & Data Science
+093. Day 93 - Professional Portfolio Project - Web Scraping
+094. Day 94 - Professional Portfolio Project - GUI Automation
+095. Day 95 - Professional Portfolio Project - Game
+096. Day 96 - Professional Portfolio Project - HTTP Requests & APIs
+097. Day 97 - Professional Portfolio Project - Web Development
+098. Day 98 - Professional Portfolio Project - Python Automation
+099. Day 99 - Professional Portfolio Project - Data Science
+100. Day 100 - Professional Portfolio Project - Data Science
+101. Final Stretch
+102. Bonus Lecture Succeed in the Age of AI
