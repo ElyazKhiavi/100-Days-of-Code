@@ -20,12 +20,13 @@
 |-----|-------|--------|
 | 1 | Variables, I/O & Band Name Generator | ✅ Complete |
 | 2 | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator | ✅ Complete |
-| 3–100 | *(upcoming)* | ⏳ |
+| 3 | Control Flow, If/Else, Logical Operators, Treasure Island | ✅ Complete |
+| 4–100 | *(upcoming)* | ⏳ |
 
 ## 🛠️ Tech Stack
 
 - **Python 3**
-- **Libraries introduced so far:** *(none yet — pure Python Days 1–2)*
+- **Libraries introduced so far:** *(none yet — pure Python Days 1–3)*
 
 ## 📝 Notes Format
 
