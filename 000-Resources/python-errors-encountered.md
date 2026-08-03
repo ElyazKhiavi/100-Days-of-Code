@@ -77,9 +77,9 @@ float("3.14abc") # ValueError
 
 **Key distinction from TypeError:**
 
-| Error | Meaning |
-|-------|---------|
-| `TypeError` | Wrong *kind* of object (gave a banana, expected a wrench) |
+| Error        | Meaning                                                        |
+| ------------ | -------------------------------------------------------------- |
+| `TypeError`  | Wrong _kind_ of object (gave a banana, expected a wrench)      |
 | `ValueError` | Right kind, but broken inside (gave a wrench, but it's melted) |
 
 **Fix:** Validate input before converting, or wrap in `try/except` (you'll learn this soon).
@@ -105,7 +105,7 @@ print(mth.pi)
 # NameError: name 'mth' is not defined    ← typo!
 ```
 
-**Fix:** Check spelling. Make sure the variable is assigned *before* you use it. Python reads top-to-bottom.
+**Fix:** Check spelling. Make sure the variable is assigned _before_ you use it. Python reads top-to-bottom.
 
 ---
 
@@ -170,6 +170,47 @@ print(art.get(user, "Invalid choice!"))
 
 ---
 
+## IndentationError
+
+**What:** Your indentation (spacing) is wrong — Python uses whitespace to define code blocks.  
+**When/Why it happened:** Added extra spaces at the start of a line where Python didn't expect them, or mixed tabs with spaces.
+
+```python
+# Wrong — unexpected indent at start of line
+ ls = ['a', 'b', 'c']
+# IndentationError: unexpected indent
+
+# Correct — no leading spaces at top level
+ls = ['a', 'b', 'c']
+```
+
+Also happens inside loops/conditionals when you inconsistent indentation:
+
+```python
+for i in range(5):
+print(i)  # IndentationError: expected an indented block
+
+# Correct
+for i in range(5):
+    print(i)  # 4 spaces (or 1 tab) — must be consistent!
+```
+
+**Fix:**
+
+- Use **Tab** or **4 spaces** consistently — never mix them
+- Code inside `for`, `if`, `def`, `with`, etc. must be indented
+- Most editors can show invisible characters (`Alt+Z` in VS Code)
+- Python convention: **4 spaces per indent level**
+
+> [!example] Day 5 context
+> Loops introduce new indentation blocks.
+>
+> Forgetting to indent the loop body → IndentationError.
+>
+> Indenting something that shouldn't be → also IndentationError.
+
+---
+
 ## (More errors will be added as we meet them...)
 
 <!--
@@ -190,7 +231,7 @@ print(art.get(user, "Invalid choice!"))
 
 ## 🔗 See Also
 
-- [[Day 13 - Debugging: How to Find and Fix Errors]] *(deep dive coming soon)*
+- [[Day 13 - Debugging: How to Find and Fix Errors]] _(deep dive coming soon)_
 - [[Lists]]
 - [[Dictionaries]]
 - [[Type Conversion]]
@@ -198,4 +239,4 @@ print(art.get(user, "Invalid choice!"))
 
 ---
 
-*Last updated: Day 4 | Total errors logged: 6*
+_Last updated: Day 5 | Total errors logged: 7_

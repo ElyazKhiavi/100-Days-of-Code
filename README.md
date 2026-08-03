@@ -16,13 +16,14 @@
 
 ## 📊 Progress
 
-| Day | Topic | Status |
-|-----|-------|--------|
-| 1 | Variables, I/O & Band Name Generator | ✅ Complete |
-| 2 | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator | ✅ Complete |
-| 3 | Control Flow, If/Else, Logical Operators, Treasure Island | ✅ Complete |
-| 4 | Randomisation, Python Lists, Modules, Rock Paper Scissors | ✅ Complete |
-| 5–100 | *(upcoming)* | ⏳ |
+| Day   | Topic                                                      | Status      |
+| ----- | ---------------------------------------------------------- | ----------- |
+| 1     | Variables, I/O & Band Name Generator                       | ✅ Complete |
+| 2     | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator | ✅ Complete |
+| 3     | Control Flow, If/Else, Logical Operators, Treasure Island  | ✅ Complete |
+| 4     | Randomisation, Python Lists, Modules, Rock Paper Scissors  | ✅ Complete |
+| 5     | Python Loops, Range(), Password Generator                  | ✅ Complete |
+| 6–100 | _(upcoming)_                                               | ⏳          |
 
 ## 🛠️ Tech Stack
 
@@ -32,6 +33,7 @@
 ## 📝 Notes Format
 
 Daily notes follow an Obsidian-ready structure:
+
 - Core Concepts (3–6 bullets)
 - Syntax / Key Commands
 - Project Summary
@@ -40,4 +42,4 @@ Daily notes follow an Obsidian-ready structure:
 
 ---
 
-*Built one day at a time. 🐍*
+_Built one day at a time. 🐍_
