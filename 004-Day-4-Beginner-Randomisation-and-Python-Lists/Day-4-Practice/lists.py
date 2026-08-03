@@ -53,6 +53,9 @@ print(person_info)
 
 
 ls = [0,1,2,"Mr.Black",3,4]
-ls.pop(2) # last item or the index inside
-ls.remove("Mr.Black") # give item
-print(ls)
+# ls.pop(2) # last item or the index inside
+# ls.remove("Mr.Black") # give item
+# print(ls)
+
+if "Mr.Black" in ls:
+    print("We found Him!")
