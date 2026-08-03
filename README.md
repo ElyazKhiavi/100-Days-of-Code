@@ -5,11 +5,11 @@
 ## 📁 Structure
 
 ```
-├── 000-Resources/          # Course PDFs, cheat sheets, error log, syllabus
-├── 001-Day-1-.../         # Daily folders
-│   ├── day-XXX.md          # Daily notes (repo version)
-│   ├── *-practice.py       # Scratch / topic exercises
-│   └── Day-X-Projects/     # Main project(s) of the day
+├── 000-Resources/              # Course PDFs, cheat sheets, error log, syllabus, reviews
+├── 001-Day-1-.../             # Daily folders
+│   ├── day-XXX.md              # Daily notes (repo version)
+│   ├── Day-X-Practice/         # Topic exercises & scratch code
+│   └── Day-X-Projects/         # Main project(s) of the day
 ├── ...
 └── README.md
 ```
@@ -21,12 +21,13 @@
 | 1 | Variables, I/O & Band Name Generator | ✅ Complete |
 | 2 | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator | ✅ Complete |
 | 3 | Control Flow, If/Else, Logical Operators, Treasure Island | ✅ Complete |
-| 4–100 | *(upcoming)* | ⏳ |
+| 4 | Randomisation, Python Lists, Modules, Rock Paper Scissors | ✅ Complete |
+| 5–100 | *(upcoming)* | ⏳ |
 
 ## 🛠️ Tech Stack
 
 - **Python 3**
-- **Libraries introduced so far:** *(none yet — pure Python Days 1–3)*
+- **Libraries introduced so far:** `random` (built-in module)
 
 ## 📝 Notes Format
 

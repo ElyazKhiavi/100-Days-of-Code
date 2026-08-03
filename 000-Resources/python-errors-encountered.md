@@ -4,7 +4,7 @@ tags: [python, errors, debugging, reference]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-07-31
+last-updated: 2026-08-03
 ---
 
 # 🐛 Python Errors Log
@@ -12,7 +12,7 @@ last-updated: 2026-07-31
 > [!tip] Philosophy
 > You don't need to memorize every error type.  
 > When one hits you → **Google it**, understand it, **log it here**.  
-> This note is a the graveyard of bugs I've slain along the way.
+> This note is a graveyard of bugs I've slain along the way.
 
 ---
 
@@ -55,7 +55,6 @@ print("Age: " + 25)
 **Fix:** Check what type your function expects. Use `type(var)` to inspect, or convert with `str()`, `int()`, `float()`.
 
 > [!example] Day 2 context
->
 > `input()` always returns a **string**. Doing math on it without `int()` first → TypeError.
 
 ---
@@ -77,12 +76,13 @@ float("3.14abc") # ValueError
 ```
 
 **Key distinction from TypeError:**
+
 | Error | Meaning |
 |-------|---------|
-| `TypeError` | Wrong _kind_ of object (gave a banana, expected a wrench) |
+| `TypeError` | Wrong *kind* of object (gave a banana, expected a wrench) |
 | `ValueError` | Right kind, but broken inside (gave a wrench, but it's melted) |
 
-**Fix:** Validate input before converting.
+**Fix:** Validate input before converting, or wrap in `try/except` (you'll learn this soon).
 
 ---
 
@@ -105,7 +105,68 @@ print(mth.pi)
 # NameError: name 'mth' is not defined    ← typo!
 ```
 
-**Fix:** Check spelling. Make sure the variable is assigned _before_ you use it. Python reads top-to-bottom.
+**Fix:** Check spelling. Make sure the variable is assigned *before* you use it. Python reads top-to-bottom.
+
+---
+
+## IndexError
+
+**What:** You try to access an index that doesn't exist in a sequence (list, string, etc.).  
+**When/Why it happened:** Index is out of range — you asked for item #5 in a list that only has items 0–4.
+
+```python
+ls = [0, 1, 2, 3, 4]
+print(ls[5])
+# IndexError: list index out of range
+
+# Also happens with strings
+name = "Alice"
+print(name[10])
+# IndexError: string index out of range
+```
+
+**Fix:** Remember indexing starts at **0**. Check the length with `len()` first, or use negative indices carefully (`[-1]` = last item, always safe if list isn't empty).
+
+> [!example] Day 4 context
+> Lists are zero-indexed. A list of 5 items has valid indices 0, 1, 2, 3, 4. Anything else → IndexError.
+
+---
+
+## KeyError
+
+**What:** Similar to IndexError, but for **dictionaries**. Happens when you try to access a key that doesn't exist in the dict.  
+**When/Why it happened:** User input didn't match any expected dictionary key.
+
+```python
+art = {"r": rock, "p": paper, "s": scissors}
+user_choice = "o"  # user typed something invalid
+print(art[user_choice])
+# KeyError: 'o'
+```
+
+**Real-world traceback from my Rock Paper Scissors game:**
+
+```bash
+✊ Make your move: (r)ock, (p)aper, or (s)cissors? o
+Traceback (most recent call last):
+  File ".../Rock-Paper-Scissors-Game.py", line 125, in <module>
+    print(f"🎯 Your choose {art[user]}")
+                            ~~~^^^^^^
+KeyError: 'o'
+```
+
+**Fix:** Always validate dictionary access! Use `.get()` with a default value, or check `if key in dict` before accessing:
+
+```python
+# Safe approach — check first
+if user in art:
+    print(art[user])
+else:
+    print("Invalid choice!")
+
+# Or use .get() with fallback
+print(art.get(user, "Invalid choice!"))
+```
 
 ---
 
@@ -129,11 +190,12 @@ print(mth.pi)
 
 ## 🔗 See Also
 
-- [[Day 13 - Debugging: How to Find and Fix Errors]] _(deep dive coming soon)_
-- [[Data Types]]
+- [[Day 13 - Debugging: How to Find and Fix Errors]] *(deep dive coming soon)*
+- [[Lists]]
+- [[Dictionaries]]
 - [[Type Conversion]]
 - [[Python Debugging Techniques]]
 
 ---
 
-_Last updated: Day 2 | Total errors logged: 4_
+*Last updated: Day 4 | Total errors logged: 6*

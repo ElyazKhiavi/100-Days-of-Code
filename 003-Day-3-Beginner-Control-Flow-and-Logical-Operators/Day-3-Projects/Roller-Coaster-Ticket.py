@@ -22,7 +22,7 @@ if height > 120:
         ride = input(
             "Okay You're looking good,\nWill you want photos after your ride? (yes or no) "
         )
-        if ride.lower() == "yes":
+        if ride[0].lower() == "y":
             cost += 3
             print("Excellent!")
             print(f"Your ticket will be ${cost}")
