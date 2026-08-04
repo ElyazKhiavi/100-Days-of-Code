@@ -23,7 +23,8 @@
 | 3     | Control Flow, If/Else, Logical Operators, Treasure Island  | ✅ Complete |
 | 4     | Randomisation, Python Lists, Modules, Rock Paper Scissors  | ✅ Complete |
 | 5     | Python Loops, Range(), Password Generator                  | ✅ Complete |
-| 6–100 | _(upcoming)_                                               | ⏳          |
+| 6     | Functions, While Loops, Karel/Reeborg Challenges            | ✅ Complete |
+| 7–100 | _(upcoming)_                                               | ⏳          |
 
 ## 🛠️ Tech Stack
 

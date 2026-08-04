@@ -140,4 +140,5 @@ password_chars_holder = password_list[:]
 # print("Here is your password: \n", final_password)
 
 random.shuffle(password_chars_holder)
-print("Here is your password: \n", "".join(password_chars_holder))
+print("Here is your password:")
+print("".join(password_chars_holder))

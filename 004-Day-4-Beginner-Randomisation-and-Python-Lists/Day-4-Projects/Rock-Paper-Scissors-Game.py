@@ -134,6 +134,7 @@ if user == computer:
 else:
     # Find user's index and check if the next item in the list beats them
     user_wins = (choices.index(user) + 2) % 3 == choices.index(computer)
+    # computer_wins = (choices.index(user)+1) == choices.index(computer)
     if user_wins:
         print(choice(win))
     else:
