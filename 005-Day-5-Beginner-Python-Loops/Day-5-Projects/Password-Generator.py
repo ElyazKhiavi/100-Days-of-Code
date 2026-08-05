@@ -55,7 +55,7 @@ alphabet = [
     "Y",
     "Z",
 ]
-numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 symbols = [
     "~",
     "`",
@@ -104,18 +104,42 @@ print("Welcome to the PyPassword Generator!")
 #     password += str(choice(choice(character)))
 # print("Generated password:\n", password)
 
-### Ask questions from the user about to determine the number of symbols and numbers
-password_size = int(input("How many characters should the password be? "))
-number_of_symbols = int(input("How many symbols would you like? "))
-if number_of_symbols>password_size//3:
-    print(f"Too many symbols! You can have at most {password_size // 3}")
-    exit()
-number_of_numbers = int(input("How many numbers would you like? "))
-if number_of_numbers>password_size//3:
-    print(f"Too many numbers! You can have at most {password_size // 3}.")
-    exit()
+### Ask questions from the user to determine the number of symbols and numbers
 
-rest_of_the_chars = password_size-number_of_symbols-number_of_numbers
+
+def check_number(line):
+    while True:
+        value = input(f"{line}")
+        if not value.isdigit():
+            print("You must enter a Number!")
+            continue
+        elif int(value) <= 0:
+            print("You must entire a positive Number!")
+            continue
+        else:
+            return int(value)
+
+
+# def is_third():  ==> wanted to pass in a function to it to also remove the if else statement duplication, but too much for me at this point of time 2026-08-05
+#     while number_of_symbols > password_size // 3:
+#         print(f"Too many symbols! You can have at most {password_size // 3}")
+
+password_size = check_number("How many characters should the password be? ")
+while True:
+    number_of_symbols = check_number("How many symbols would you like? ")
+    if number_of_symbols > password_size // 3:
+        print(f"Too many symbols! You can have at most {password_size // 3}.")
+        continue
+    break
+while True:
+    number_of_numbers = check_number("How many numbers would you like? ")
+    if number_of_numbers > password_size // 3:
+        print(f"Too many numbers! You can have at most {password_size // 3}.")
+        continue
+    break
+
+
+rest_of_the_chars = password_size - number_of_symbols - number_of_numbers
 
 password_list = []
 for _ in range(number_of_symbols):

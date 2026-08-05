@@ -28,9 +28,9 @@ def go():
         turn_left()
 
     while not at_goal():
-        if front_is_clear() and not at_goal():
+        if front_is_clear():
             move()
-        if wall_in_front() and not at_goal():
+        if wall_in_front():
             jump()
 
 
