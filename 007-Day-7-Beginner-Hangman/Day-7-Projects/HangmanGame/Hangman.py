@@ -1,11 +1,6 @@
 import random
-from hangman_words import impossible_words
-from hangman_words import hard_words
-from hangman_words import intermediate_words
-from hangman_words import easy_words
-from hangman_logo import logo
-from hangman_logo import HANGMANPICS
-
+from hangman_words import impossible_words, hard_words, intermediate_words, easy_words
+from hangman_logo import logo, HANGMANPICS
 
 print(logo)
 print("Welcome to Hangman. Think you can survive?")
@@ -36,7 +31,6 @@ def play_game():
     placeholder = ""
     for i in word:
         placeholder += "_"
-
 
     letter_list = []
     lives = 6
