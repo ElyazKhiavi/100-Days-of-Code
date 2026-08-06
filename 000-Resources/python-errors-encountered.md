@@ -54,7 +54,7 @@ print("Age: " + 25)
 
 **Fix:** Check what type your function expects. Use `type(var)` to inspect, or convert with `str()`, `int()`, `float()`.
 
-> [!example] Day 2 context
+> [!note] Day 2 context
 > `input()` always returns a **string**. Doing math on it without `int()` first → TypeError.
 
 ---
@@ -127,7 +127,7 @@ print(name[10])
 
 **Fix:** Remember indexing starts at **0**. Check the length with `len()` first, or use negative indices carefully (`[-1]` = last item, always safe if list isn't empty).
 
-> [!example] Day 4 context
+> [!note] Day 4 context
 > Lists are zero-indexed. A list of 5 items has valid indices 0, 1, 2, 3, 4. Anything else → IndexError.
 
 ---
@@ -202,12 +202,50 @@ for i in range(5):
 - Most editors can show invisible characters (`Alt+Z` in VS Code)
 - Python convention: **4 spaces per indent level**
 
-> [!example] Day 5 context
+> [!note] Day 5 context
 > Loops introduce new indentation blocks.
 >
 > Forgetting to indent the loop body → IndentationError.
 >
 > Indenting something that shouldn't be → also IndentationError.
+
+---
+
+## UnboundLocalError
+
+**What:** You're trying to access a **local variable** that doesn't exist in the current scope.  
+**When/Why it happened:** Inside a function, you referenced a variable that was defined in a **different function or scope**, or you tried to use a variable before assigning it a value.
+
+**Real-world traceback from my Love Calculator:**
+
+```bash
+File ".../Love-Calculator.py", line 53, in <module>
+    calculate_love_score(input("Name 1:"), input("Name 2: "))
+  File ".../Love-Calculator.py", line 49, in check
+    digit += score  # ← THIS is where it broke!
+    ^^^^^
+UnboundLocalError: cannot access local variable 'digit'
+where it is not associated with a value
+```
+
+**The Problem:** In my `check()` nested inside `calculate_love_score()`, I used `digit` as an accumulator variable but **forgot to initialize it before the loop** (`digit = 0` before the `for` loop). Python sees `digit += score` → looks for `digit` → can't find it in current/local scope → explodes.
+
+**Fix:** Always initialize your accumulators BEFORE the loop/function:
+
+```python
+def check(word):
+    score = 0  # ← ADD THIS
+    for i in name1 + name2:
+        if i.lower() in word:
+            score += 1
+    return score
+```
+
+> [!tip] Common Pattern
+> This error almost always means one of two things:
+>
+> 1. **Forgot to initialize** a variable before using it (most common cause!)
+> 2. **Typo in variable name** — Python says "not associated" = you misspelled it somewhere
 
 ---
 
@@ -239,4 +277,4 @@ for i in range(5):
 
 ---
 
-_Last updated: Day 5 | Total errors logged: 7_
+_Last updated: Day 8 | Total errors logged: 8_

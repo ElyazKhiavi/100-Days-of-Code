@@ -16,16 +16,17 @@
 
 ## 📊 Progress
 
-| Day   | Topic                                                      | Status      |
-| ----- | ---------------------------------------------------------- | ----------- |
-| 1     | Variables, I/O & Band Name Generator                       | ✅ Complete |
-| 2     | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator | ✅ Complete |
-| 3     | Control Flow, If/Else, Logical Operators, Treasure Island  | ✅ Complete |
-| 4     | Randomisation, Python Lists, Modules, Rock Paper Scissors  | ✅ Complete |
-| 5     | Python Loops, Range(), Password Generator                  | ✅ Complete |
-| 6     | Functions, While Loops, Reeborg Challenges                    | ✅ Complete |
-| 7     | Hangman Project (Capstone: Days 1–6 Review)                 | ✅ Complete |
-| 8–100 | _(upcoming)_                                               | ⏳          |
+| Day   | Topic                                                              | Status      |
+| ----- | ------------------------------------------------------------------ | ----------- |
+| 1     | Variables, I/O & Band Name Generator                               | ✅ Complete |
+| 2     | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator         | ✅ Complete |
+| 3     | Control Flow, If/Else, Logical Operators, Treasure Island          | ✅ Complete |
+| 4     | Randomisation, Python Lists, Modules, Rock Paper Scissors          | ✅ Complete |
+| 5     | Python Loops, Range(), Password Generator                          | ✅ Complete |
+| 6     | Functions, While Loops, Reeborg Challenges                         | ✅ Complete |
+| 7     | Hangman Capstone (Days 1–6 Review)                                 | ✅ Complete |
+| 8     | Function Parameters, Caesar Cipher, Love Calculator, Life in Weeks | ✅ Complete |
+| 9–100 | _(upcoming)_                                                       | ⏳          |
 
 ## 🛠️ Tech Stack
 

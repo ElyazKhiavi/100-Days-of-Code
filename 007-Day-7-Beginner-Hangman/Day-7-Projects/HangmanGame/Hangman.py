@@ -9,10 +9,8 @@ print("Welcome to Hangman. Think you can survive?")
 def play_game():
     while True:
         difficulty = input(
-            "Set the stakes: Easy, Medium, Hard, or Impossible.\n====> "
-        )[
-            0
-        ].lower()  # easy , medium, hard , impossible
+            "Set the stakes: Easy(e), Medium(m), Hard(h), or Impossible(i).\n====> "
+        ).lower()  # easy , medium, hard , impossible
         if difficulty == "e":
             word = random.choice(easy_words)
             break
