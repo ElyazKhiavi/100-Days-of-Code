@@ -45,13 +45,13 @@ def main():
     while True:
         # Get valid odd number of wins to become champion
         while True:
-            total_wins = input("How many wins to become champion? (odd number): ")
+            total_wins = input("How many wins to become champion?: ")
             if total_wins.isdigit():
                 total_wins = int(total_wins)
-                if total_wins % 2 == 1:
-                    break
-                else:
-                    print("Please enter an odd number.")
+                # if total_wins % 2 == 1:   ## ==> we changed my logic now don't need odd number for tie breaker just get the number of wins need 
+                #     break
+                # else:
+                #     print("Please enter an odd number.")
             else:
                 print("Invalid input. Enter a number.")
 

@@ -41,7 +41,7 @@ def play_game():
         guess = input("Guess a letter: ").lower()
 
         if guess in letter_list:
-            print("You've already guess that letter!")
+            print("You've already guessed that letter!")
         elif guess in word:
             print("Correct! One step closer to freedom.")
         else:

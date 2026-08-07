@@ -26,7 +26,8 @@
 | 6     | Functions, While Loops, Reeborg Challenges                         | ✅ Complete |
 | 7     | Hangman Capstone (Days 1–6 Review)                                 | ✅ Complete |
 | 8     | Function Parameters, Caesar Cipher, Love Calculator, Life in Weeks | ✅ Complete |
-| 9–100 | _(upcoming)_                                                       | ⏳          |
+| 9     | Dictionaries, Nesting, Secret Auction, Grading Program             | ✅ Complete |
+| 10–100| _(upcoming)_                                                      | ⏳          |
 
 ## 🛠️ Tech Stack
 

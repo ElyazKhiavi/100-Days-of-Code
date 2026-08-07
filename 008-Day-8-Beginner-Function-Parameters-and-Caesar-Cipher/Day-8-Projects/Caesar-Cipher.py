@@ -144,11 +144,10 @@ def main():
             caesar_cipher(text, shift, direction)
 
         again = input("Crack another one? (y/n): ").lower()
-        if again == "y":
-            print("Back to the vault.")
-        else:
+        if again != "y":
             print("Locking the vault. Until next time...")
             break
+        print("Back to the vault.")
 
 
 main()
