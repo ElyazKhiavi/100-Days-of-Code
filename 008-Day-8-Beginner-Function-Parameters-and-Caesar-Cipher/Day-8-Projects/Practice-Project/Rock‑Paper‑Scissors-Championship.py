@@ -2,8 +2,10 @@ import random
 
 choices = ["rock", "paper", "scissors"]
 
+
 def get_computer_choice():
     return random.choice(choices)
+
 
 def player_choice():
     while True:
@@ -11,6 +13,7 @@ def player_choice():
         if choice in choices:
             return choice
         print("Invalid choice. Try again.")
+
 
 def determine_game_winner(player, computer):
     if player == computer:
@@ -23,11 +26,13 @@ def determine_game_winner(player, computer):
         print("Computer wins this round!")
         return "c"
 
+
 def play_round():
     p_choice = player_choice()
     c_choice = get_computer_choice()
     print(f"Player: {p_choice}  –  Computer: {c_choice}")
     return determine_game_winner(p_choice, c_choice)
+
 
 def match_over(player_score, computer_score, wins_needed):
     """Return True if a player has reached the required wins."""
@@ -39,7 +44,9 @@ def match_over(player_score, computer_score, wins_needed):
         return True
     return False
 
+
 print("Welcome to the Rock‑Paper‑Scissors Championship!")
+
 
 def main():
     while True:
@@ -48,7 +55,7 @@ def main():
             total_wins = input("How many wins to become champion?: ")
             if total_wins.isdigit():
                 total_wins = int(total_wins)
-                # if total_wins % 2 == 1:   ## ==> we changed my logic now don't need odd number for tie breaker just get the number of wins need 
+                # if total_wins % 2 == 1:   ## ==> we changed my logic now don't need odd number for tie breaker just get the number of wins need
                 #     break
                 # else:
                 #     print("Please enter an odd number.")
@@ -77,5 +84,6 @@ def main():
             print("Thanks for playing! Goodbye.")
             break
         # if 'y', loop continues
+
 
 main()

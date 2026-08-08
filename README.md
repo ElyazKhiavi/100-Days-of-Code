@@ -27,7 +27,9 @@
 | 7     | Hangman Capstone (Days 1–6 Review)                                 | ✅ Complete |
 | 8     | Function Parameters, Caesar Cipher, Love Calculator, Life in Weeks | ✅ Complete |
 | 9     | Dictionaries, Nesting, Secret Auction, Grading Program             | ✅ Complete |
-| 10–100| _(upcoming)_                                                      | ⏳          |
+| 10    | Functions with Outputs, Docstrings, Calculator, Leap Year         | ✅ Complete |
+| 11–100| _(upcoming)_                                                       | ⏳          |
+
 
 ## 🛠️ Tech Stack
 

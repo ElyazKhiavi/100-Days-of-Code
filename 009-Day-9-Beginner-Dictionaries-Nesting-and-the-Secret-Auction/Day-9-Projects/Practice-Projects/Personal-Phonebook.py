@@ -15,8 +15,14 @@ def add_contact():
             if overwrite == "y":
                 phone_book[name] = number
                 break
-        print("Okay fill in the information again.")
+            else:
+                print("Okay fill in the information again.")
+                continue
+        else:
+            phone_book[name] = number  # new contact, add directly
+        break
     print("Contact added successfully!")
+
 
 
 def lookup():

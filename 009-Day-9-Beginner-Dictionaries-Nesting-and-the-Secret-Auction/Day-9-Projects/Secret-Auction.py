@@ -8,11 +8,10 @@ def submit_action(bidders):
     while True:
         user_bid = input("How much is your bid? $")
         if user_bid.isdigit():
-            user_bid = int(user_bid)
             break
         else:
             print("You must enter in a Number! ")
-    bidders[user_name] = user_bid
+    bidders[user_name] = int(user_bid)
 
 
 def auction_winner(bidders):

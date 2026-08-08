@@ -130,6 +130,25 @@ def check(word):
 
 ---
 
+## ZeroDivisionError
+
+**What:** Trying to divide a number by zero, which is mathematically undefined.  
+**Common cause:** Using a variable that ends up being `0` as a divisor, often in a loop or user input without validation.
+
+```python
+total = 0
+average = 100 / total  # division by zero
+```
+
+**Fix:** Always check the divisor is not zero before dividing. You can use an `if` guard:
+
+```python
+if total != 0:
+    average = 100 / total
+else:
+    average = 0  # or handle gracefully
+```
+
 <!--
 📋 ERROR TEMPLATE:
 
@@ -149,3 +168,7 @@ def check(word):
 
 - [[Day 13 - Debugging: How to Find and Fix Errors]]
 - [[Lists]] | [[Dictionaries]] | [[Type Conversion]]
+
+---
+
+_Last updated: Day 10 | Total errors logged: 9_
