@@ -1,0 +1,86 @@
+---
+day: 13
+title: "Day 13 - Debugging How to Find and Fix Errors in your Code"
+tags: [python, basics, debugging, error-handling, try-except]
+course: "100 Days of Code - Angela Yu"
+projects: [None - Debugging Exercises]
+status: completed
+time-spent: "3h"
+---
+
+# 📗 Day 13 — Debugging How to Find and Fix Errors in your Code
+
+> [!IMPORTANT] Core Concepts
+>
+> - **Types of Errors** — Syntax Errors (crash the program) vs Logical Errors (code runs, but does the wrong thing).
+> - **Debugging Steps** — Understand/visualize, recreate, "play computer", check edge cases, use `print()`, use a debugger.
+> - **IDE Debugger** — Setting breakpoints to pause execution and inspect variables/state step-by-step.
+> - **`try/except` Block** — Python's way of handling expected errors gracefully without crashing the program.
+
+---
+
+## Syntax / Key Commands
+
+### The `try/except` Block
+
+Used to catch errors and prevent the program from crashing. If the code inside `try` fails, the code inside `except` runs instead.
+
+```python
+while True:
+    new_age = input("Enter in your age: ")
+    try:
+        new_age = int(new_age)
+        break  # Exit loop if successful
+    except ValueError:
+        print("Please enter in a valid number.")
+```
+
+---
+
+## 🛠️ Practice Exercises
+
+### 1. `debugger.py`
+Used to practice reading error messages and using the IDE's step-through debugger to inspect variable states during a loop.
+
+**Key logic:** Modifying list elements using `random` inside a `for` loop.
+
+### 2. `try-except.py`
+A simple user input loop that catches `ValueError`. If the user types a string instead of a number, it warns them and asks again instead of crashing.
+
+---
+
+## 📂 Day 13 Files
+
+| File | Description |
+| --- | --- |
+| [debugger.py](Day-13-Practice/debugger.py) | **Practice** — Loop modification & IDE breakpoint testing |
+| [try-except.py](Day-13-Practice/try-except.py) | **Practice** — Catching `ValueError` on user input |
+| [practice-013.py](Day-13-Practice/practice-013.py) | Scratch / experimental code |
+
+---
+
+## ⚠️ Watch Out / Pitfalls
+
+| Mistake | Why It Happens | Fix |
+| --- | --- | --- |
+| Catching all exceptions | `except Exception:` hides specific bugs | Catch specific errors: `except ValueError:` |
+| Silent failures | `except` block is empty (`pass`) | Always print a message or log the error |
+| Ignoring Logical Errors | Code doesn't crash, but outputs wrong data | Use `print()` to trace variables or step through with the IDE Debugger |
+
+---
+
+## 🔗 See Also
+
+- [[Day 12 - Beginner - Scope & Number Guessing Game]] ← previous day
+- [[Day 14 - Beginner - Higher Lower Game Project]] ← next up! (Final Beginner Project)
+- [[python-errors-encountered]]
+- [[Debugging]]
+
+---
+
+## ✅ Completion Checklist
+
+- [x] Learned the difference between Syntax and Logical errors
+- [x] Practiced the 9 steps of debugging
+- [x] Learned how to use IDE breakpoints
+- [x] Implemented `try/except` blocks for error handling

@@ -30,7 +30,8 @@
 | 10     | Functions with Outputs, Docstrings, Calculator, Leap Year          | ✅ Complete |
 | 11     | Blackjack Capstone Project (Days 1–10 Review)                      | ✅ Complete |
 | 12     | Scope, Number Guessing Game, Prime Number Checker                  | ✅ Complete |
-| 13–100 | _(upcoming)_                                                       | ⏳          |
+| 13     | Debugging, Try/Except, IDE Debugger                                | ✅ Complete |
+| 14–100 | _(upcoming)_                                                       | ⏳          |
 
 ## 🛠️ Tech Stack
 
