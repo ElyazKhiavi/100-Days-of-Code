@@ -31,7 +31,8 @@
 | 11     | Blackjack Capstone Project (Days 1–10 Review)                      | ✅ Complete |
 | 12     | Scope, Number Guessing Game, Prime Number Checker                  | ✅ Complete |
 | 13     | Debugging, Try/Except, IDE Debugger                                | ✅ Complete |
-| 14–100 | _(upcoming)_                                                       | ⏳          |
+| 14     | Higher Lower Game Project (Final Beginner Capstone)                | ✅ Complete |
+| 15–100 | _(upcoming)_                                                       | ⏳          |
 
 ## 🛠️ Tech Stack
 

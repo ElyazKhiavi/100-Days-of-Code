@@ -2,16 +2,15 @@
 import os
 
 
-
 def submit_action(bidders):
     user_name = input("What is your name? ")
     while True:
         user_bid = input("How much is your bid? $")
-        if user_bid.isdigit():
+        try:
+            bidders[user_name] = int(user_bid)
             break
-        else:
+        except ValueError:
             print("You must enter in a Number! ")
-    bidders[user_name] = int(user_bid)
 
 
 def auction_winner(bidders):
