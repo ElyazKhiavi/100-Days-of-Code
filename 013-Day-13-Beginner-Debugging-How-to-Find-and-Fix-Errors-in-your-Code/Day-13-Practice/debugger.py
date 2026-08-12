@@ -16,7 +16,7 @@ def change_number(nums):
 change_number([1,2,3,7,8,9,12,20,40])
 
 
-sum()
-max()
+# sum()
+# max()
 
 

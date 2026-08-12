@@ -66,7 +66,7 @@ def main():
         if result == "win":
             print(f"You got it! The answer was {number}.")
         else:
-            print("You ran out of lives, You lose!")
+            print(f"You ran out of lives, You lose! The answer was {number}.")
 
         guess_again = input("Do you want to go again? (y)/(n): ").strip().lower()
         if guess_again != "y":
