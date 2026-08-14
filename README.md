@@ -29,6 +29,7 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 ## 📊 Progress
 
 ### 🟢 Phase 1: Beginner (Days 1–14)
+
 | Day | Topic                                                              | Status      |
 | --- | ------------------------------------------------------------------ | ----------- |
 | 1   | Variables, I/O & Band Name Generator                               | ✅ Complete |
@@ -47,17 +48,21 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 14  | Higher Lower Game Project (Final Beginner Capstone)                | ✅ Complete |
 
 ### 🔵 Phase 2: Intermediate (Days 15–31)
-| Day | Topic                                                              | Status      |
-| --- | ------------------------------------------------------------------ | ----------- |
-| 15  | Local Dev Environment Setup & the Coffee Machine                   | ✅ Complete |
-| 16–100 | _(upcoming)_                                                       | ⏳          |
+
+| Day    | Topic                                                                      | Status      |
+| ------ | -------------------------------------------------------------------------- | ----------- |
+| 15     | Local Dev Environment Setup & the Coffee Machine                           | ✅ Complete |
+| 16     | Object Oriented Programming (OOP), Coffee Machine OOP, PrettyTable, Turtle | ✅ Complete |
+| 17–100 | _(upcoming)_                                                               | ⏳          |
 
 ## 🛠️ Tech Stack
 
 - **Python 3.11 / 3.14** (Managed via `pyenv` and `Anaconda`)
-- **Libraries used so far:** 
-  - `random` (pseudo-random number generation, list shuffling)
-  - `os` (system calls, e.g., `os.system("clear")` for terminal UI)
+- **Libraries used so far:**
+  - `random` — pseudo-random number generation, list shuffling
+  - `os` — system calls, e.g., `os.system("clear")` for terminal UI
+  - `turtle` — beginner graphics and drawing
+  - `prettytable` — terminal-friendly tables
 - **Tools:** VSCodium, Git/GitHub, Obsidian (for note-taking & Excalidraw flowcharts)
 
 ## 📝 Notes Format
@@ -70,7 +75,7 @@ Daily repo notes (`day-XXX.md`) follow a strict, Obsidian-ready documentation st
 - **Watch Out / Pitfalls:** Common mistakes, edge cases, and fixes.
 - **See Also:** Cross-links to related days and concepts.
 
-*Note: Personal practice projects (built alongside the course) are migrating to a separate dedicated repository.*
+_Note: Personal practice projects (built alongside the course) are migrating to a separate dedicated repository._
 
 ---
 
