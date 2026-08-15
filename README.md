@@ -53,7 +53,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | ------ | -------------------------------------------------------------------------- | ----------- |
 | 15     | Local Dev Environment Setup & the Coffee Machine                           | ✅ Complete |
 | 16     | Object Oriented Programming (OOP), Coffee Machine OOP, PrettyTable, Turtle | ✅ Complete |
-| 17–100 | _(upcoming)_                                                               | ⏳          |
+| 17     | The Quiz Project & the Benefits of OOP                                     | ✅ Complete |
+| 18–100 | _(upcoming)_                                                               | ⏳          |
 
 ## 🛠️ Tech Stack
 
@@ -80,3 +81,7 @@ _Note: Personal practice projects (built alongside the course) are migrating to 
 ---
 
 _Built one day at a time. 🐍_
+
+```
+
+```
