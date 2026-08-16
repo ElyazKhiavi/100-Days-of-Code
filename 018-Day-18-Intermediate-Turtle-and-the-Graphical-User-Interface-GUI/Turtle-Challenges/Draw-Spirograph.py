@@ -20,15 +20,13 @@ trt.pensize(5)
 
 
 def draw_circles(gap):
-    trt.color(generate_color())
-    trt.circle(
-        radius=300,
-    )
-    for _ in range(360/gap):
+    for _ in range(int(360 / gap)):
+        trt.color(generate_color())
+        trt.circle(radius=400)
         trt.rt(gap)
-        
 
-draw_circles(5)
+
+draw_circles(2)
 
 sc = Screen()
 sc.exitonclick()
