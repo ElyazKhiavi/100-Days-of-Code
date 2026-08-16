@@ -14,7 +14,7 @@
 
 # my_list = ['name', 'address', 'age', 'gender']
 
-# # print(sum(my_list))
+# # print(sum(my_list)) ## throws error in the item are not integer
 # print(" ".join(my_list))
 
 

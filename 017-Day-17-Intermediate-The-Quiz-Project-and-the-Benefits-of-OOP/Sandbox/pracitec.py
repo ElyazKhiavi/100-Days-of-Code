@@ -1,5 +1,6 @@
 import random
-# 
+
+#
 data = {
     "1": {"name": "Alice", "age": 25, "city": "New York", "score": 85},
     "2": {"name": "Bob", "age": 30, "city": "London", "score": 92},
@@ -15,16 +16,17 @@ data = {
 # print(data[random.choice(list(data.keys()))]['name'])
 
 
-for key in data:
-    print(key, data[key]["name"])
+for key, value in data.items():
+    print(key, value["name"])
 
-    
+
 class Student:
     """docstring for ClassName."""
+
     def __init__(self, name, age):
-      self.name = name
-      self.age = age
-      self.grades = []
-    
-    def add_grade(self,grade):
+        self.name = name
+        self.age = age
+        self.grades = []
+
+    def add_grade(self, grade):
         self.grades.append(grade)

@@ -12,8 +12,6 @@ for i in range(len(question_data)):
 quiz = QuizBrain(question_bank)
 
 def main():
-    score = 0
-    questions_asked = 0
     while quiz.has_question():
         quiz.ask_question()
     print("You've completed the quiz")

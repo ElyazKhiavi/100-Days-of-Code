@@ -11,7 +11,7 @@ money_machine = MoneyMachine()
 
 
 def start_coffee_machine():
-    order = input(f"What would you like? {menu.get_items()}: ")
+    order = input(f"What would you like? {menu.get_items()}: ").strip().lower()
     if order == "off":
         return "OFF"
     elif order == "report":
