@@ -83,7 +83,3 @@ _Note: Personal practice projects (built alongside the course) are migrating to 
 ---
 
 _Built one day at a time. 🐍_
-
-```
-
-```
