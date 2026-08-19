@@ -56,7 +56,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 17     | The Quiz Project & the Benefits of OOP                                     | ✅ Complete |
 | 18     | Turtle & GUI, Tuples, colorgram, Dot Painting                              | ✅ Complete |
 | 19     | Instances, State, Higher Order Functions, Etch-a-Sketch, Turtle Race       | ✅ Complete |
-| 20–100 | _(upcoming)_                                                               | ⏳          |
+| 20     | Build the Snake Game Part 1 (Animation, Coordinates, Screen Refresh)       | ✅ Complete |
+| 21–100 | _(upcoming)_                                                               | ⏳          |
 
 ## 🛠️ Tech Stack
 
