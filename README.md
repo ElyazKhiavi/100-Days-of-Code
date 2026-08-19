@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Started (Day 15+)
+### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Ongoing (Days 15–21)
 
 ---
 
@@ -18,9 +18,10 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 │   └── Day-X-Projects/         # Main project(s) of the day (usually single files)
 ├── 015-Day-15-.../            # Daily folders (Intermediate Phase & beyond)
 │   ├── day-XXX.md
+│   ├── Sandbox/                # Scratch code, package demos, and concept testing
 │   └── Project-Name/           # Dedicated project folder
 │       ├── main.py             # Core project code
-│       ├── project-polished.py # Clean, refactored, documented version
+│       ├── project_polished.py # Clean, refactored, documented version
 │       ├── Project-Flowchart.svg # Excalidraw logic diagram
 │       └── instructions.md     # Project requirements & notes
 └── README.md
@@ -66,8 +67,10 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 - **Libraries used so far:**
   - `random` — pseudo-random number generation, list shuffling
   - `os` — system calls, e.g., `os.system("clear")` for terminal UI
-  - `turtle` — beginner graphics and drawing
+  - `turtle` — beginner graphics, drawing, and OOP game state management
+  - `time` — game loop control, e.g., `time.sleep()` for frame rates
   - `prettytable` — terminal-friendly tables
+  - `colorgram` — image color extraction
 - **Tools:** VSCodium, Git/GitHub, Obsidian (for note-taking & Excalidraw flowcharts)
 
 ## 📝 Notes Format

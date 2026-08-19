@@ -1,110 +1,38 @@
 ---
 title: "Python Errors Encountered"
-tags: [python, errors, debugging, reference]
+tags: [python, errors, debugging, reference, documentation]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-08-06
+last-updated: 2026-08-19
 ---
 
 # 🐛 Python Errors Log
 
 > [!tip] Philosophy
-> Don't memorize every error type. Google it, understand it, log it here.  
-> This note is a graveyard of bugs I've slain along the way.
+> Don't memorize every error type. When one hits you → **Google it**, understand it, **log it here**.
+> This note is a cheat sheet of bugs I've slain along the way.
 
 ---
 
 ## SyntaxError
 
-**What:** Code breaks Python's grammar rules.  
-**Common causes:** Missing quotes, unmatched parentheses, wrong indentation, typos in keywords.
+**What:** Code breaks Python's grammar rules.
+**Common causes:** Missing colons (`:`), unclosed quotes, unmatched parentheses, typos in keywords.
 
 ```python
 print('Hello World!)   # unterminated string literal
-fro range(5):           # invalid syntax
+fro range(5):         # invalid syntax
 ```
 
-**Fix:** Read the error message. Look for unclosed `()`, `[]`, `{}`, `''`, `""`.
-
----
-
-## TypeError
-
-**What:** Operation receives a value of the **wrong data type**.  
-**Common cause:** Mixing types (e.g., str + int).
-
-```python
-len(123)             # object of type 'int' has no len()
-print("Age: " + 25)  # can only concatenate str (not "int") to str
-```
-
-**Fix:** Use `type(var)` to inspect. Convert with `str()`, `int()`, `float()`.
-
-> [!note] Day 2 context
-> `input()` always returns a **string**. Doing math on it without `int()` first → TypeError.
-
----
-
-## ValueError
-
-**What:** Value is the **right type** but **wrong content**.  
-**Common cause:** Converting a non-numeric string to a number.
-
-```python
-int("Hello")   # invalid literal for int() with base 10: 'Hello'
-float("3.14abc") # ValueError
-```
-
-**Fix:** Validate input before converting, or use `try/except`.
-
----
-
-## NameError
-
-**What:** Referencing a variable or name that **doesn't exist** in the current scope.  
-**Common causes:** Typo in variable name, using before assignment, forgot import.
-
-```python
-pritn(message)  # name 'pritn' is not defined
-```
-
-**Fix:** Check spelling. Ensure variable is assigned _before_ use.
-
----
-
-## IndexError
-
-**What:** Accessing an index that doesn't exist in a sequence.  
-**Common cause:** Asking for item #5 in a list that only has items 0–4.
-
-```python
-ls = [0, 1, 2, 3, 4]
-print(ls[5])  # list index out of range
-```
-
-**Fix:** Remember indexing starts at **0**. Check length with `len()` first.
-
----
-
-## KeyError
-
-**What:** Accessing a dictionary key that doesn't exist.  
-**Common cause:** User input didn't match any expected dictionary key.
-
-```python
-art = {"r": "rock"}
-print(art["o"])  # KeyError: 'o'
-```
-
-**Fix:** Use `.get()` with a default value, or check `if key in dict:`.
+**Fix:** Read the error message. Look for unclosed `()`, `[]`, `{}`, `''`, `""`, or missing `:`.
 
 ---
 
 ## IndentationError
 
-**What:** Indentation is wrong—Python uses whitespace to define code blocks.  
-**Common cause:** Mixed tabs/spaces, or missing indent inside `for`/`if`/`def`.
+**What:** Indentation (spacing) is wrong—Python uses whitespace to define code blocks.
+**Common causes:** Mixed tabs and spaces, or missing indent inside `for`/`if`/`def`.
 
 ```python
 for i in range(5):
@@ -115,10 +43,103 @@ print(i)  # expected an indented block
 
 ---
 
+## NameError
+
+**What:** Referencing a variable or name that **doesn't exist** in the current scope.
+**Common causes:** Typo in variable name, using before assignment, forgot `import`.
+
+```python
+pritn(message)  # name 'pritn' is not defined
+```
+
+**Fix:** Check spelling. Ensure the variable is assigned _before_ use. Check your imports.
+
+---
+
+## AttributeError
+
+**What:** Trying to access an attribute or method that doesn't exist for that object type.
+**Common causes:**
+
+- Typo in method name (e.g., `.forwardd()` instead of `.forward()`).
+- Variable is actually `None` (e.g., a function returned `None` instead of an object).
+- Forgetting `super().__init__()` in a child class (so it doesn't inherit the parent's methods).
+
+```python
+my_list = 5
+my_list.append(10)  # 'int' object has no attribute 'append'
+
+trt = None
+trt.fd(100)         # 'NoneType' object has no attribute 'fd'
+```
+
+**Fix:** Print the type of the variable (`print(type(var))`). If it says `NoneType`, find where your function returned `None` instead of the object. If in a child class, ensure `super().__init__()` is called.
+
+---
+
+## TypeError
+
+**What:** An operation or function receives a value of the **wrong data type**.
+**Common cause:** Mixing types that don't play nice together (e.g., str + int).
+
+```python
+len(123)             # object of type 'int' has no len()
+print("Age: " + 25)  # can only concatenate str (not "int") to str
+```
+
+**Fix:** Use `type(var)` to inspect. Convert types using `str()`, `int()`, `float()`.
+
+> [!note] Day 2 Context
+> `input()` always returns a **string**. Doing math on it without `int()` first → TypeError.
+
+---
+
+## ValueError
+
+**What:** The value is the **right type** but **wrong content** for the operation.
+**Common cause:** Trying to convert a non-numeric string to a number.
+
+```python
+int("Hello")      # invalid literal for int() with base 10: 'Hello'
+float("3.14abc")  # ValueError
+```
+
+**Fix:** Validate input before converting, or use `try/except ValueError:`.
+
+---
+
+## IndexError
+
+**What:** You try to access an index that doesn't exist in a sequence (list, string, etc.).
+**Common cause:** Asking for item #5 in a list that only has items 0–4.
+
+```python
+ls = [0, 1, 2, 3, 4]
+print(ls[5])  # list index out of range
+```
+
+**Fix:** Remember indexing starts at **0**. Check the length with `len(ls)` first.
+
+---
+
+## KeyError
+
+**What:** Trying to access a dictionary key that doesn't exist.
+**Common cause:** User input didn't match any expected dictionary key.
+
+```python
+art = {"r": "rock"}
+print(art["o"])  # KeyError: 'o'
+```
+
+**Fix:** Always validate dictionary access! Use `.get()` with a default value, or check `if key in dict:`.
+
+---
+
 ## UnboundLocalError
 
-**What:** Trying to access a **local variable** that doesn't exist in the current scope.  
-**Common cause:** Referenced a variable inside a function before assigning it a value.
+**What:** Trying to access a **local variable** that hasn't been initialized in the current scope.
+**Common cause:** Forgetting to initialize an accumulator (`score = 0`) before a loop, or modifying a global variable inside a function without the `global` keyword.
 
 ```python
 def check(word):
@@ -126,31 +147,31 @@ def check(word):
         score += 1  # cannot access local variable 'score'
 ```
 
-**Fix:** Always initialize accumulators (`score = 0`) **before** loops.
+**Fix:** Always initialize accumulators **before** loops (`score = 0`). Use the `global` keyword if modifying an outer variable.
 
 ---
 
 ## ZeroDivisionError
 
-**What:** Trying to divide a number by zero, which is mathematically undefined.  
-**Common cause:** Using a variable that ends up being `0` as a divisor, often in a loop or user input without validation.
+**What:** Trying to divide a number by zero, which is mathematically undefined.
+**Common cause:** Using a variable that ends up being `0` as a divisor, often from user input without validation.
 
 ```python
 total = 0
 average = 100 / total  # division by zero
 ```
 
-**Fix:** Always check the divisor is not zero before dividing. You can use an `if` guard:
+**Fix:** Always check the divisor is not zero before dividing.
 
 ```python
 if total != 0:
     average = 100 / total
 else:
-    average = 0  # or handle gracefully
+    average = 0  # handle gracefully
 ```
 
 <!--
-📋 ERROR TEMPLATE:
+📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
 ## ErrorName
 **What:** One-line description.
@@ -166,9 +187,10 @@ else:
 
 ## 🔗 See Also
 
-- [[Day 13 - Debugging: How to Find and Fix Errors]]
-- [[Lists]] | [[Dictionaries]] | [[Type Conversion]]
+- [[Day 13 - Beginner - Debugging How to Find and Fix Errors in your Code]]
+- [[Day 16 - Intermediate - Object Oriented Programming (OOP)]] (AttributeError common here)
+- [[Lists]] | [[Dictionaries]] | [[Type Conversion]] | [[OOP]]
 
 ---
 
-_Last updated: Day 10 | Total errors logged: 9_
+_Last updated: Day 21 | Total errors logged: 10_
