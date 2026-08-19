@@ -57,7 +57,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 18     | Turtle & GUI, Tuples, colorgram, Dot Painting                              | ✅ Complete |
 | 19     | Instances, State, Higher Order Functions, Etch-a-Sketch, Turtle Race       | ✅ Complete |
 | 20     | Build the Snake Game Part 1 (Animation, Coordinates, Screen Refresh)       | ✅ Complete |
-| 21–100 | _(upcoming)_                                                               | ⏳          |
+| 21     | Build the Snake Game Part 2 (Inheritance, Slicing, Collision)              | ✅ Complete |
+| 22–100 | _(upcoming)_                                                               | ⏳          |
 
 ## 🛠️ Tech Stack
 
