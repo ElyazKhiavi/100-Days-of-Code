@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Ongoing (Days 15–21)
+### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Ongoing (Days 15–22)
 
 ---
 
@@ -21,9 +21,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 │   ├── Sandbox/                # Scratch code, package demos, and concept testing
 │   └── Project-Name/           # Dedicated project folder
 │       ├── main.py             # Core project code
-│       ├── project_polished.py # Clean, refactored, documented version
 │       ├── Project-Flowchart.svg # Excalidraw logic diagram
-│       └── instructions.md     # Project requirements & notes
+│       └── docs/               # AI code reviews and fix logs
 └── README.md
 ```
 
@@ -31,35 +30,36 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 
 ### 🟢 Phase 1: Beginner (Days 1–14)
 
-| Day | Topic                                                              | Status      |
-| --- | ------------------------------------------------------------------ | ----------- |
-| [1](001-Day-1-Beginner-Working-with-Variables-in-Python-to-Manage-Data/day-001.md) | Variables, I/O & Band Name Generator | ✅ | Complete |
-| [2](002-Day-2-Beginner-Understanding-Data-Types-and-How-to-Manipulate-Strings/day-002.md) | Data Types, Strings, Math, F-Strings, BMI & Tip Calculator | ✅ | Complete |
-| [3](003-Day-3-Beginner-Control-Flow-and-Logical-Operators/day-003.md) | Control Flow, If/Else, Logical Operators, Treasure Island | ✅ | Complete |
-| [4](004-Day-4-Beginner-Randomisation-and-Python-Lists/day-004.md) | Randomisation, Python Lists, Modules, Rock Paper Scissors | ✅ | Complete |
-| [5](005-Day-5-Beginner-Python-Loops/day-005.md) | Python Loops, Range(), Password Generator | ✅ | Complete |
-| [6](006-Day-6-Beginner-Python-Functions-and-Karel/day-006.md) | Functions, While Loops, Reeborg Challenges | ✅ | Complete |
-| [7](007-Day-7-Beginner-Hangman/day-007.md) | Hangman Capstone (Days 1–6 Review) | ✅ | Complete |
-| [8](008-Day-8-Beginner-Function-Parameters-and-Caesar-Cipher/day-008.md) | Function Parameters, Caesar Cipher, Love Calculator, Life in Weeks | ✅ | Complete |
-| [9](009-Day-9-Beginner-Dictionaries-Nesting-and-the-Secret-Auction/day-009.md) | Dictionaries, Nesting, Secret Auction, Grading Program | ✅ | Complete |
-| [10](010-Day-10-Beginner-Functions-with-Outputs/day-010.md) | Functions with Outputs, Docstrings, Calculator, Leap Year | ✅ | Complete |
-| [11](011-Day-11-Beginner-The-Blackjack-Capstone-Project/day-011.md) | Blackjack Capstone Project (Days 1–10 Review) | ✅ | Complete |
-| [12](012-Day-12-Beginner-Scope-and-Number-Guessing-Game/day-012.md) | Scope, Number Guessing Game, Prime Number Checker | ✅ | Complete |
-| [13](013-Day-13-Beginner-Debugging-How-to-Find-and-Fix-Errors-in-your-Code/day-013.md) | Debugging, Try/Except, IDE Debugger | ✅ | Complete |
-| [14](014-Day-14-Beginner-Higher-Lower-Game-Project/day-014.md) | Higher Lower Game Project (Final Beginner Capstone) | ✅ | Complete |
+| Day | Topic                                                                                                                                              | Status      |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 1   | [Variables, I/O & Band Name Generator](001-Day-1-Beginner-Working-with-Variables-in-Python-to-Manage-Data/day-001.md)                              | ✅ Complete |
+| 2   | [Data Types, Strings, Math, F-Strings, BMI & Tip Calculator](002-Day-2-Beginner-Understanding-Data-Types-and-How-to-Manipulate-Strings/day-002.md) | ✅ Complete |
+| 3   | [Control Flow, If/Else, Logical Operators, Treasure Island](003-Day-3-Beginner-Control-Flow-and-Logical-Operators/day-003.md)                      | ✅ Complete |
+| 4   | [Randomisation, Python Lists, Modules, Rock Paper Scissors](004-Day-4-Beginner-Randomisation-and-Python-Lists/day-004.md)                          | ✅ Complete |
+| 5   | [Python Loops, Range(), Password Generator](005-Day-5-Beginner-Python-Loops/day-005.md)                                                            | ✅ Complete |
+| 6   | [Functions, While Loops, Reeborg Challenges](006-Day-6-Beginner-Python-Functions-and-Karel/day-006.md)                                             | ✅ Complete |
+| 7   | [Hangman Capstone (Days 1–6 Review)](007-Day-7-Beginner-Hangman/day-007.md)                                                                        | ✅ Complete |
+| 8   | [Function Parameters, Caesar Cipher, Love Calculator, Life in Weeks](008-Day-8-Beginner-Function-Parameters-and-Caesar-Cipher/day-008.md)          | ✅ Complete |
+| 9   | [Dictionaries, Nesting, Secret Auction, Grading Program](009-Day-9-Beginner-Dictionaries-Nesting-and-the-Secret-Auction/day-009.md)                | ✅ Complete |
+| 10  | [Functions with Outputs, Docstrings, Calculator, Leap Year](010-Day-10-Beginner-Functions-with-Outputs/day-010.md)                                 | ✅ Complete |
+| 11  | [Blackjack Capstone Project (Days 1–10 Review)](011-Day-11-Beginner-The-Blackjack-Capstone-Project/day-011.md)                                     | ✅ Complete |
+| 12  | [Scope, Number Guessing Game, Prime Number Checker](012-Day-12-Beginner-Scope-and-Number-Guessing-Game/day-012.md)                                 | ✅ Complete |
+| 13  | [Debugging, Try/Except, IDE Debugger](013-Day-13-Beginner-Debugging-How-to-Find-and-Fix-Errors-in-your-Code/day-013.md)                            | ✅ Complete |
+| 14  | [Higher Lower Game Project (Final Beginner Capstone)](014-Day-14-Beginner-Higher-Lower-Game-Project/day-014.md)                                    | ✅ Complete |
 
 ### 🔵 Phase 2: Intermediate (Days 15–31)
 
-| Day    | Topic                                                                      | Status      |
-| ------ | -------------------------------------------------------------------------- | ----------- |
-| [15](015-Day-15-Intermediate-Local-Development-Environment-Setup-and-the-Coffee-Machine/day-015.md) | Local Dev Environment Setup & the Coffee Machine | ✅ | Complete |
-| [16](016-Day-16-Intermediate-Object-Oriented-Programming-OOP/day-016.md) | Object Oriented Programming (OOP), Coffee Machine OOP, PrettyTable, Turtle | ✅ | Complete |
-| [17](017-Day-17-Intermediate-The-Quiz-Project-and-the-Benefits-of-OOP/day-017.md) | The Quiz Project & the Benefits of OOP | ✅ | Complete |
-| [18](018-Day-18-Intermediate-Turtle-and-the-Graphical-User-Interface-GUI/day-018.md) | Turtle & GUI, Tuples, colorgram, Dot Painting | ✅ | Complete |
-| [19](019-Day-19-Intermediate-Instances-State-and-Higher-Order-Functions/day-019.md) | Instances, State, Higher Order Functions, Etch-a-Sketch, Turtle Race | ✅ | Complete |
-| [20](020-Day-20-Intermediate-Build-the-Snake-Game-Part-1-Animation-and-Coordinates/day-020.md) | Build the Snake Game Part 1 (Animation, Coordinates, Screen Refresh) | ✅ | Complete |
-| [21](021-Day-21-Intermediate-Build-the-Snake-Game-Part-2-Inheritance-and-List-Slicing/day-021.md) | Build the Snake Game Part 2 (Inheritance, Slicing, Collision) | ✅ | Complete |
-| 22–100 | _(upcoming)_                                                               | ⏳          |
+| Day    | Topic                                                                                                                                                            | Status      |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 15     | [Local Dev Environment Setup & the Coffee Machine](015-Day-15-Intermediate-Local-Development-Environment-Setup-and-the-Coffee-Machine/day-015.md)                | ✅ Complete |
+| 16     | [Object Oriented Programming (OOP), Coffee Machine OOP, PrettyTable, Turtle](016-Day-16-Intermediate-Object-Oriented-Programming-OOP/day-016.md)                 | ✅ Complete |
+| 17     | [The Quiz Project & the Benefits of OOP](017-Day-17-Intermediate-The-Quiz-Project-and-the-Benefits-of-OOP/day-017.md)                                            | ✅ Complete |
+| 18     | [Turtle & GUI, Tuples, colorgram, Dot Painting](018-Day-18-Intermediate-Turtle-and-the-Graphical-User-Interface-GUI/day-018.md)                                  | ✅ Complete |
+| 19     | [Instances, State, Higher Order Functions, Etch-a-Sketch, Turtle Race](019-Day-19-Intermediate-Instances-State-and-Higher-Order-Functions/day-019.md)            | ✅ Complete |
+| 20     | [Build the Snake Game Part 1 (Animation, Coordinates, Screen Refresh)](020-Day-20-Intermediate-Build-the-Snake-Game-Part-1-Animation-and-Coordinates/day-020.md) | ✅ Complete |
+| 21     | [Build the Snake Game Part 2 (Inheritance, Slicing, Collision)](021-Day-21-Intermediate-Build-the-Snake-Game-Part-2-Inheritance-and-List-Slicing/day-021.md)     | ✅ Complete |
+| 22     | [Build Pong The Famous Arcade Game](022-Day-22-Intermediate-Build-Pong-The-Famous-Arcade-Game/day-022.md)                                                        | ✅ Complete |
+| 23–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
 
 ## 🛠️ Tech Stack
 
