@@ -23,7 +23,7 @@ rating: 8/10
 > | **My Rating** | ⭐⭐⭐⭐⭐⭐⭐⭐ (8/10) |
 > | **Vibe** | Salty, honest, no sugar-coating — tells it like it is |
 
-> 📂 [**View source PDF →**](../000-Resources/12-Rules-to-Learn-to-Code.pdf)
+> 📂 [**View source PDF →**](../000-resources/12-rules-to-learn-to-code.pdf)
 
 > _I'm already coding, so let's see if I'm doing something wrong — or maybe doing something right._
 
