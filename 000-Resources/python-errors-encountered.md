@@ -9,7 +9,7 @@ last-updated: 2026-08-22
 
 # 🐛 Python Errors Log
 
-> [!tip] Philosophy
+> [!TIP]
 > Don't memorize every error type. When one hits you → **Google it**, understand it, **log it here**.
 > This note is a cheat sheet of bugs I've slain along the way.
 
@@ -89,7 +89,8 @@ print("Age: " + 25)  # can only concatenate str (not "int") to str
 
 **Fix:** Use `type(var)` to inspect. Convert types using `str()`, `int()`, `float()`.
 
-> [!note] Day 2 Context
+> [!note] 
+> #### Day 2 Context
 > `input()` always returns a **string**. Doing math on it without `int()` first → TypeError.
 
 ---
