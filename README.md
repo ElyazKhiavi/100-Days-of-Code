@@ -60,7 +60,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 21     | [Build the Snake Game Part 2 (Inheritance, Slicing, Collision)](021-Day-21-Intermediate-Build-the-Snake-Game-Part-2-Inheritance-and-List-Slicing/day-021.md)     | ✅ Complete |
 | 22     | [Build Pong The Famous Arcade Game](022-Day-22-Intermediate-Build-Pong-The-Famous-Arcade-Game/day-022.md)                                                        | ✅ Complete |
 | 23     | [The Turtle Crossing Capstone Project ](023-Day-23-Intermediate-The-Turtle-Crossing-Capstone-Project/day-023.md)                                                 | ✅ Complete |
-| 24–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
+| 24     | [Files, Directories, Paths, Birthday Letter Generator, Snake High Scores](024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md)                        | ✅ Complete |
+| 25–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
 
 ## 🛠️ Tech Stack
 
