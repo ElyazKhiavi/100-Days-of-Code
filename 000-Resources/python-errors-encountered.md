@@ -4,7 +4,7 @@ tags: [python, errors, debugging, reference, documentation]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-08-19
+last-updated: 2026-08-22
 ---
 
 # 🐛 Python Errors Log
@@ -170,6 +170,38 @@ else:
     average = 0  # handle gracefully
 ```
 
+---
+
+## FileNotFoundError
+
+**What:** Trying to open a file that doesn't exist in the specified path.
+**Common causes:** Using read mode (`'r'`) on a missing file, or running the script from the wrong Current Working Directory (CWD).
+
+```python
+with open("missing_file.txt", "r") as f:
+    contents = f.read()
+# FileNotFoundError: [Errno 2] No such file or directory: 'missing_file.txt'
+```
+
+**Fix:** Check your CWD (`import os; print(os.getcwd())`). Use absolute paths if unsure, or ensure the file exists before reading. If you want Python to create it, use write (`'w'`) or append (`'a'`) mode.
+
+---
+
+## io.UnsupportedOperation
+
+**What:** Performing a file operation that the current file mode does not allow.
+**Common cause:** Trying to `.write()` to a file opened in default read (`'r'`) mode.
+
+```python
+with open("my_file.txt") as f:  # Default mode is 'r' (read)
+    f.write("New text")
+# io.UnsupportedOperation: not writable
+```
+
+**Fix:** Explicitly specify the mode as `'w'` (write) or `'a'` (append) when opening the file if you intend to modify it.
+
+---
+
 <!--
 📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
@@ -189,8 +221,9 @@ else:
 
 - [[Day 13 - Beginner - Debugging How to Find and Fix Errors in your Code]]
 - [[Day 16 - Intermediate - Object Oriented Programming (OOP)]] (AttributeError common here)
-- [[Lists]] | [[Dictionaries]] | [[Type Conversion]] | [[OOP]]
+- [[Day 24 - Intermediate - Files, Directories and Paths]] (FileNotFound & io.UnsupportedOperation common here)
+- [[Lists]] | [[Dictionaries]] | [[Type Conversion]] | [[OOP]] | [[File Handling]]
 
 ---
 
-_Last updated: Day 21 | Total errors logged: 10_
+_Last updated: Day 24 | Total errors logged: 12_
