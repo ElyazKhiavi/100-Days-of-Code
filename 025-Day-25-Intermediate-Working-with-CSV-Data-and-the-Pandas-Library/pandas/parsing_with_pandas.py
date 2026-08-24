@@ -51,4 +51,4 @@ def c_to_f(temp):
 
 monday = data[data.day == "Monday"]
 # print(monday.temp[2]) # !!!!
-print(c_to_f(monday.temp[2]))
+print(c_to_f(monday.temp.item()))

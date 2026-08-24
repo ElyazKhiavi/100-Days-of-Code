@@ -62,7 +62,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 23     | [The Turtle Crossing Capstone Project ](023-Day-23-Intermediate-The-Turtle-Crossing-Capstone-Project/day-023.md)                                                 | ✅ Complete |
 | 24     | [Files, Directories, Paths, Birthday Letter Generator, Snake High Scores](024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md)                        | ✅ Complete |
 | 25     | [CSV Data, Pandas Library, US States Game, Squirrel Census, PIL](025-Day-25-Intermediate-Working-with-CSV-Data-and-the-Pandas-Library/day-025.md)                | ✅ Complete |
-| 26–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
+| 26     | [List Comprehension, Dictionary Comprehension, NATO Alphabet](026-Day-26-Intermediate-List-Comprehension-and-the-NATO-Alphabet/day-026.md)                       | ✅ Complete |
+| 27–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
 
 ## 🛠️ Tech Stack
 
