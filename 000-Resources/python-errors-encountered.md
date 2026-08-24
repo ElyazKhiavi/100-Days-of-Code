@@ -89,7 +89,7 @@ print("Age: " + 25)  # can only concatenate str (not "int") to str
 
 **Fix:** Use `type(var)` to inspect. Convert types using `str()`, `int()`, `float()`.
 
-> [!note] 
+> [!NOTE] 
 > #### Day 2 Context
 > `input()` always returns a **string**. Doing math on it without `int()` first → TypeError.
 

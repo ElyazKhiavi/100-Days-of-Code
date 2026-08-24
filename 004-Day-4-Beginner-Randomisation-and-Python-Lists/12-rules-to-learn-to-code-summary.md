@@ -14,7 +14,7 @@ rating: 8/10
 
 # 📚 12 Rules to Learn to Code
 
-> [!IMPORTANT] Meta
+> [!IMPORTANT]
 > | Field | Value |
 > |-------|-------|
 > | **Author** | Dr. Angela Yu (Udemy / App Brewery) |
