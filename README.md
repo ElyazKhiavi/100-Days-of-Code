@@ -63,7 +63,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 24     | [Files, Directories, Paths, Birthday Letter Generator, Snake High Scores](024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md)                        | ✅ Complete |
 | 25     | [CSV Data, Pandas Library, US States Game, Squirrel Census, PIL](025-Day-25-Intermediate-Working-with-CSV-Data-and-the-Pandas-Library/day-025.md)                | ✅ Complete |
 | 26     | [List Comprehension, Dictionary Comprehension, NATO Alphabet](026-Day-26-Intermediate-List-Comprehension-and-the-NATO-Alphabet/day-026.md)                       | ✅ Complete |
-| 27–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
+| 27    | [Tkinter, args, kwargs, Creating GUI Programs, Miles to KM Converter](027-Day-27-Intermediate-Tkinter-args-kwargs-and-Creating-GUI-Programs/day-027.md) | ✅ Complete |
+| 28–100| _(upcoming)_                                                       | ⏳          |
 
 ## 🛠️ Tech Stack
 
