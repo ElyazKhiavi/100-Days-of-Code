@@ -1,8 +1,8 @@
-# 1️⃣0️⃣0️⃣ 100 Days of Python
+# 🔟🔟 100 Days of Python
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Ongoing (Days 15–22)
+### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Ongoing (Days 15–29)
 
 ---
 
@@ -78,6 +78,13 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
   - `time` — game loop control, e.g., `time.sleep()` for frame rates
   - `prettytable` — terminal-friendly tables
   - `colorgram` — image color extraction
+  - `pandas` — data analysis, DataFrame manipulation, CSV parsing
+  - `csv` — built-in CSV file parsing
+  - `tkinter` — GUI development, Canvas widget, event loops (`after`)
+  - `secrets` — cryptographically secure random number generation
+  - `pyperclip` — clipboard management for copy/paste operations
+  - `re` — regular expressions for string pattern matching and validation
+  - `PIL (Pillow)` — image processing, resizing for GUI assets
 - **Tools:** VSCodium, Git/GitHub, Obsidian (for note-taking & Excalidraw flowcharts)
 
 ## 📝 Notes Format
