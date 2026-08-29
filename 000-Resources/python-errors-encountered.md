@@ -89,8 +89,10 @@ print("Age: " + 25)  # can only concatenate str (not "int") to str
 
 **Fix:** Use `type(var)` to inspect. Convert types using `str()`, `int()`, `float()`.
 
-> [!NOTE] 
+> [!NOTE]
+>
 > #### Day 2 Context
+>
 > `input()` always returns a **string**. Doing math on it without `int()` first → TypeError.
 
 ---
@@ -203,6 +205,23 @@ with open("my_file.txt") as f:  # Default mode is 'r' (read)
 
 ---
 
+## ModuleNotFoundError
+
+**What:** Trying to import a module that Python cannot find.
+**Common causes:** The module is not installed in your current environment, or you mistyped the module name in the `import` statement.
+
+```python
+import pyperclippp  # ModuleNotFoundError: No module named 'pyperclippp'
+```
+
+**Fix:**
+
+1. Check spelling in the `import` statement.
+2. If it's an external package, install it via terminal: `pip install <module_name>`.
+3. Ensure you are installing it in the correct virtual environment (check `pip --version`).
+
+---
+
 <!--
 📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
@@ -220,11 +239,11 @@ with open("my_file.txt") as f:  # Default mode is 'r' (read)
 
 ## 🔗 See Also
 
-- [[Day 13 - Beginner - Debugging How to Find and Fix Errors in your Code]]
-- [[Day 16 - Intermediate - Object Oriented Programming (OOP)]] (AttributeError common here)
-- [[Day 24 - Intermediate - Files, Directories and Paths]] (FileNotFound & io.UnsupportedOperation common here)
-- [[Lists]] | [[Dictionaries]] | [[Type Conversion]] | [[OOP]] | [[File Handling]]
+- [Day 13 - Beginner - Debugging How to Find and Fix Errors in your Code](../013-Day-13-Beginner-Debugging-How-to-Find-and-Fix-Errors-in-your-Code/day-013.md)
+- [Day 16 - Intermediate - Object Oriented Programming (OOP)](.//016-Day-16-Intermediate-Object-Oriented-Programming-OOP/day-016.md) (AttributeError common here)
+- [Day 24 - Intermediate - Files, Directories and Paths](../024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md) (FileNotFound & io.UnsupportedOperation common here)
+- `Lists` | `Dictionaries` | `Type Conversion` | `OOP` | `File Handling`
 
 ---
 
-_Last updated: Day 24 | Total errors logged: 12_
+_Last updated: Day 29 | Total errors logged: 13_
