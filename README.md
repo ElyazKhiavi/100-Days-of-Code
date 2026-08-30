@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Ongoing (Days 15–29)
+### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Complete (Days 15–31) | Intermediate+ Phase Started (Day 32+)
 
 ---
 
@@ -49,25 +49,30 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 
 ### 🔵 Phase 2: Intermediate (Days 15–31)
 
-| Day    | Topic                                                                                                                                                            | Status      |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| 15     | [Local Dev Environment Setup & the Coffee Machine](015-Day-15-Intermediate-Local-Development-Environment-Setup-and-the-Coffee-Machine/day-015.md)                | ✅ Complete |
-| 16     | [Object Oriented Programming (OOP), Coffee Machine OOP, PrettyTable, Turtle](016-Day-16-Intermediate-Object-Oriented-Programming-OOP/day-016.md)                 | ✅ Complete |
-| 17     | [The Quiz Project & the Benefits of OOP](017-Day-17-Intermediate-The-Quiz-Project-and-the-Benefits-of-OOP/day-017.md)                                            | ✅ Complete |
-| 18     | [Turtle & GUI, Tuples, colorgram, Dot Painting](018-Day-18-Intermediate-Turtle-and-the-Graphical-User-Interface-GUI/day-018.md)                                  | ✅ Complete |
-| 19     | [Instances, State, Higher Order Functions, Etch-a-Sketch, Turtle Race](019-Day-19-Intermediate-Instances-State-and-Higher-Order-Functions/day-019.md)            | ✅ Complete |
-| 20     | [Build the Snake Game Part 1 (Animation, Coordinates, Screen Refresh)](020-Day-20-Intermediate-Build-the-Snake-Game-Part-1-Animation-and-Coordinates/day-020.md) | ✅ Complete |
-| 21     | [Build the Snake Game Part 2 (Inheritance, Slicing, Collision)](021-Day-21-Intermediate-Build-the-Snake-Game-Part-2-Inheritance-and-List-Slicing/day-021.md)     | ✅ Complete |
-| 22     | [Build Pong The Famous Arcade Game](022-Day-22-Intermediate-Build-Pong-The-Famous-Arcade-Game/day-022.md)                                                        | ✅ Complete |
-| 23     | [The Turtle Crossing Capstone Project ](023-Day-23-Intermediate-The-Turtle-Crossing-Capstone-Project/day-023.md)                                                 | ✅ Complete |
-| 24     | [Files, Directories, Paths, Birthday Letter Generator, Snake High Scores](024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md)                        | ✅ Complete |
-| 25     | [CSV Data, Pandas Library, US States Game, Squirrel Census, PIL](025-Day-25-Intermediate-Working-with-CSV-Data-and-the-Pandas-Library/day-025.md)                | ✅ Complete |
-| 26     | [List Comprehension, Dictionary Comprehension, NATO Alphabet](026-Day-26-Intermediate-List-Comprehension-and-the-NATO-Alphabet/day-026.md)                       | ✅ Complete |
-| 27     | [Tkinter, args, kwargs, Creating GUI Programs, Miles to KM Converter](027-Day-27-Intermediate-Tkinter-args-kwargs-and-Creating-GUI-Programs/day-027.md)          | ✅ Complete |
-| 28     | [Tkinter, Dynamic Typing, Pomodoro GUI Application](028-Day-28-Intermediate-Tkinter-Dynamic-Typing-and-the-Pomodoro-GUI-Application/day-028.md)                  | ✅ Complete |
-| 29     | [Building a Password Manager GUI App with Tkinter, Secrets, Regex](029-Day-29-Intermediate-Building-a-Password-Manager-GUI-App-with-Tkinter/day-029.md)          | ✅ Complete |
-| 30     | [Errors, Exceptions, JSON Data, Password Manager Upgrade](030-Day-30-Intermediate-Errors-Exceptions-and-JSON-Data-Improving-the-Password/day-030.md)             | ✅ Complete |
-| 31–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
+| Day | Topic                                                                                                                                                            | Status      |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 15  | [Local Dev Environment Setup & the Coffee Machine](015-Day-15-Intermediate-Local-Development-Environment-Setup-and-the-Coffee-Machine/day-015.md)                | ✅ Complete |
+| 16  | [Object Oriented Programming (OOP), Coffee Machine OOP, PrettyTable, Turtle](016-Day-16-Intermediate-Object-Oriented-Programming-OOP/day-016.md)                 | ✅ Complete |
+| 17  | [The Quiz Project & the Benefits of OOP](017-Day-17-Intermediate-The-Quiz-Project-and-the-Benefits-of-OOP/day-017.md)                                            | ✅ Complete |
+| 18  | [Turtle & GUI, Tuples, colorgram, Dot Painting](018-Day-18-Intermediate-Turtle-and-the-Graphical-User-Interface-GUI/day-018.md)                                  | ✅ Complete |
+| 19  | [Instances, State, Higher Order Functions, Etch-a-Sketch, Turtle Race](019-Day-19-Intermediate-Instances-State-and-Higher-Order-Functions/day-019.md)            | ✅ Complete |
+| 20  | [Build the Snake Game Part 1 (Animation, Coordinates, Screen Refresh)](020-Day-20-Intermediate-Build-the-Snake-Game-Part-1-Animation-and-Coordinates/day-020.md) | ✅ Complete |
+| 21  | [Build the Snake Game Part 2 (Inheritance, Slicing, Collision)](021-Day-21-Intermediate-Build-the-Snake-Game-Part-2-Inheritance-and-List-Slicing/day-021.md)     | ✅ Complete |
+| 22  | [Build Pong The Famous Arcade Game](022-Day-22-Intermediate-Build-Pong-The-Famous-Arcade-Game/day-022.md)                                                        | ✅ Complete |
+| 23  | [The Turtle Crossing Capstone Project ](023-Day-23-Intermediate-The-Turtle-Crossing-Capstone-Project/day-023.md)                                                 | ✅ Complete |
+| 24  | [Files, Directories, Paths, Birthday Letter Generator, Snake High Scores](024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md)                        | ✅ Complete |
+| 25  | [CSV Data, Pandas Library, US States Game, Squirrel Census, PIL](025-Day-25-Intermediate-Working-with-CSV-Data-and-the-Pandas-Library/day-025.md)                | ✅ Complete |
+| 26  | [List Comprehension, Dictionary Comprehension, NATO Alphabet](026-Day-26-Intermediate-List-Comprehension-and-the-NATO-Alphabet/day-026.md)                       | ✅ Complete |
+| 27  | [Tkinter, args, kwargs, Creating GUI Programs, Miles to KM Converter](027-Day-27-Intermediate-Tkinter-args-kwargs-and-Creating-GUI-Programs/day-027.md)          | ✅ Complete |
+| 28  | [Tkinter, Dynamic Typing, Pomodoro GUI Application](028-Day-28-Intermediate-Tkinter-Dynamic-Typing-and-the-Pomodoro-GUI-Application/day-028.md)                  | ✅ Complete |
+| 29  | [Building a Password Manager GUI App with Tkinter, Secrets, Regex](029-Day-29-Intermediate-Building-a-Password-Manager-GUI-App-with-Tkinter/day-029.md)          | ✅ Complete |
+| 30  | [Errors, Exceptions, JSON Data, Password Manager Upgrade](030-Day-30-Intermediate-Errors-Exceptions-and-JSON-Data-Improving-the-Password/day-030.md)             | ✅ Complete |
+| 31  | [Flash Card App Capstone Project (Intermediate Phase Complete)](031-Day-31-Intermediate-Flash-Card-App-Capstone-Project/day-031.md)                              | ✅ Complete |
+
+### 🟣 Phase 3: Intermediate+ (Days 32–58)
+| Day    | Topic        | Status |
+| ------ | ------------ | ------ |
+| 32–100 | _(upcoming)_ | ⏳     |
 
 ## 🛠️ Tech Stack
 
