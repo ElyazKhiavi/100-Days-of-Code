@@ -66,7 +66,8 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 27     | [Tkinter, args, kwargs, Creating GUI Programs, Miles to KM Converter](027-Day-27-Intermediate-Tkinter-args-kwargs-and-Creating-GUI-Programs/day-027.md)          | ✅ Complete |
 | 28     | [Tkinter, Dynamic Typing, Pomodoro GUI Application](028-Day-28-Intermediate-Tkinter-Dynamic-Typing-and-the-Pomodoro-GUI-Application/day-028.md)                  | ✅ Complete |
 | 29     | [Building a Password Manager GUI App with Tkinter, Secrets, Regex](029-Day-29-Intermediate-Building-a-Password-Manager-GUI-App-with-Tkinter/day-029.md)          | ✅ Complete |
-| 30–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
+| 30     | [Errors, Exceptions, JSON Data, Password Manager Upgrade](030-Day-30-Intermediate-Errors-Exceptions-and-JSON-Data-Improving-the-Password/day-030.md)             | ✅ Complete |
+| 31–100 | _(upcoming)_                                                                                                                                                     | ⏳          |
 
 ## 🛠️ Tech Stack
 
