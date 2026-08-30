@@ -1,4 +1,4 @@
-# 🔟🔟 100 Days of Python
+# 🔟0️⃣ 100 Days of Python
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
