@@ -70,9 +70,11 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 31  | [Flash Card App Capstone Project (Intermediate Phase Complete)](031-Day-31-Intermediate-Flash-Card-App-Capstone-Project/day-031.md)                              | ✅ Complete |
 
 ### 🟣 Phase 3: Intermediate+ (Days 32–58)
-| Day    | Topic        | Status |
-| ------ | ------------ | ------ |
-| 32–100 | _(upcoming)_ | ⏳     |
+
+| Day    | Topic                                                                                                                                                                     | Status      |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 32     | [Send Email (smtplib), Manage Dates (datetime), Birthday Wisher, Motivational Email](032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md) | ✅ Complete |
+| 33–100 | _(upcoming)_                                                                                                                                                              | ⏳          |
 
 ## 🛠️ Tech Stack
 

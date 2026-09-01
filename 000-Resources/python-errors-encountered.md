@@ -4,7 +4,7 @@ tags: [python, errors, debugging, reference, documentation]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-08-22
+last-updated: 2026-09-01
 ---
 
 # 🐛 Python Errors Log
@@ -222,6 +222,22 @@ import pyperclippp  # ModuleNotFoundError: No module named 'pyperclippp'
 
 ---
 
+## smtplib.SMTPAuthenticationError
+
+**What:** Authentication with the SMTP server failed — usually because you’re using your normal Gmail password instead of an App Password.
+
+**Common cause:** Using your regular Gmail password with `smtplib` instead of a generated App Password.
+
+```python
+import smtplib
+with smtplib.SMTP("smtp.gmail.com") as connection:
+    connection.login("myemail@gmail.com", "my_normal_password")  # fails
+```
+
+**Fix:** Enable **2‑Step Verification** on your Google account, then generate a 16‑character **App Password** and use that in your code.
+
+---
+
 <!--
 📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
@@ -242,8 +258,9 @@ import pyperclippp  # ModuleNotFoundError: No module named 'pyperclippp'
 - [Day 13 - Beginner - Debugging How to Find and Fix Errors in your Code](../013-Day-13-Beginner-Debugging-How-to-Find-and-Fix-Errors-in-your-Code/day-013.md)
 - [Day 16 - Intermediate - Object Oriented Programming (OOP)](.//016-Day-16-Intermediate-Object-Oriented-Programming-OOP/day-016.md) (AttributeError common here)
 - [Day 24 - Intermediate - Files, Directories and Paths](../024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md) (FileNotFound & io.UnsupportedOperation common here)
+- [Day 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime)](../032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md) (smtplib.SMTPAuthenticationError)
 - `Lists` | `Dictionaries` | `Type Conversion` | `OOP` | `File Handling`
 
 ---
 
-_Last updated: Day 29 | Total errors logged: 13_
+_Last updated: Day 32 | Total errors logged: 14_
