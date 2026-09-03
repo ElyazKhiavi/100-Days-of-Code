@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Complete (Days 15–31) | Intermediate+ Phase Started (Day 32+)
+### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Complete (Days 15–31) | Intermediate+ Phase Started (Day 33+)
 
 ---
 
@@ -74,7 +74,7 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | Day    | Topic                                                                                                                                                                     | Status      |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | 32     | [Send Email (smtplib), Manage Dates (datetime), Birthday Wisher, Motivational Email](032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md) | ✅ Complete |
-| 33–100 | _(upcoming)_                                                                                                                                                              | ⏳          |
+| 33 | [API Endpoints & API Parameters — ISS Overhead Notifier](./033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md) | ✅ Complete |
 
 ## 🛠️ Tech Stack
 

@@ -4,7 +4,7 @@ tags: [python, errors, debugging, reference, documentation]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-09-01
+last-updated: 2026-09-03
 ---
 
 # 🐛 Python Errors Log
@@ -238,6 +238,52 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
 
 ---
 
+## requests.exceptions.ConnectionError
+
+**What:** `requests` couldn't reach the server at all — DNS failure, connection refused, or no internet. Nothing about your code syntax is wrong; the network path is.
+
+**When/Why it happened:** Hitting `http://api.open-notify.org/iss-now.json` when the API was unreachable. The message usually shows "Max retries exceeded" and a `Caused by:` line with the real cause.
+
+```python
+import requests
+requests.get("http://api.open-notify.org/iss-now.json")
+# requests.exceptions.ConnectionError:
+# HTTPConnectionPool(host='api.open-notify.org', port=80): Max retries exceeded
+```
+
+**Fix:** Check internet and URL (http vs https). For long-running scripts (like the ISS notifier), wrap the call so a dead API doesn't kill the loop:
+
+```python
+try:
+    response = requests.get(url=API)
+    response.raise_for_status()
+except requests.exceptions.ConnectionError:
+    return False  # or retry later
+```
+
+---
+
+## MaxRetryError (urllib3)
+
+**What:** `urllib3` — the engine underneath `requests` — exhausted its retry attempts and gave up connecting. You almost never catch this directly; it arrives **wrapped inside** `requests.exceptions.ConnectionError` (or `requests.exceptions.RetryError`).
+
+**When/Why it happened:** Same triggers as ConnectionError (server down, bad host/port, firewall), but it means retries were already attempted and failed.
+
+```python
+# urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='api.open-notify.org', port=80):
+# Max retries exceeded with url: /iss-now.json
+```
+
+**Fix:** Don't catch `MaxRetryError` directly. Read the `Caused by: ...` line at the bottom of the traceback — that's the actual problem — and handle the parent `requests` exception instead.
+
+> [!NOTE]
+>
+> #### Day 33 Context
+>
+> open-notify is HTTP-only and frequently down. Any project depending on it (ISS notifier) needs `try/except requests.exceptions.ConnectionError` around the call.
+
+---
+
 <!--
 📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
@@ -259,8 +305,9 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
 - [Day 16 - Intermediate - Object Oriented Programming (OOP)](.//016-Day-16-Intermediate-Object-Oriented-Programming-OOP/day-016.md) (AttributeError common here)
 - [Day 24 - Intermediate - Files, Directories and Paths](../024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md) (FileNotFound & io.UnsupportedOperation common here)
 - [Day 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime)](../032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md) (smtplib.SMTPAuthenticationError)
+- [Day 33 - API Endpoints & API Parameters - ISS Overhead Notifier](../033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md) (ConnectionError & MaxRetryError)
 - `Lists` | `Dictionaries` | `Type Conversion` | `OOP` | `File Handling`
 
 ---
 
-_Last updated: Day 32 | Total errors logged: 14_
+_Last updated: Day 33 | Total errors logged: 16_
