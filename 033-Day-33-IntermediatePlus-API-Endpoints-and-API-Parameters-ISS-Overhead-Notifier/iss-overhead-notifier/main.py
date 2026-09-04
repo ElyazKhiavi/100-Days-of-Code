@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 import smtplib
 
 MY_LAT = 51.507351  # Your latitude
@@ -43,7 +43,8 @@ def is_night():
     sunrise = int(data["results"]["sunrise"].split("T")[1].split(":")[0])
     sunset = int(data["results"]["sunset"].split("T")[1].split(":")[0])
 
-    time_now = datetime.now().hour
+    # time_now = datetime.now().hour
+    time_now = datetime.now(timezone.utc).hour
     if time_now >= sunset or time_now < sunrise:
         return True
 
