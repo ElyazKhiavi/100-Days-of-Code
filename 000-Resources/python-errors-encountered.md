@@ -4,7 +4,7 @@ tags: [python, errors, debugging, reference, documentation]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-09-03
+last-updated: 2026-09-05
 ---
 
 # 🐛 Python Errors Log
@@ -284,6 +284,30 @@ except requests.exceptions.ConnectionError:
 
 ---
 
+## ImportError
+
+**What:** The module was found, but the name you're importing from it doesn't exist inside it.
+
+**When/Why it happened:** `main.py` did `from data import question_data` while `data.py` didn't define `question_data` yet — file saved incomplete / modules written out of order.
+
+```python
+from data import question_data
+# ImportError: cannot import name 'question_data' from 'data' (.../data.py)
+```
+
+**Fix:** Make sure the name exists in the source module before importing. Know the difference:
+
+- **ModuleNotFoundError** → the module itself can't be found (typo, not installed).
+- **ImportError** → module found, but that name isn't in it (typo in the import, or not defined yet).
+
+> [!NOTE]
+>
+> #### Day 34 Context
+>
+> Hit while assembling the Quizzler app — `main.py` imported `question_data` before `data.py` was saved with the module-level `question_data = get_questions()` line.
+
+---
+
 <!--
 📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
@@ -306,8 +330,9 @@ except requests.exceptions.ConnectionError:
 - [Day 24 - Intermediate - Files, Directories and Paths](../024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md) (FileNotFound & io.UnsupportedOperation common here)
 - [Day 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime)](../032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md) (smtplib.SMTPAuthenticationError)
 - [Day 33 - API Endpoints & API Parameters - ISS Overhead Notifier](../033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md) (ConnectionError & MaxRetryError)
+- [Day 34 - API Practice - Creating a GUI Quiz App](../034-Day-34-IntermediatePlus-API-Practice-Creating-a-GUI-Quiz-App/day-034.md) (ImportError)
 - `Lists` | `Dictionaries` | `Type Conversion` | `OOP` | `File Handling`
 
 ---
 
-_Last updated: Day 33 | Total errors logged: 16_
+_Last updated: Day 34 | Total errors logged: 17_
