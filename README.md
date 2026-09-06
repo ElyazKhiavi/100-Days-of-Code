@@ -71,11 +71,12 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 
 ### 🟣 Phase 3: Intermediate+ (Days 32–58)
 
-| Day | Topic                                                                                                                                                                     | Status      |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| 32  | [Send Email (smtplib), Manage Dates (datetime), Birthday Wisher, Motivational Email](032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md) | ✅ Complete |
-| 33  | [API Endpoints & API Parameters — ISS Overhead Notifier](033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md)                   | ✅ Complete |
-| 34  | [API Practice, Type Hints, Quizzler GUI App (tkinter + OpenTDB)](034-Day-34-IntermediatePlus-API-Practice-Creating-a-GUI-Quiz-App/day-034.md)                             | ✅ Complete |
+| Day | Topic                                                                                                                                                                                     | Status      |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| 32  | [Send Email (smtplib), Manage Dates (datetime), Birthday Wisher, Motivational Email](032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md)                 | ✅ Complete |
+| 33  | [API Endpoints & API Parameters — ISS Overhead Notifier](033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md)                                   | ✅ Complete |
+| 34  | [API Practice, Type Hints, Quizzler GUI App (tkinter + OpenTDB)](034-Day-34-IntermediatePlus-API-Practice-Creating-a-GUI-Quiz-App/day-034.md)                                             | ✅ Complete |
+| 35  | [API Keys, Authentication & Environment Variables — Rain Alert (OpenWeatherMap, SMS→SMTP)](035-Day-35-IntermediatePlus-Keys-Authentication-and-Environment-Variables-Send-SMS/day-035.md) | ✅ Complete |
 
 ## 🛠️ Tech Stack
 

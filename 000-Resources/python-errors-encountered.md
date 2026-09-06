@@ -4,7 +4,7 @@ tags: [python, errors, debugging, reference, documentation]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-09-05
+last-updated: 2026-09-06
 ---
 
 # 🐛 Python Errors Log
@@ -308,6 +308,28 @@ from data import question_data
 
 ---
 
+## requests.exceptions.MissingSchema
+
+**What:** `requests.get()` received a URL string with no scheme — no `http://` or `https://` prefix.
+
+**When/Why it happened:** Passing the bare host from API docs straight into `requests.get("api.openweathermap.org/data/2.5/forecast")`. Docs often print URLs schemeless; `requests` refuses to guess.
+
+```python
+requests.get("api.openweathermap.org/data/2.5/forecast")
+# requests.exceptions.MissingSchema: Invalid URL 'api.openweathermap.org/data/2.5/forecast':
+# No scheme supplied. Perhaps you meant https://api.openweathermap.org/data/2.5/forecast?
+```
+
+**Fix:** Include the full scheme. When the error names the fix in its own message — read it.
+
+> [!NOTE]
+>
+> #### Day 35 Context
+>
+> Hit on the OpenWeatherMap forecast call. The exception even suggests the corrected URL — one of the friendliest errors `requests` throws.
+
+---
+
 <!--
 📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
@@ -331,8 +353,9 @@ from data import question_data
 - [Day 32 - Intermediate+ Send Email (smtplib) & Manage Dates (datetime)](../032-Day-32-IntermediatePlus-Send-Email-smtplib-and-Manage-Dates-datetime/day-032.md) (smtplib.SMTPAuthenticationError)
 - [Day 33 - API Endpoints & API Parameters - ISS Overhead Notifier](../033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md) (ConnectionError & MaxRetryError)
 - [Day 34 - API Practice - Creating a GUI Quiz App](../034-Day-34-IntermediatePlus-API-Practice-Creating-a-GUI-Quiz-App/day-034.md) (ImportError)
+- [Day 35 - Keys, Authentication & Environment Variables - Send SMS](../035-Day-35-IntermediatePlus-Keys-Authentication-and-Environment-Variables-Send-SMS/day-035.md) (MissingSchema)
 - `Lists` | `Dictionaries` | `Type Conversion` | `OOP` | `File Handling`
 
 ---
 
-_Last updated: Day 34 | Total errors logged: 17_
+_Last updated: Day 35 | Total errors logged: 18_
