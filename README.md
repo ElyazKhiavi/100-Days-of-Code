@@ -2,27 +2,27 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Complete (Days 15–31) | Intermediate+ Phase Started (Day 36+)
+### 🚀 Status: Day 36/100 — Beginner ✅ | Intermediate ✅ | Intermediate+ In Progress (5/27 days)
 
 ---
 
 ## 📁 Repository Structure
 
-The repository structure evolved starting Day 15 to accommodate larger, multi-file projects.
+Daily folders use zero-padded prefixes; structure evolved at Day 15 for multi-file projects.
 
 ```text
 ├── 000-Resources/              # Course PDFs, cheat sheets, error log, syllabus
-├── 001-Day-1-.../             # Daily folders (Beginner Phase)
-│   ├── day-XXX.md              # Daily documentation (repo version)
-│   ├── Day-X-Practice/         # Topic exercises & scratch code
-│   └── Day-X-Projects/         # Main project(s) of the day (usually single files)
-├── 015-Day-15-.../            # Daily folders (Intermediate Phase & beyond)
+├── 001-Day-1-.../              # Beginner days
+│   ├── day-XXX.md              # Daily documentation
+│   ├── day-X-practice/         # Topic exercises & scratch code
+│   └── day-X-projects/         # Day projects (usually single files)
+├── 015-Day-15-.../             # Intermediate & beyond
 │   ├── day-XXX.md
-│   ├── Sandbox/                # Scratch code, package demos, and concept testing
-│   └── Project-Name/           # Dedicated project folder
-│       ├── main.py             # Core project code
-│       ├── Project-Flowchart.svg # Excalidraw logic diagram
-│       └── docs/               # AI code reviews and fix logs
+│   ├── sandbox/                # Scratch code & concept testing
+│   └── project-name/           # Dedicated project folder
+│       ├── main.py
+│       ├── project-flowchart.svg
+│       └── docs/
 └── README.md
 ```
 
@@ -59,7 +59,7 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 20  | [Build the Snake Game Part 1 (Animation, Coordinates, Screen Refresh)](020-Day-20-Intermediate-Build-the-Snake-Game-Part-1-Animation-and-Coordinates/day-020.md) | ✅ Complete |
 | 21  | [Build the Snake Game Part 2 (Inheritance, Slicing, Collision)](021-Day-21-Intermediate-Build-the-Snake-Game-Part-2-Inheritance-and-List-Slicing/day-021.md)     | ✅ Complete |
 | 22  | [Build Pong The Famous Arcade Game](022-Day-22-Intermediate-Build-Pong-The-Famous-Arcade-Game/day-022.md)                                                        | ✅ Complete |
-| 23  | [The Turtle Crossing Capstone Project ](023-Day-23-Intermediate-The-Turtle-Crossing-Capstone-Project/day-023.md)                                                 | ✅ Complete |
+| 23  | [The Turtle Crossing Capstone Project](023-Day-23-Intermediate-The-Turtle-Crossing-Capstone-Project/day-023.md)                                                  | ✅ Complete |
 | 24  | [Files, Directories, Paths, Birthday Letter Generator, Snake High Scores](024-Day-24-Intermediate-Files-Directories-and-Paths/day-024.md)                        | ✅ Complete |
 | 25  | [CSV Data, Pandas Library, US States Game, Squirrel Census, PIL](025-Day-25-Intermediate-Working-with-CSV-Data-and-the-Pandas-Library/day-025.md)                | ✅ Complete |
 | 26  | [List Comprehension, Dictionary Comprehension, NATO Alphabet](026-Day-26-Intermediate-List-Comprehension-and-the-NATO-Alphabet/day-026.md)                       | ✅ Complete |
@@ -82,33 +82,52 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 ## 🛠️ Tech Stack
 
 - **Python 3.11 / 3.14** (Managed via `pyenv` and `Anaconda`)
-- **Libraries used so far:**
+- **Standard library:**
   - `random` — pseudo-random number generation, list shuffling
-  - `os` — system calls, e.g., `os.system("clear")` for terminal UI
+  - `os` — system calls, environment variable access via `os.getenv()`
   - `turtle` — beginner graphics, drawing, and OOP game state management
   - `time` — game loop control, e.g., `time.sleep()` for frame rates
-  - `prettytable` — terminal-friendly tables
-  - `colorgram` — image color extraction
-  - `pandas` — data analysis, DataFrame manipulation, CSV parsing
   - `csv` — built-in CSV file parsing
+  - `json` — reading and writing JSON data (Day 30 password persistence)
+  - `datetime` — dates, times, weekday checks for scheduling logic (Day 32)
   - `tkinter` — GUI development, Canvas widget, event loops (`after`)
+  - `smtplib` — sending email over SMTP (Days 32, 35, 36)
+  - `email.message` — structured email construction with `EmailMessage` (Day 36)
+  - `html` — unescaping HTML entities from API payloads (Day 34)
   - `secrets` — cryptographically secure random number generation
   - `pyperclip` — clipboard management for copy/paste operations
   - `re` — regular expressions for string pattern matching and validation
+  - `prettytable` — terminal-friendly tables
+  - `colorgram` — image color extraction
   - `PIL (Pillow)` — image processing, resizing for GUI assets
-- **Tools:** VSCodium, Git/GitHub, Obsidian (for note-taking & Excalidraw flowcharts)
+- **Third-party:**
+  - `requests` — HTTP client for API calls (Days 33–36)
+  - `python-dotenv` — loads secrets from `.env` into environment variables (Days 35–36)
+  - `pandas` — data analysis, DataFrame manipulation, CSV parsing
+- **Tools:** VSCodium, Git/GitHub, Obsidian (note-taking & Excalidraw flowcharts)
+
+## 🔌 Platform Substitutions
+
+Some services used in the course are inaccessible in this region (sanctions). The affected projects swap only the delivery layer — fetch, parse, and decision logic follow the course as taught.
+
+| Course Service | This Repo | Days |
+|----------------|-----------|------|
+| Twilio (SMS) | SMTP email via `.env`-configured provider | 35, 36 |
+| Gmail + App Password | Alternative SMTP provider (account creation restricted in region) | 32+ |
 
 ## 📝 Notes Format
 
-Daily repo notes (`day-XXX.md`) follow a strict, Obsidian-ready documentation structure:
+Daily repo notes (`day-XXX.md`) follow a consistent documentation structure:
 
-- **Core Concepts:** 3–6 bullet points covering the day's main ideas.
-- **Syntax / Key Commands:** Essential, tiny code snippets (1-3 lines).
-- **Projects:** Summary of built projects, key logic, and features.
-- **Watch Out / Pitfalls:** Common mistakes, edge cases, and fixes.
-- **See Also:** Cross-links to related days and concepts.
+- **Core Concepts** — the day's main ideas, one line each.
+- **Syntax / Key Commands** — minimal, essential code snippets.
+- **Project** — what was built, key logic, link to source.
+- **Day XX Files** — linked table of all files with one-line descriptions.
+- **Pitfalls** — mistakes encountered and their fixes.
+- **See Also** — cross-links to related days and references.
+- **Completion Checklist**
 
-_Note: Personal practice projects (built alongside the course) are migrating to a separate dedicated repository._
+_Note: Personal practice projects (built alongside the course) live in a separate dedicated repository._
 
 ---
 
