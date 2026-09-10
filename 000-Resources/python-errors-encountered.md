@@ -4,7 +4,7 @@ tags: [python, errors, debugging, reference, documentation]
 type: error-log
 course: "100 Days of Code"
 status: growing
-last-updated: 2026-09-06
+last-updated: 2026-09-10
 ---
 
 # 🐛 Python Errors Log
@@ -330,6 +330,28 @@ requests.get("api.openweathermap.org/data/2.5/forecast")
 
 ---
 
+## USERNAME env var collision (dotenv)
+
+**What:** No exception — `os.getenv("USERNAME")` silently returned the Linux system value instead of the value written in `.env`.
+
+**Why:** `USERNAME` already exists as a system environment variable, and `load_dotenv()` does not override existing variables by default.
+
+```python
+# .env
+USERNAME=pixela_user        # ← never loaded
+print(os.getenv("USERNAME"))  # → "dante" (the system user)
+```
+
+**Fix:** Namespace project variables — `PIXELA_TOKEN`, `PIXELA_USERNAME`, `SMTP_PASSWORD`. Never reuse system names (`USERNAME`, `HOME`, `PATH`, `SHELL`, `LANG`). Alternative for quick scripts: `load_dotenv(override=True)`.
+
+> [!NOTE]
+>
+> #### Day 37 Context
+>
+> Hit while wiring up the Pixela habit tracker. The failure is silent — no traceback, just the wrong value flowing downstream, which made it slower to spot than any exception.
+
+---
+
 <!--
 📋 ERROR TEMPLATE — copy & paste when a new one bites you:
 
@@ -354,8 +376,9 @@ requests.get("api.openweathermap.org/data/2.5/forecast")
 - [Day 33 - API Endpoints & API Parameters - ISS Overhead Notifier](../033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md) (ConnectionError & MaxRetryError)
 - [Day 34 - API Practice - Creating a GUI Quiz App](../034-Day-34-IntermediatePlus-API-Practice-Creating-a-GUI-Quiz-App/day-034.md) (ImportError)
 - [Day 35 - Keys, Authentication & Environment Variables - Send SMS](../035-Day-35-IntermediatePlus-Keys-Authentication-and-Environment-Variables-Send-SMS/day-035.md) (MissingSchema)
+- [Day 37 - Habit Tracking Project API Post Requests & Headers](../037-Day-37-IntermediatePlus-Habit-Tracking-Project-API-Post-Requests-and-Headers/day-037.md) (USERNAME env collision)
 - `Lists` | `Dictionaries` | `Type Conversion` | `OOP` | `File Handling`
 
 ---
 
-_Last updated: Day 35 | Total errors logged: 18_
+_Last updated: Day 37 | Total errors logged: 19_
