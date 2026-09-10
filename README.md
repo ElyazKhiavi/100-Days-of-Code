@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Complete (Days 15–31) | Intermediate+ Phase Started (Day 35+)
+### 🚀 Status: Beginner Phase Complete (Days 1–14) | Intermediate Phase Complete (Days 15–31) | Intermediate+ Phase Started (Day 36+)
 
 ---
 
@@ -77,6 +77,7 @@ The repository structure evolved starting Day 15 to accommodate larger, multi-fi
 | 33  | [API Endpoints & API Parameters — ISS Overhead Notifier](033-Day-33-IntermediatePlus-API-Endpoints-and-API-Parameters-ISS-Overhead-Notifier/day-033.md)                                   | ✅ Complete |
 | 34  | [API Practice, Type Hints, Quizzler GUI App (tkinter + OpenTDB)](034-Day-34-IntermediatePlus-API-Practice-Creating-a-GUI-Quiz-App/day-034.md)                                             | ✅ Complete |
 | 35  | [API Keys, Authentication & Environment Variables — Rain Alert (OpenWeatherMap, SMS→SMTP)](035-Day-35-IntermediatePlus-Keys-Authentication-and-Environment-Variables-Send-SMS/day-035.md) | ✅ Complete |
+| 36  | [Stock Trading News Alert — Alpha Vantage, NewsAPI, SMTP](036-Day-36-IntermediatePlus-Stock-Trading-News-Alert-Project/day-036.md)                                                        | ✅ Complete |
 
 ## 🛠️ Tech Stack
 
