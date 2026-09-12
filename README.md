@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Day 38/100 — Beginner ✅ | Intermediate ✅ | Intermediate+ In Progress (5/27 days)
+### 🚀 Status: Day 39/100 — Beginner ✅ | Intermediate ✅ | Intermediate+ In Progress (5/27 days)
 
 ---
 
@@ -80,6 +80,7 @@ Daily folders use zero-padded prefixes; structure evolved at Day 15 for multi-fi
 | 36  | [Stock Trading News Alert — Alpha Vantage, NewsAPI, SMTP](036-Day-36-IntermediatePlus-Stock-Trading-News-Alert-Project/day-036.md)                                                        | ✅ Complete |
 | 37  | [API POST/PUT/DELETE & Headers — Pixela Habit Tracker](037-Day-37-IntermediatePlus-Habit-Tracking-Project-API-Post-Requests-and-Headers/day-037.md)                                       | ✅ Complete |
 | 38  | [Workout Tracking Using Google Sheets — Nutritionix + Sheety](038-Day-38-IntermediatePlus-Workout-Tracking-Using-Google-Sheets/day-038.md)                                                | ✅ Complete |
+| 39  | [Capstone Pt 1 — Flight Deal Finder (Flights API + Sheety + SMTP)](039-Day-39-IntermediatePlus-Capstone-Part-1-Flight-Deal-Finder/day-039.md)                                             | ✅ Complete |
 
 ## 🛠️ Tech Stack
 
