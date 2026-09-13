@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueSite — Tailwind Edition</title>
+    <!-- Tailwind v4 Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-white text-[#011f4b] font-sans antialiased">
+    <!-- ===== HEADER ===== -->
+    <header class="sticky top-0 z-50 bg-[#011f4b] text-white shadow-lg">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="#" class="text-2xl font-bold tracking-wide">BlueSite</a>
+
+        <!-- Mobile menu button -->
+        <button
+          id="menuBtn"
+          class="md:hidden text-[#b3cde0] focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="#home" class="text-[#b3cde0] hover:text-white transition"
+            >Home</a
+          >
+          <a href="#features" class="text-[#b3cde0] hover:text-white transition"
+            >Features</a
+          >
+          <a href="#stats" class="text-[#b3cde0] hover:text-white transition"
+            >Stats</a
+          >
+          <a href="#pricing" class="text-[#b3cde0] hover:text-white transition"
+            >Pricing</a
+          >
+          <a href="#faq" class="text-[#b3cde0] hover:text-white transition"
+            >FAQ</a
+          >
+          <a
+            href="#contact"
+            class="bg-[#6497b1] hover:bg-[#005b96] text-white px-4 py-2 rounded-lg transition"
+          >
+            Contact
+          </a>
+        </nav>
+      </div>
+
+      <!-- Mobile nav -->
+      <nav
+        id="mobileNav"
+        class="hidden md:hidden bg-[#03396c] px-4 pb-4 space-y-2 text-sm font-medium"
+      >
+        <a
+          href="#home"
+          class="block py-2 text-[#b3cde0] hover:text-white transition"
+          >Home</a
+        >
+        <a
+          href="#features"
+          class="block py-2 text-[#b3cde0] hover:text-white transition"
+          >Features</a
+        >
+        <a
+          href="#stats"
+          class="block py-2 text-[#b3cde0] hover:text-white transition"
+          >Stats</a
+        >
+        <a
+          href="#pricing"
+          class="block py-2 text-[#b3cde0] hover:text-white transition"
+          >Pricing</a
+        >
+        <a
+          href="#faq"
+          class="block py-2 text-[#b3cde0] hover:text-white transition"
+          >FAQ</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-[#b3cde0] hover:text-white transition"
+          >Contact</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO ===== -->
+      <section
+        id="home"
+        class="bg-gradient-to-br from-[#03396c] to-[#005b96] text-white"
+      >
+        <div class="max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
+          <span
+            class="inline-block bg-[#6497b1]/30 text-[#b3cde0] text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
+          >
+            Tailwind CSS v4 · Zero Build
+          </span>
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+            Build beautiful<br class="hidden md:block" />
+            <span class="text-[#b3cde0]">blue interfaces</span> fast.
+          </h1>
+          <p class="text-lg md:text-xl text-[#b3cde0] max-w-2xl mx-auto mb-10">
+            A complete starter with navigation, hero, features, stats, pricing,
+            FAQ, and contact form. All powered by utility classes and your
+            custom blue palette.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#features"
+              class="bg-[#6497b1] hover:bg-[#005b96] text-white font-semibold px-8 py-3.5 rounded-lg transition shadow-lg hover:shadow-xl"
+            >
+              Explore Features
+            </a>
+            <a
+              href="#contact"
+              class="border-2 border-[#6497b1] text-[#b3cde0] hover:bg-[#6497b1]/10 font-semibold px-8 py-3.5 rounded-lg transition"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FEATURES ===== -->
+      <section id="features" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#011f4b] mb-4">
+              Features
+            </h2>
+            <p class="text-[#03396c] max-w-xl mx-auto">
+              Everything you need in a modern starter — no frameworks, no build
+              tools.
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-3">
+            <article
+              class="bg-white border border-[#b3cde0] rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-[#6497b1] transition"
+            >
+              <div
+                class="w-12 h-12 bg-[#005b96] rounded-lg flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-[#011f4b] mb-2">
+                Lightning Fast
+              </h3>
+              <p class="text-[#03396c] text-sm leading-relaxed">
+                Tailwind v4’s new engine delivers near-instant builds with
+                minimal overhead.
+              </p>
+            </article>
+
+            <article
+              class="bg-white border border-[#b3cde0] rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-[#6497b1] transition"
+            >
+              <div
+                class="w-12 h-12 bg-[#005b96] rounded-lg flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-[#011f4b] mb-2">
+                Fully Customizable
+              </h3>
+              <p class="text-[#03396c] text-sm leading-relaxed">
+                Use arbitrary values or define theme tokens to match any brand
+                instantly.
+              </p>
+            </article>
+
+            <article
+              class="bg-white border border-[#b3cde0] rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-[#6497b1] transition"
+            >
+              <div
+                class="w-12 h-12 bg-[#005b96] rounded-lg flex items-center justify-center mb-4"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-[#011f4b] mb-2">
+                Responsive by Default
+              </h3>
+              <p class="text-[#03396c] text-sm leading-relaxed">
+                Mobile-first breakpoints ensure your layout looks great on every
+                device.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== STATS ===== -->
+      <section id="stats" class="py-20 bg-[#b3cde0]">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
+            <div>
+              <p
+                class="text-4xl md:text-5xl font-extrabold text-[#011f4b]"
+                data-count="120"
+              >
+                0
+              </p>
+              <p
+                class="text-sm font-semibold text-[#03396c] mt-2 uppercase tracking-wide"
+              >
+                Components
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-4xl md:text-5xl font-extrabold text-[#011f4b]"
+                data-count="98"
+              >
+                0
+              </p>
+              <p
+                class="text-sm font-semibold text-[#03396c] mt-2 uppercase tracking-wide"
+              >
+                Satisfaction %
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-4xl md:text-5xl font-extrabold text-[#011f4b]"
+                data-count="45"
+              >
+                0
+              </p>
+              <p
+                class="text-sm font-semibold text-[#03396c] mt-2 uppercase tracking-wide"
+              >
+                Countries
+              </p>
+            </div>
+            <div>
+              <p
+                class="text-4xl md:text-5xl font-extrabold text-[#011f4b]"
+                data-count="12"
+              >
+                0
+              </p>
+              <p
+                class="text-sm font-semibold text-[#03396c] mt-2 uppercase tracking-wide"
+              >
+                Awards
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PRICING ===== -->
+      <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#011f4b] mb-4">
+              Pricing
+            </h2>
+            <p class="text-[#03396c] max-w-xl mx-auto">
+              Simple, transparent plans that scale with you.
+            </p>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-3">
+            <!-- Starter -->
+            <div class="border border-[#b3cde0] rounded-2xl p-8 flex flex-col">
+              <h3 class="text-xl font-bold text-[#011f4b]">Starter</h3>
+              <p class="text-[#03396c] text-sm mt-2">
+                For side projects and experiments.
+              </p>
+              <p class="text-4xl font-extrabold text-[#011f4b] mt-6">
+                $0<span class="text-base font-medium text-[#03396c]">/mo</span>
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-[#03396c] flex-1">
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  1 project
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Community support
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Basic analytics
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="mt-8 block text-center border-2 border-[#6497b1] text-[#03396c] font-semibold py-3 rounded-lg hover:bg-[#6497b1]/10 transition"
+              >
+                Get Started
+              </a>
+            </div>
+
+            <!-- Pro (featured) -->
+            <div
+              class="relative border-2 border-[#005b96] rounded-2xl p-8 flex flex-col shadow-xl"
+            >
+              <span
+                class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#005b96] text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wide"
+              >
+                Most Popular
+              </span>
+              <h3 class="text-xl font-bold text-[#011f4b]">Pro</h3>
+              <p class="text-[#03396c] text-sm mt-2">
+                For growing teams and products.
+              </p>
+              <p class="text-4xl font-extrabold text-[#011f4b] mt-6">
+                $29<span class="text-base font-medium text-[#03396c]">/mo</span>
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-[#03396c] flex-1">
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Unlimited projects
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Priority support
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Advanced analytics
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Custom domains
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="mt-8 block text-center bg-[#005b96] hover:bg-[#03396c] text-white font-semibold py-3 rounded-lg transition shadow-md"
+              >
+                Choose Pro
+              </a>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="border border-[#b3cde0] rounded-2xl p-8 flex flex-col">
+              <h3 class="text-xl font-bold text-[#011f4b]">Enterprise</h3>
+              <p class="text-[#03396c] text-sm mt-2">
+                For large-scale organizations.
+              </p>
+              <p class="text-4xl font-extrabold text-[#011f4b] mt-6">
+                $99<span class="text-base font-medium text-[#03396c]">/mo</span>
+              </p>
+              <ul class="mt-6 space-y-3 text-sm text-[#03396c] flex-1">
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Everything in Pro
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Dedicated manager
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg
+                    class="w-4 h-4 text-[#005b96]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  SLA guarantee
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="mt-8 block text-center border-2 border-[#6497b1] text-[#03396c] font-semibold py-3 rounded-lg hover:bg-[#6497b1]/10 transition"
+              >
+                Contact Sales
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ ===== -->
+      <section id="faq" class="py-20 bg-[#b3cde0]">
+        <div class="max-w-3xl mx-auto px-4">
+          <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#011f4b] mb-4">
+              FAQ
+            </h2>
+            <p class="text-[#03396c]">Common questions, answered.</p>
+          </div>
+
+          <div class="space-y-4" id="faqList">
+            <details
+              class="bg-white rounded-xl border border-[#6497b1]/30 group"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer font-semibold text-[#011f4b] list-none"
+              >
+                Do I need a build step?
+                <svg
+                  class="w-5 h-5 text-[#005b96] transition-transform group-open:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <p class="px-6 pb-4 text-sm text-[#03396c]">
+                No. This setup uses the Tailwind v4 Play CDN, so you can open
+                the HTML file directly in a browser.
+              </p>
+            </details>
+
+            <details
+              class="bg-white rounded-xl border border-[#6497b1]/30 group"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer font-semibold text-[#011f4b] list-none"
+              >
+                Can I customize the blue palette?
+                <svg
+                  class="w-5 h-5 text-[#005b96] transition-transform group-open:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <p class="px-6 pb-4 text-sm text-[#03396c]">
+                Yes. Change the arbitrary values like
+                <code class="bg-[#b3cde0]/50 px-1.5 py-0.5 rounded text-xs"
+                  >#005b96</code
+                >
+                to any hex you like, or define a theme in CSS.
+              </p>
+            </details>
+
+            <details
+              class="bg-white rounded-xl border border-[#6497b1]/30 group"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer font-semibold text-[#011f4b] list-none"
+              >
+                Is JavaScript required?
+                <svg
+                  class="w-5 h-5 text-[#005b96] transition-transform group-open:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <p class="px-6 pb-4 text-sm text-[#03396c]">
+                Only for the mobile menu, smooth scroll, form handling, and stat
+                counters. The layout works without it.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+          <div class="text-center mb-14">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#011f4b] mb-4">
+              Contact
+            </h2>
+            <p class="text-[#03396c]">Have a question? Send us a message.</p>
+          </div>
+
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label
+                for="name"
+                class="block text-sm font-semibold text-[#03396c] mb-1.5"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+                class="w-full border-2 border-[#b3cde0] rounded-lg px-4 py-3 text-[#011f4b] placeholder-[#6497b1] focus:border-[#005b96] focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-semibold text-[#03396c] mb-1.5"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+                class="w-full border-2 border-[#b3cde0] rounded-lg px-4 py-3 text-[#011f4b] placeholder-[#6497b1] focus:border-[#005b96] focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-semibold text-[#03396c] mb-1.5"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Say hello..."
+                required
+                class="w-full border-2 border-[#b3cde0] rounded-lg px-4 py-3 text-[#011f4b] placeholder-[#6497b1] focus:border-[#005b96] focus:outline-none transition resize-y"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-[#005b96] hover:bg-[#03396c] text-white font-semibold py-3.5 rounded-lg transition shadow-md hover:shadow-lg"
+            >
+              Send Message
+            </button>
+
+            <p
+              id="formStatus"
+              class="text-center text-sm font-semibold text-[#005b96]"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-[#011f4b] text-[#6497b1] py-10">
+      <div class="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-3">
+        <div>
+          <p class="text-xl font-bold text-white mb-3">BlueSite</p>
+          <p class="text-sm leading-relaxed">
+            A Tailwind CSS v4 starter with your custom blue palette. No build,
+            no dependencies.
+          </p>
+        </div>
+        <div>
+          <p class="text-sm font-bold text-white uppercase tracking-wide mb-3">
+            Links
+          </p>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#home" class="hover:text-[#b3cde0] transition">Home</a>
+            </li>
+            <li>
+              <a href="#features" class="hover:text-[#b3cde0] transition"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="#pricing" class="hover:text-[#b3cde0] transition"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a href="#faq" class="hover:text-[#b3cde0] transition">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-sm font-bold text-white uppercase tracking-wide mb-3">
+            Legal
+          </p>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:text-[#b3cde0] transition">Privacy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#b3cde0] transition">Terms</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#b3cde0] transition">Cookies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="max-w-6xl mx-auto px-4 mt-10 pt-6 border-t border-[#03396c] text-center text-xs"
+      >
+        &copy; 2026 BlueSite. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

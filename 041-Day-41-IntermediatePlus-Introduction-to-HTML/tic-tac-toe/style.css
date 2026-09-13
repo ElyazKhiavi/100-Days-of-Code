@@ -1,0 +1,67 @@
+/* Essentials Tailwind can't handle */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Board cells */
+.cell {
+  aspect-ratio: 1 / 1;
+  background: #23272a;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+  user-select: none;
+  border: 2px solid transparent;
+}
+
+.cell:hover:not(:disabled) {
+  background: #2c2f33;
+  border-color: #7289da;
+}
+
+.cell:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.cell:disabled {
+  cursor: not-allowed;
+}
+
+/* Mark colors */
+.cell.x {
+  color: #7289da;
+}
+
+.cell.o {
+  color: #ffffff;
+}
+
+/* Winning cells */
+.cell.win {
+  background: #7289da;
+  color: #23272a;
+  animation: pulse 0.6s ease-in-out;
+}
+
+.cell.win.o {
+  background: #ffffff;
+  color: #23272a;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+/* Prevent tap highlight on mobile */
+.cell {
+  -webkit-tap-highlight-color: transparent;
+}

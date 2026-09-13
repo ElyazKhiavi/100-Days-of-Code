@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe — Dark</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="bg-[#23272a] text-white font-sans min-h-screen flex flex-col antialiased"
+  >
+    <!-- ===== HEADER ===== -->
+    <header class="bg-[#2c2f33] shadow-lg border-b border-[#23272a]">
+      <div
+        class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <h1 class="text-xl font-bold text-white flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-[#7289da]"></span>
+          Tic Tac Toe
+        </h1>
+        <button
+          id="resetBtn"
+          class="text-sm font-semibold text-[#99aab5] hover:text-white bg-[#23272a] hover:bg-[#7289da] px-4 py-2 rounded-lg transition"
+        >
+          Reset
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="flex-1 flex items-center justify-center px-4 py-10">
+      <div class="w-full max-w-md">
+        <!-- Status -->
+        <div class="text-center mb-6">
+          <p id="status" class="text-lg font-semibold text-[#99aab5]">
+            Player <span class="text-[#7289da]">X</span>'s turn
+          </p>
+        </div>
+
+        <!-- Board -->
+        <div
+          id="board"
+          class="grid grid-cols-3 gap-3 bg-[#2c2f33] p-3 rounded-2xl shadow-2xl"
+        >
+          <button class="cell" data-index="0"></button>
+          <button class="cell" data-index="1"></button>
+          <button class="cell" data-index="2"></button>
+          <button class="cell" data-index="3"></button>
+          <button class="cell" data-index="4"></button>
+          <button class="cell" data-index="5"></button>
+          <button class="cell" data-index="6"></button>
+          <button class="cell" data-index="7"></button>
+          <button class="cell" data-index="8"></button>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="grid grid-cols-3 gap-3 mt-6">
+          <div
+            class="bg-[#2c2f33] rounded-xl py-3 px-2 text-center border border-[#23272a]"
+          >
+            <p class="text-xs uppercase tracking-widest text-[#99aab5] mb-1">
+              X Wins
+            </p>
+            <p id="scoreX" class="text-2xl font-extrabold text-[#7289da]">0</p>
+          </div>
+          <div
+            class="bg-[#2c2f33] rounded-xl py-3 px-2 text-center border border-[#23272a]"
+          >
+            <p class="text-xs uppercase tracking-widest text-[#99aab5] mb-1">
+              Draws
+            </p>
+            <p id="scoreDraw" class="text-2xl font-extrabold text-[#99aab5]">
+              0
+            </p>
+          </div>
+          <div
+            class="bg-[#2c2f33] rounded-xl py-3 px-2 text-center border border-[#23272a]"
+          >
+            <p class="text-xs uppercase tracking-widest text-[#99aab5] mb-1">
+              O Wins
+            </p>
+            <p id="scoreO" class="text-2xl font-extrabold text-white">0</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ===== FOOTER ===== -->
+    <footer
+      class="text-center text-xs text-[#99aab5] py-6 border-t border-[#2c2f33]"
+    >
+      Built with Tailwind CSS v4 · No build step
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

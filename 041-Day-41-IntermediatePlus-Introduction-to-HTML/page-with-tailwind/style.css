@@ -1,0 +1,38 @@
+/* Only the essentials Tailwind can't do inline */
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar (optional, matches palette) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #b3cde0;
+}
+::-webkit-scrollbar-thumb {
+  background: #005b96;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #03396c;
+}
+
+/* Remove default marker on details summary */
+summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  list-style: none;
+}
+
+/* Slight fade-in for the page */
+body {
+  animation: fadeIn 0.4s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

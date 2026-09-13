@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">BlueSite</h1>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <h2>This is IT!</h2>
+          <p>A clean, simple starter with a beautiful blue palette.</p>
+          <a href="#services" class="btn">Get Started</a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            This is a bare-bones HTML, CSS, and JavaScript site. No frameworks,
+            no modules, no build tools — just the essentials.
+          </p>
+          <ul>
+            <li>Semantic HTML5</li>
+            <li>Responsive layout</li>
+            <li>Clean blue color palette</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" class="section alt">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Design</h3>
+              <p>Simple, readable, and consistent interfaces.</p>
+            </article>
+            <article class="card">
+              <h3>Development</h3>
+              <p>Vanilla HTML, CSS, and JavaScript.</p>
+            </article>
+            <article class="card">
+              <h3>Support</h3>
+              <p>Easy to extend and maintain.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <form id="contactForm" class="form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Say hello..."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <p id="formStatus" class="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 BlueSite. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

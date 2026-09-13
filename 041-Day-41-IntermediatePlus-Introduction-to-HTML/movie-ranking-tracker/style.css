@@ -1,0 +1,170 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Palette ===== */
+:root {
+  --navy: #09005b;
+  --plum: #2f004d;
+  --cream: #fff1cb;
+  --deep: #050c38;
+  --berry: #4a0034;
+
+  /* Rating colors */
+  --rating-green: #1a7f37;
+  --rating-green-dark: #0f5c26;
+  --rating-yellow: #e0a800;
+  --rating-yellow-dark: #b88700;
+  --rating-red: #c1272d;
+  --rating-red-deep: #7a0a0f;
+}
+
+/* ===== Base ===== */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--cream);
+  color: var(--deep);
+  line-height: 1.7;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  background-image:
+    radial-gradient(circle at top left, rgba(9, 0, 91, 0.08), transparent 50%),
+    radial-gradient(circle at bottom right, rgba(74, 0, 52, 0.08), transparent 50%);
+  background-attachment: fixed;
+}
+
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.page-header {
+  border-bottom: 3px solid var(--navy);
+  padding-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  color: var(--navy);
+  letter-spacing: 1px;
+}
+
+/* ===== Section ===== */
+.recent h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--cream);
+  background: linear-gradient(90deg, var(--navy), var(--plum));
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+/* ===== Movie card ===== */
+.movie {
+  background: #ffffff;
+  border: 1px solid rgba(9, 0, 91, 0.15);
+  border-left: 5px solid var(--navy);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 8px rgba(5, 12, 56, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-left-color 0.2s ease;
+}
+
+.movie:hover {
+  transform: translateX(4px);
+  border-left-color: var(--berry);
+  box-shadow: 0 6px 18px rgba(5, 12, 56, 0.12);
+}
+
+/* ===== Movie header ===== */
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+
+.movie-header h3 {
+  font-size: 1.15rem;
+  color: var(--deep);
+  font-weight: 700;
+}
+
+.year {
+  color: var(--plum);
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+/* ===== Rating badge ===== */
+.rating {
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* 8+ : green */
+.rating-8,
+.rating-9,
+.rating-10 {
+  background: var(--rating-green);
+}
+
+/* 6-7 : yellow */
+.rating-6,
+.rating-7 {
+  background: var(--rating-yellow);
+  color: var(--deep);
+}
+
+/* 5 : red */
+.rating-5 {
+  background: var(--rating-red);
+}
+
+/* below 5 : bleeding red */
+.rating-4,
+.rating-3,
+.rating-2,
+.rating-1,
+.rating-0 {
+  background: var(--rating-red-deep);
+  box-shadow: 0 0 0 2px var(--rating-red-deep),
+              0 0 12px rgba(122, 10, 15, 0.6);
+  animation: bleed 2s ease-in-out infinite;
+}
+
+@keyframes bleed {
+  0%, 100% { box-shadow: 0 0 0 2px var(--rating-red-deep), 0 0 8px rgba(122, 10, 15, 0.5); }
+  50%      { box-shadow: 0 0 0 2px var(--rating-red-deep), 0 0 20px rgba(193, 39, 45, 0.9); }
+}
+
+/* ===== Movie text ===== */
+.movie p {
+  color: var(--deep);
+  font-size: 0.98rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .movie-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
