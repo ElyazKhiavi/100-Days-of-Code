@@ -1,0 +1,20 @@
+Movie Title                                   | TMDB Poster Link
+-------------------------------------------------------------------------------------------------------------------
+Sicario: Day of the Soldado (2018)            | https://image.tmdb.org/t/p/w1280/qcLYofEhNh51Sk1jUWjmKHLzkqw.jpg
+Tuner (2025)                                  | https://image.tmdb.org/t/p/w1280/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg
+I Swear (2025)                                | https://image.tmdb.org/t/p/w1280/vUwyhNWBKkSwK8ELvEeBRwV724h.jpg
+Finding Emily (2026)                          | https://image.tmdb.org/t/p/w1280/bfEQ6C702oPsN4kzIiY7n4JsrxF.jpg
+Masters of the Universe (2026)                | https://image.tmdb.org/t/p/w1280/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg
+Soulm8te (2026)                               | https://image.tmdb.org/t/p/w1280/bNErActDctl6cdUGw9pnjSCmyhQ.jpg
+The Sheep Detectives (2026)                   | https://image.tmdb.org/t/p/w1280/iKy5460GdsoknM8ppmGlJbKxAKa.jpg
+Scary Movie (2026)                            | https://image.tmdb.org/t/p/w1280/znHT8peERZRWG1ME3r0Db0EV8k8.jpg
+Supergirl (2026)                              | https://image.tmdb.org/t/p/w1280/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg
+Insomnia (2002)                               | https://image.tmdb.org/t/p/w1280/riVXh3EimGO0y5dgQxEWPRy5Itg.jpg
+Pressure (2026)                               | https://image.tmdb.org/t/p/w1280/gFjEggtrejCN79r6SXRjM269OtG.jpg
+Speak No Evil (2022)                          | https://image.tmdb.org/t/p/w1280/ukYuuFzPTumN1QNpQyz863bcNvr.jpg
+Good Luck, Have Fun, Don't Die (2025)         | https://image.tmdb.org/t/p/w1280/af7yguGbWQyvYtk6QCD5l4yBbKN.jpg
+The Usual Suspects (1995)                     | https://image.tmdb.org/t/p/w1280/99X2SgyFunJFXGAYnDv3sb9pnUD.jpg
+Split (2016)                                  | https://image.tmdb.org/t/p/w1280/lli31lYTFpvxVBeFHWoe5PMfW5s.jpg
+The Legend of Hei 2 (2025)                    | https://image.tmdb.org/t/p/w1280/dRCUBiTKtsmju3fmSS4MK0ywcqR.jpg
+Minions & Monsters (2026)                     | https://image.tmdb.org/t/p/w1280/4LwvU9SZc8QQzW1X1FAPhNbXnEU.jpg
+Mutiny (2026)                                 | https://image.tmdb.org/t/p/w1280/pu2VxGlpGwffOx292w18b1tv96j.jpg
