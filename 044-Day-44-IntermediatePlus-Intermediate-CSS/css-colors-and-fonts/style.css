@@ -1,0 +1,375 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Palette ===== */
+:root {
+  --gray: #a8a69f;
+  --brand: #240777;
+  --coral: #e67c61;
+  --plum: #765c95;
+  --pink: #b67dae;
+
+  --bg-0: #0d0320; /* deepest background */
+  --bg-1: #170535; /* sections */
+  --bg-2: #1f0a47; /* cards */
+  --bg-3: #2a1057; /* hover */
+  --border: rgba(118, 92, 149, 0.35);
+
+  --text: #ece9f5;
+  --muted: #a8a69f;
+
+  --code-bg: #0a0118;
+  --code-text: #e0e0e0;
+  --code-sel: #b67dae;
+  --code-prop: #e67c61;
+  --code-val: #a8a69f;
+  --code-comment: #765c95;
+}
+
+/* ===== Base ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: var(--bg-0);
+  color: var(--text);
+  line-height: 1.65;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(36, 7, 119, 0.55), transparent 45%),
+    radial-gradient(
+      circle at 85% 100%,
+      rgba(118, 92, 149, 0.35),
+      transparent 50%
+    );
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Hero ===== */
+.hero {
+  padding: 3.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--coral);
+  margin-bottom: 0.6rem;
+}
+
+.hero h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.hero-sub {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 620px;
+  margin-bottom: 2rem;
+}
+
+.hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-nav a {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease,
+    border-color 0.2s ease;
+}
+
+.hero-nav a:hover {
+  background: var(--brand);
+  color: #fff;
+  border-color: var(--coral);
+  transform: translateY(-2px);
+}
+
+/* ===== Section ===== */
+.section {
+  margin-bottom: 4rem;
+  scroll-margin-top: 1.5rem;
+}
+
+.section h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  border-left: 6px solid var(--coral);
+}
+
+.section-intro {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.75rem;
+  padding-left: 1rem;
+}
+
+/* ===== Card ===== */
+.card {
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+}
+
+.card > h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--pink);
+  margin-bottom: 1rem;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Code block (GitHub-style dark) ===== */
+.code-block {
+  position: relative;
+  background: var(--code-bg);
+  color: var(--code-text);
+  border: 1px solid rgba(118, 92, 149, 0.35);
+  border-radius: 10px;
+  padding: 1rem 3.25rem 1rem 1rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.code-block pre {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  white-space: pre;
+  font-family: "JetBrains Mono", "Courier New", monospace;
+}
+
+.code-block code {
+  color: var(--code-text);
+  font-family: inherit;
+}
+
+.code-block .sel {
+  color: var(--code-sel);
+}
+.code-block .prop {
+  color: var(--code-prop);
+}
+.code-block .val {
+  color: var(--code-val);
+}
+.code-block .comment {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--code-text);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(182, 125, 174, 0.25);
+}
+
+.copy-btn.copied {
+  background: var(--coral);
+  color: #0a0118;
+  border-color: var(--coral);
+}
+
+/* ===== Demo panel ===== */
+.demo {
+  background: rgba(10, 1, 24, 0.6);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* ===== Color swatches ===== */
+.swatch-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+.swatch-chip {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  background: var(--c);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: flex-end;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.7rem;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.swatch-chip.swatch-checker {
+  background-image:
+    linear-gradient(45deg, #444 25%, transparent 25%),
+    linear-gradient(-45deg, #444 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #444 75%),
+    linear-gradient(-45deg, transparent 75%, #444 75%);
+  background-size: 12px 12px;
+  background-position:
+    0 0,
+    0 6px,
+    6px -6px,
+    -6px 0;
+  background-color: #222;
+}
+
+.swatch-chip span {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Font demo lines ===== */
+.font-line {
+  color: var(--text);
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed rgba(118, 92, 149, 0.2);
+}
+.font-line:last-child {
+  border-bottom: none;
+}
+
+/* ===== Size / weight / style demo rows ===== */
+.size-demo,
+.weight-demo,
+.style-demo {
+  color: var(--text);
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed rgba(118, 92, 149, 0.2);
+}
+.size-demo:last-child,
+.weight-demo:last-child,
+.style-demo:last-child {
+  border-bottom: none;
+}
+
+/* Inline tags */
+.sz-tag,
+.w-tag,
+.st-tag {
+  display: inline-block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--brand);
+  color: var(--text);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  letter-spacing: 0.3px;
+}
+
+/* ===== Inline code in text ===== */
+code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 0.85em;
+  background: rgba(36, 7, 119, 0.4);
+  color: var(--pink);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* ===== Footer ===== */
+.page-footer {
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+  }
+  .card {
+    padding: 1.1rem;
+  }
+  .code-block {
+    padding: 0.85rem 3rem 0.85rem 0.85rem;
+  }
+  .code-block pre {
+    font-size: 0.72rem;
+  }
+  .font-line {
+    font-size: 0.92rem !important;
+  }
+  .swatch-row {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  }
+}

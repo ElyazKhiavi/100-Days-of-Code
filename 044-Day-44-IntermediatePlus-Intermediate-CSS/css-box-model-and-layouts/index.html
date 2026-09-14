@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model &amp; Layouts — Playground</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Fraunces:opsz,wght@9..144,300..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Ravenclaw · CSS Playground</p>
+      <h1>Box Model <span class="dot">·</span> Layouts</h1>
+      <p class="hero-sub">
+        Margin, padding, border, flexbox, grid — rendered live with code alongside.
+      </p>
+      <nav class="hero-nav">
+        <a href="#box-model">Box Model</a>
+        <a href="#box-sizing">box-sizing</a>
+        <a href="#spacing">Margin · Padding</a>
+        <a href="#size">Size</a>
+        <a href="#border">Border</a>
+        <a href="#radius">Radius</a>
+        <a href="#shadow">Shadow · Outline</a>
+        <a href="#overflow">Overflow</a>
+        <a href="#z-index">z-index</a>
+        <a href="#div-span">Div · Span</a>
+        <a href="#flex">Flexbox</a>
+        <a href="#grid">Grid</a>
+        <a href="#compare">Grid vs Flex</a>
+        <a href="#position">Position</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== BOX MODEL ===== -->
+    <section id="box-model" class="section">
+      <h2>Box Model</h2>
+      <p class="section-intro">Every element is a rectangle made of four layers, inside to out.</p>
+
+      <div class="card">
+        <h3>The Four Layers</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="comment">/* layer order, inside → outside */</span>
+<span class="prop">content</span>  → text / image / children
+<span class="prop">padding</span>  → space inside the border
+<span class="prop">border</span>   → the edge itself
+<span class="prop">margin</span>   → space outside the border</code></pre>
+        </div>
+
+        <div class="demo demo-boxmodel">
+          <div class="bm-margin">
+            <span class="bm-label bm-label-margin">margin</span>
+            <div class="bm-border">
+              <span class="bm-label bm-label-border">border</span>
+              <div class="bm-padding">
+                <span class="bm-label bm-label-padding">padding</span>
+                <div class="bm-content">content</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOX-SIZING ===== -->
+    <section id="box-sizing" class="section">
+      <h2>box-sizing</h2>
+      <p class="section-intro">The single most important line in any stylesheet.</p>
+
+      <div class="card">
+        <h3>content-box vs border-box</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="comment">/* width only counts content — padding &amp; border are added on top */</span>
+<span class="prop">box-sizing</span>: <span class="val">content-box</span>; <span class="comment">/* default */</span>
+
+<span class="comment">/* width includes content + padding + border */</span>
+<span class="prop">box-sizing</span>: <span class="val">border-box</span>;
+
+<span class="comment">/* the universal reset — do this always */</span>
+<span class="sel">*, *::before, *::after</span> {
+  <span class="prop">box-sizing</span>: <span class="val">border-box</span>;
+}</code></pre>
+        </div>
+        <div class="demo">
+          <div class="bs-row">
+            <div>
+              <p class="bs-caption">content-box · width: 200px</p>
+              <div class="bs-box bs-content">200px declared<br>→ 260px actual</div>
+            </div>
+            <div>
+              <p class="bs-caption">border-box · width: 200px</p>
+              <div class="bs-box bs-border">200px declared<br>→ 200px actual</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPACING ===== -->
+    <section id="spacing" class="section">
+      <h2>Margin &amp; Padding</h2>
+      <p class="section-intro">Margin is outside the border. Padding is inside.</p>
+
+      <div class="card">
+        <h3>Shorthand Directions</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">margin</span>: <span class="val">10px</span>;                <span class="comment">/* all sides */</span>
+<span class="prop">margin</span>: <span class="val">10px 20px</span>;           <span class="comment">/* vertical | horizontal */</span>
+<span class="prop">margin</span>: <span class="val">10px 20px 30px</span>;      <span class="comment">/* top | horiz | bottom */</span>
+<span class="prop">margin</span>: <span class="val">10px 20px 30px 40px</span>; <span class="comment">/* top right bottom left */</span>
+
+<span class="prop">margin-inline</span>: <span class="val">auto</span>;         <span class="comment">/* center a block horizontally */</span>
+<span class="prop">margin-block</span>: <span class="val">1rem</span>;          <span class="comment">/* top + bottom */</span>
+
+<span class="comment">/* same for padding, except negatives are illegal */</span>
+<span class="prop">padding</span>: <span class="val">1rem 2rem</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <div class="spacing-visual">
+            <div class="sp-margin-zone">
+              <div class="sp-border-zone">
+                <div class="sp-padding-zone">
+                  <div class="sp-content-zone">content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="spacing-note">margin: 20px · padding: 24px · border: 2px</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Margin Collapse</h3>
+        <p class="desc">Adjacent vertical margins collapse to the larger value, not the sum.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.a</span> { <span class="prop">margin-bottom</span>: <span class="val">30px</span>; }
+<span class="sel">.b</span> { <span class="prop">margin-top</span>:    <span class="val">20px</span>; }
+
+<span class="comment">/* actual gap = 30px, NOT 50px */</span></code></pre>
+        </div>
+        <div class="demo">
+          <div class="collapse-a">.a</div>
+          <div class="collapse-b">.b</div>
+          <p class="collapse-note">gap between = 30px</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SIZE ===== -->
+    <section id="size" class="section">
+      <h2>Width &amp; Height</h2>
+      <p class="section-intro">Fixed, relative, fluid, content-based.</p>
+
+      <div class="card">
+        <h3>Units</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">width</span>: <span class="val">300px</span>;       <span class="comment">/* fixed */</span>
+<span class="prop">width</span>: <span class="val">50%</span>;         <span class="comment">/* relative to parent */</span>
+<span class="prop">width</span>: <span class="val">50vw</span>;        <span class="comment">/* % of viewport width */</span>
+<span class="prop">height</span>: <span class="val">100dvh</span>;     <span class="comment">/* dynamic — mobile-safe */</span>
+
+<span class="prop">width</span>: <span class="val">fit-content</span>; <span class="comment">/* shrink to content */</span>
+<span class="prop">width</span>: <span class="val">min-content</span>;
+<span class="prop">width</span>: <span class="val">max-content</span>;
+
+<span class="prop">width</span>: <span class="val">clamp(200px, 50%, 600px)</span>; <span class="comment">/* fluid */</span>
+
+<span class="prop">min-width</span>: <span class="val">200px</span>;
+<span class="prop">max-width</span>: <span class="val">800px</span>;
+
+<span class="prop">aspect-ratio</span>: <span class="val">16 / 9</span>;   <span class="comment">/* lock the shape */</span></code></pre>
+        </div>
+        <div class="demo">
+          <div class="size-row">
+            <div class="size-box" style="width: 100px">100px</div>
+            <div class="size-box" style="width: 150px">150px</div>
+            <div class="size-box" style="width: 50%">50%</div>
+            <div class="size-box size-fluid">clamp()</div>
+          </div>
+          <div class="ratio-box">aspect-ratio: 16 / 9</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BORDER ===== -->
+    <section id="border" class="section">
+      <h2>Border</h2>
+      <p class="section-intro">Width, style, color — per side or all at once.</p>
+
+      <div class="card">
+        <h3>Border Styles</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">border</span>: <span class="val">2px solid #946b2d</span>;
+<span class="prop">border</span>: <span class="val">2px dashed #946b2d</span>;
+<span class="prop">border</span>: <span class="val">2px dotted #946b2d</span>;
+<span class="prop">border</span>: <span class="val">4px double #946b2d</span>;
+
+<span class="comment">/* per-side */</span>
+<span class="prop">border-top</span>:    <span class="val">2px solid #946b2d</span>;
+<span class="prop">border-bottom</span>: <span class="val">2px dashed #946b2d</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <div class="border-grid">
+            <div class="border-box" style="border: 2px solid #946b2d">solid</div>
+            <div class="border-box" style="border: 2px dashed #946b2d">dashed</div>
+            <div class="border-box" style="border: 2px dotted #946b2d">dotted</div>
+            <div class="border-box" style="border: 4px double #946b2d">double</div>
+            <div class="border-box" style="border-top: 4px solid #946b2d; border-bottom: 2px dashed #7da4d4">per-side</div>
+            <div class="border-box" style="border-left: 6px solid #946b2d; padding-left: 1rem">left accent</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RADIUS ===== -->
+    <section id="radius" class="section">
+      <h2>Border Radius</h2>
+      <p class="section-intro">Corners — square to pill to circle.</p>
+
+      <div class="card">
+        <h3>Shapes</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">border-radius</span>: <span class="val">8px</span>;               <span class="comment">/* all corners */</span>
+<span class="prop">border-radius</span>: <span class="val">8px 16px</span>;          <span class="comment">/* TL/BR · TR/BL */</span>
+<span class="prop">border-radius</span>: <span class="val">8px 16px 24px 32px</span>; <span class="comment">/* clockwise */</span>
+
+<span class="prop">border-radius</span>: <span class="val">50% / 20%</span>;         <span class="comment">/* elliptical */</span>
+<span class="prop">border-radius</span>: <span class="val">9999px</span>;            <span class="comment">/* pill */</span>
+<span class="prop">border-radius</span>: <span class="val">50%</span>;               <span class="comment">/* circle (with square box) */</span></code></pre>
+        </div>
+        <div class="demo">
+          <div class="radius-row">
+            <div class="radius-shape" style="border-radius: 0">0</div>
+            <div class="radius-shape" style="border-radius: 8px">8px</div>
+            <div class="radius-shape" style="border-radius: 50%">50%</div>
+            <div class="radius-shape" style="border-radius: 50% / 20%">50% / 20%</div>
+            <div class="radius-shape" style="border-radius: 9999px; width: 8rem; height: 2.5rem">pill</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHADOW ===== -->
+    <section id="shadow" class="section">
+      <h2>Box Shadow &amp; Outline</h2>
+      <p class="section-intro">Depth without extra elements. Focus rings without layout shift.</p>
+
+      <div class="card">
+        <h3>box-shadow</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="comment">/* x | y | blur | spread | color */</span>
+<span class="prop">box-shadow</span>: <span class="val">0 4px 10px rgba(0,0,0,0.2)</span>;
+<span class="prop">box-shadow</span>: <span class="val">inset 0 2px 4px rgba(0,0,0,0.3)</span>;
+
+<span class="comment">/* multiple shadows stack */</span>
+<span class="prop">box-shadow</span>:
+  <span class="val">0 1px 2px rgba(0,0,0,0.1)</span>,
+  <span class="val">0 8px 24px rgba(0,0,0,0.2)</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <div class="shadow-row">
+            <div class="shadow-box" style="box-shadow: 0 4px 10px rgba(0,0,0,0.3)">soft</div>
+            <div class="shadow-box" style="box-shadow: 0 12px 30px rgba(0,0,0,0.5)">deep</div>
+            <div class="shadow-box" style="box-shadow: 0 0 0 3px #946b2d">ring</div>
+            <div class="shadow-box" style="box-shadow: inset 0 4px 8px rgba(0,0,0,0.5)">inset</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>outline &amp; :focus-visible</h3>
+        <p class="desc">Outline doesn't affect layout. Use it for accessible focus rings.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">:focus-visible</span> {
+  <span class="prop">outline</span>: <span class="val">3px solid #946b2d</span>;
+  <span class="prop">outline-offset</span>: <span class="val">3px</span>;
+}</code></pre>
+        </div>
+        <div class="demo">
+          <button class="focus-btn" type="button">Tab to me — keyboard focus ring</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OVERFLOW ===== -->
+    <section id="overflow" class="section">
+      <h2>Overflow</h2>
+      <p class="section-intro">What happens when content is bigger than its box.</p>
+
+      <div class="card">
+        <h3>Four Values</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">overflow</span>: <span class="val">visible</span>; <span class="comment">/* default — spills out */</span>
+<span class="prop">overflow</span>: <span class="val">hidden</span>;  <span class="comment">/* clips, no scroll */</span>
+<span class="prop">overflow</span>: <span class="val">scroll</span>;  <span class="comment">/* always shows scrollbars */</span>
+<span class="prop">overflow</span>: <span class="val">auto</span>;    <span class="comment">/* scrollbars only if needed */</span>
+<span class="prop">overflow</span>: <span class="val">clip</span>;    <span class="comment">/* like hidden, not scrollable */</span>
+
+<span class="comment">/* per axis */</span>
+<span class="prop">overflow-x</span>: <span class="val">hidden</span>;
+<span class="prop">overflow-y</span>: <span class="val">auto</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <div class="overflow-grid">
+            <div class="overflow-box" style="overflow: visible">
+              <p class="overflow-label">visible</p>
+              <p>This content spills out of the box on every side if it's long enough.</p>
+            </div>
+            <div class="overflow-box" style="overflow: hidden">
+              <p class="overflow-label">hidden</p>
+              <p>This content spills out of the box on every side if it's long enough.</p>
+            </div>
+            <div class="overflow-box" style="overflow: scroll">
+              <p class="overflow-label">scroll</p>
+              <p>This content spills out of the box on every side if it's long enough.</p>
+            </div>
+            <div class="overflow-box" style="overflow: auto">
+              <p class="overflow-label">auto</p>
+              <p>This content spills out of the box on every side if it's long enough.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Z-INDEX ===== -->
+    <section id="z-index" class="section">
+      <h2>Stacking &amp; z-index</h2>
+      <p class="section-intro">Which element paints on top. Only works on positioned elements or in stacking contexts.</p>
+
+      <div class="card">
+        <h3>Layering</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.box</span> {
+  <span class="prop">position</span>: <span class="val">relative</span>; <span class="comment">/* required for z-index on static flow */</span>
+  <span class="prop">z-index</span>: <span class="val">1</span>;
+}
+
+<span class="comment">/* modern alternative — creates a stacking context without position */</span>
+<span class="sel">.container</span> { <span class="prop">isolation</span>: <span class="val">isolate</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <div class="stack-demo">
+            <div class="stack-box" style="background: #222f5b; left: 0;     z-index: 1">z: 1</div>
+            <div class="stack-box" style="background: #946b2d; left: 60px;  z-index: 3">z: 3</div>
+            <div class="stack-box" style="background: #0e1a40; left: 120px; z-index: 2">z: 2</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIV SPAN ===== -->
+    <section id="div-span" class="section">
+      <h2>Div &amp; Span</h2>
+      <p class="section-intro">No semantic meaning. Used only when nothing else fits.</p>
+
+      <div class="card">
+        <h3>Block vs Inline</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="comment">/* &lt;div&gt; — block-level, full width, new line */</span>
+<span class="sel">div</span> { <span class="prop">display</span>: <span class="val">block</span>; }
+
+<span class="comment">/* &lt;span&gt; — inline, flows with text */</span>
+<span class="sel">span</span> { <span class="prop">display</span>: <span class="val">inline</span>; }
+
+<span class="comment">/* inline-block — inline flow but accepts width/height */</span>
+<span class="sel">.chip</span> { <span class="prop">display</span>: <span class="val">inline-block</span>; <span class="prop">width</span>: <span class="val">100px</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <p>Text with a <span class="inline-highlight">highlighted span</span> flowing inline with the paragraph.</p>
+          <div class="block-demo">I am a &lt;div&gt; — I take a full row.</div>
+          <div class="block-demo">So do I — I start on a new line.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FLEX ===== -->
+    <section id="flex" class="section">
+      <h2>Flexbox</h2>
+      <p class="section-intro">One dimension — lay items out in a row or column.</p>
+
+      <div class="card">
+        <h3>Container Properties</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.container</span> {
+  <span class="prop">display</span>: <span class="val">flex</span>;
+  <span class="prop">flex-direction</span>: <span class="val">row</span>;         <span class="comment">/* row | row-reverse | column | column-reverse */</span>
+  <span class="prop">flex-wrap</span>: <span class="val">wrap</span>;              <span class="comment">/* nowrap | wrap | wrap-reverse */</span>
+  <span class="prop">justify-content</span>: <span class="val">center</span>;      <span class="comment">/* main axis */</span>
+  <span class="prop">align-items</span>: <span class="val">center</span>;          <span class="comment">/* cross axis */</span>
+  <span class="prop">gap</span>: <span class="val">1rem</span>;
+}</code></pre>
+        </div>
+
+        <div class="flex-controls">
+          <div class="ctrl-group">
+            <span class="ctrl-label">flex-direction</span>
+            <div class="ctrl-buttons">
+              <button class="ctrl-btn active" data-flex-dir="row" type="button">row</button>
+              <button class="ctrl-btn" data-flex-dir="row-reverse" type="button">row-reverse</button>
+              <button class="ctrl-btn" data-flex-dir="column" type="button">column</button>
+              <button class="ctrl-btn" data-flex-dir="column-reverse" type="button">column-reverse</button>
+            </div>
+          </div>
+
+          <div class="ctrl-group">
+            <span class="ctrl-label">justify-content</span>
+            <div class="ctrl-buttons">
+              <button class="ctrl-btn active" data-flex-justify="flex-start" type="button">flex-start</button>
+              <button class="ctrl-btn" data-flex-justify="center" type="button">center</button>
+              <button class="ctrl-btn" data-flex-justify="flex-end" type="button">flex-end</button>
+              <button class="ctrl-btn" data-flex-justify="space-between" type="button">between</button>
+              <button class="ctrl-btn" data-flex-justify="space-around" type="button">around</button>
+              <button class="ctrl-btn" data-flex-justify="space-evenly" type="button">evenly</button>
+            </div>
+          </div>
+
+          <div class="ctrl-group">
+            <span class="ctrl-label">align-items</span>
+            <div class="ctrl-buttons">
+              <button class="ctrl-btn active" data-flex-align="stretch" type="button">stretch</button>
+              <button class="ctrl-btn" data-flex-align="flex-start" type="button">flex-start</button>
+              <button class="ctrl-btn" data-flex-align="center" type="button">center</button>
+              <button class="ctrl-btn" data-flex-align="flex-end" type="button">flex-end</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-demo" id="flexDemo">
+          <div class="flex-item" style="height: 2.5rem">1</div>
+          <div class="flex-item" style="height: 4rem">2</div>
+          <div class="flex-item" style="height: 3rem">3</div>
+          <div class="flex-item" style="height: 5rem">4</div>
+        </div>
+
+        <div class="code-block" style="margin-top: 1rem">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="comment">/* flex items */</span>
+<span class="sel">.item</span> {
+  <span class="prop">flex</span>: <span class="val">1</span>;              <span class="comment">/* grow:1 shrink:1 basis:0 */</span>
+  <span class="prop">flex-grow</span>: <span class="val">1</span>;
+  <span class="prop">flex-shrink</span>: <span class="val">0</span>;
+  <span class="prop">flex-basis</span>: <span class="val">200px</span>;
+  <span class="prop">align-self</span>: <span class="val">flex-end</span>;  <span class="comment">/* override parent align-items */</span>
+  <span class="prop">order</span>: <span class="val">2</span>;             <span class="comment">/* reorder visually */</span>
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GRID ===== -->
+    <section id="grid" class="section">
+      <h2>Grid</h2>
+      <p class="section-intro">Two dimensions — rows and columns at the same time.</p>
+
+      <div class="card">
+        <h3>Tracks &amp; fr Units</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.container</span> {
+  <span class="prop">display</span>: <span class="val">grid</span>;
+  <span class="prop">grid-template-columns</span>: <span class="val">1fr 2fr 1fr</span>;
+  <span class="prop">gap</span>: <span class="val">1rem</span>;
+}
+
+<span class="comment">/* responsive gallery */</span>
+<span class="prop">grid-template-columns</span>: <span class="val">repeat(auto-fill, minmax(180px, 1fr))</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <div class="grid-demo" style="grid-template-columns: 1fr 2fr 1fr">
+            <div class="grid-item">1fr</div>
+            <div class="grid-item">2fr</div>
+            <div class="grid-item">1fr</div>
+          </div>
+          <div class="grid-demo" style="grid-template-columns: repeat(4, 1fr)">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Named Areas — the readable way to build a page</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.layout</span> {
+  <span class="prop">display</span>: <span class="val">grid</span>;
+  <span class="prop">grid-template-areas</span>:
+    <span class="val">"header header header"</span>
+    <span class="val">"sidebar main aside"</span>
+    <span class="val">"footer footer footer"</span>;
+  <span class="prop">grid-template-columns</span>: <span class="val">120px 1fr 120px</span>;
+  <span class="prop">grid-template-rows</span>: <span class="val">auto 1fr auto</span>;
+  <span class="prop">gap</span>: <span class="val">0.5rem</span>;
+  <span class="prop">min-height</span>: <span class="val">260px</span>;
+}
+
+<span class="sel">.layout &gt; header</span> { <span class="prop">grid-area</span>: <span class="val">header</span>; }
+<span class="sel">.layout &gt; nav</span>    { <span class="prop">grid-area</span>: <span class="val">sidebar</span>; }
+<span class="sel">.layout &gt; main</span>   { <span class="prop">grid-area</span>: <span class="val">main</span>; }
+<span class="sel">.layout &gt; aside</span>  { <span class="prop">grid-area</span>: <span class="val">aside</span>; }
+<span class="sel">.layout &gt; footer</span> { <span class="prop">grid-area</span>: <span class="val">footer</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <div class="page-layout">
+            <header>header</header>
+            <nav>sidebar</nav>
+            <main>main</main>
+            <aside>aside</aside>
+            <footer>footer</footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPARE ===== -->
+    <section id="compare" class="section">
+      <h2>Grid vs Flexbox</h2>
+      <p class="section-intro">The rule: Flexbox = content decides layout. Grid = layout decides where content goes.</p>
+
+      <div class="card">
+        <table class="compare-table">
+          <thead>
+            <tr><th>Use case</th><th>Pick</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Navbar / toolbar</td><td><span class="tag tag-flex">Flexbox</span></td></tr>
+            <tr><td>Center one thing</td><td><span class="tag tag-flex">Flexbox</span></td></tr>
+            <tr><td>Card grid / gallery</td><td><span class="tag tag-grid">Grid</span></td></tr>
+            <tr><td>Full page layout</td><td><span class="tag tag-grid">Grid</span></td></tr>
+            <tr><td>Dashboard structure</td><td><span class="tag tag-grid">Grid</span></td></tr>
+            <tr><td>List of items, unknown count</td><td><span class="tag tag-flex">Flexbox</span></td></tr>
+            <tr><td>Sticky footer</td><td><span class="tag tag-flex">Flexbox</span></td></tr>
+            <tr><td>Overlapping layout</td><td><span class="tag tag-grid">Grid</span></td></tr>
+            <tr><td>Anything 2-dimensional</td><td><span class="tag tag-grid">Grid</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== POSITION ===== -->
+    <section id="position" class="section">
+      <h2>Position</h2>
+      <p class="section-intro">Remove an element from normal flow, or stick it to an edge.</p>
+
+      <div class="card">
+        <h3>Five Values</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">position</span>: <span class="val">static</span>;   <span class="comment">/* default */</span>
+<span class="prop">position</span>: <span class="val">relative</span>; <span class="comment">/* offsets from its own spot, still takes space */</span>
+<span class="prop">position</span>: <span class="val">absolute</span>; <span class="comment">/* out of flow, positioned to nearest positioned ancestor */</span>
+<span class="prop">position</span>: <span class="val">fixed</span>;    <span class="comment">/* out of flow, positioned to viewport */</span>
+<span class="prop">position</span>: <span class="val">sticky</span>;   <span class="comment">/* relative until scroll threshold, then sticks */</span>
+
+<span class="comment">/* inset shorthand for top / right / bottom / left */</span>
+<span class="prop">inset</span>: <span class="val">0</span>;
+
+<span class="comment">/* sticky header */</span>
+<span class="sel">.sticky-header</span> {
+  <span class="prop">position</span>: <span class="val">sticky</span>;
+  <span class="prop">top</span>: <span class="val">0</span>;
+  <span class="prop">z-index</span>: <span class="val">10</span>;
+}</code></pre>
+        </div>
+        <div class="demo">
+          <div class="pos-demo">
+            <div class="pos-box pos-relative">relative</div>
+            <div class="pos-box pos-absolute">absolute</div>
+            <div class="pos-box pos-static">static</div>
+            <div class="pos-box pos-sticky">sticky (top: 0.5rem)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Ravenclaw CSS Playground · Box Model &amp; Layouts</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Typography &amp; Colors — Playground</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;700&family=Bebas+Neue&family=Caveat:wght@400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">Live Playground</p>
+      <h1>Colors &amp; Typography</h1>
+      <p class="hero-sub">
+        Every color format, every size unit, every weight, every family — rendered live with code alongside.
+      </p>
+      <nav class="hero-nav">
+        <a href="#colors">Colors</a>
+        <a href="#sizes">Sizes</a>
+        <a href="#weights">Weights</a>
+        <a href="#styles">Styles</a>
+        <a href="#websafe">Web-safe</a>
+        <a href="#google">Google Fonts</a>
+        <a href="#shorthand">Shorthand</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== COLORS ===== -->
+    <section id="colors" class="section">
+      <h2>Colors</h2>
+      <p class="section-intro">Every common format — same color, different syntax.</p>
+
+      <div class="card">
+        <h3>Named &amp; Keyword</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">color</span>: <span class="val">tomato</span>;
+<span class="prop">color</span>: <span class="val">rebeccapurple</span>;
+<span class="prop">color</span>: <span class="val">transparent</span>;
+<span class="prop">color</span>: <span class="val">currentColor</span>;</code></pre>
+        </div>
+        <div class="swatch-row">
+          <div class="swatch-chip" style="--c:tomato"><span>tomato</span></div>
+          <div class="swatch-chip" style="--c:rebeccapurple"><span>rebeccapurple</span></div>
+          <div class="swatch-chip swatch-checker" style="--c:transparent"><span>transparent</span></div>
+          <div class="swatch-chip" style="--c:#e67c61"><span>currentColor</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Hex</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">color</span>: <span class="val">#240777</span>;
+<span class="prop">color</span>: <span class="val">#e67c61</span>;
+<span class="prop">color</span>: <span class="val">#b67dae80</span>; <span class="comment">/* 50% alpha */</span></code></pre>
+        </div>
+        <div class="swatch-row">
+          <div class="swatch-chip" style="--c:#240777"><span>#240777</span></div>
+          <div class="swatch-chip" style="--c:#e67c61"><span>#e67c61</span></div>
+          <div class="swatch-chip" style="--c:#b67dae80"><span>#b67dae80</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>RGB / RGBA</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">color</span>: <span class="val">rgb(36, 7, 119)</span>;
+<span class="prop">color</span>: <span class="val">rgba(230, 124, 97, 0.5)</span>;
+<span class="prop">color</span>: <span class="val">rgb(182 125 174 / 50%)</span>; <span class="comment">/* modern */</span></code></pre>
+        </div>
+        <div class="swatch-row">
+          <div class="swatch-chip" style="--c:rgb(36,7,119)"><span>rgb(36,7,119)</span></div>
+          <div class="swatch-chip" style="--c:rgba(230,124,97,0.5)"><span>rgba(…, .5)</span></div>
+          <div class="swatch-chip" style="--c:rgb(182 125 174 / 50%)"><span>rgb(… / 50%)</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>HSL / HSLA</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">color</span>: <span class="val">hsl(257, 89%, 25%)</span>;
+<span class="prop">color</span>: <span class="val">hsl(12 78% 64%)</span>;
+<span class="prop">color</span>: <span class="val">hsl(288 40% 60% / 50%)</span>;</code></pre>
+        </div>
+        <div class="swatch-row">
+          <div class="swatch-chip" style="--c:hsl(257,89%,25%)"><span>hsl(257,89%,25%)</span></div>
+          <div class="swatch-chip" style="--c:hsl(12 78% 64%)"><span>hsl(12 78% 64%)</span></div>
+          <div class="swatch-chip" style="--c:hsl(288 40% 60% / 50%)"><span>hsl(… / 50%)</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Modern Color Spaces</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">color</span>: <span class="val">oklch(0.63 0.26 29)</span>;
+<span class="prop">color</span>: <span class="val">oklab(0.63 0.22 0.13)</span>;
+<span class="prop">color</span>: <span class="val">lab(54% 80 69)</span>;
+<span class="prop">color</span>: <span class="val">lch(54% 106 40)</span>;
+<span class="prop">color</span>: <span class="val">color(display-p3 1 0 0)</span>;</code></pre>
+        </div>
+        <div class="swatch-row">
+          <div class="swatch-chip" style="--c:oklch(0.63 0.26 29)"><span>oklch</span></div>
+          <div class="swatch-chip" style="--c:oklab(0.63 0.22 0.13)"><span>oklab</span></div>
+          <div class="swatch-chip" style="--c:lab(54% 80 69)"><span>lab</span></div>
+          <div class="swatch-chip" style="--c:lch(54% 106 40)"><span>lch</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Functional &amp; Variables</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">:root</span> { <span class="prop">--brand</span>: <span class="val">#240777</span>; }
+
+<span class="prop">color</span>: <span class="val">var(--brand)</span>;
+<span class="prop">color</span>: <span class="val">color-mix(in srgb, var(--brand) 60%, white)</span>;
+<span class="prop">color</span>: <span class="val">light-dark(#111, #fff)</span>;</code></pre>
+        </div>
+        <div class="swatch-row">
+          <div class="swatch-chip" style="--c:var(--brand)"><span>var(--brand)</span></div>
+          <div class="swatch-chip" style="--c:color-mix(in srgb, #240777 60%, white)"><span>color-mix</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SIZES ===== -->
+    <section id="sizes" class="section">
+      <h2>Font Sizes</h2>
+      <p class="section-intro">Absolute, relative, named, and fluid.</p>
+
+      <div class="card">
+        <h3>Absolute Units</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-size</span>: <span class="val">16px</span>;
+<span class="prop">font-size</span>: <span class="val">12pt</span>;
+<span class="prop">font-size</span>: <span class="val">1pc</span>;
+<span class="prop">font-size</span>: <span class="val">0.5in</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="size-demo" style="font-size:12px"><span class="sz-tag">12px</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="size-demo" style="font-size:14px"><span class="sz-tag">14px</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="size-demo" style="font-size:16px"><span class="sz-tag">16px</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="size-demo" style="font-size:20px"><span class="sz-tag">20px</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="size-demo" style="font-size:24px"><span class="sz-tag">24px</span> The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Relative Units</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-size</span>: <span class="val">1rem</span>;   <span class="comment">/* root font-size */</span>
+<span class="prop">font-size</span>: <span class="val">1.5em</span>;  <span class="comment">/* parent font-size */</span>
+<span class="prop">font-size</span>: <span class="val">1.2ch</span>;  <span class="comment">/* width of "0" */</span>
+<span class="prop">font-size</span>: <span class="val">2vw</span>;    <span class="comment">/* 2% viewport width */</span>
+<span class="prop">font-size</span>: <span class="val">2vmin</span>;  <span class="comment">/* smaller of vw / vh */</span></code></pre>
+        </div>
+        <div class="demo">
+          <p class="size-demo" style="font-size:1rem"><span class="sz-tag">1rem</span> Root-relative — respects user preference.</p>
+          <p class="size-demo" style="font-size:1.5em"><span class="sz-tag">1.5em</span> Parent-relative — compounds.</p>
+          <p class="size-demo" style="font-size:2vw"><span class="sz-tag">2vw</span> Viewport-relative — resize the window.</p>
+          <p class="size-demo" style="font-size:clamp(1rem, 3vw, 2rem)"><span class="sz-tag">clamp()</span> Fluid — scales between 1rem and 2rem.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Named Keyword Sizes</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-size</span>: <span class="val">xx-small</span> … <span class="val">xxx-large</span>;
+<span class="prop">font-size</span>: <span class="val">smaller</span> | <span class="val">larger</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="size-demo" style="font-size:xx-small"><span class="sz-tag">xx-small</span> Tiny</p>
+          <p class="size-demo" style="font-size:x-small"><span class="sz-tag">x-small</span> Small</p>
+          <p class="size-demo" style="font-size:small"><span class="sz-tag">small</span> Compact</p>
+          <p class="size-demo" style="font-size:medium"><span class="sz-tag">medium</span> Default</p>
+          <p class="size-demo" style="font-size:large"><span class="sz-tag">large</span> Comfortable</p>
+          <p class="size-demo" style="font-size:x-large"><span class="sz-tag">x-large</span> Big</p>
+          <p class="size-demo" style="font-size:xx-large"><span class="sz-tag">xx-large</span> Bigger</p>
+          <p class="size-demo" style="font-size:xxx-large"><span class="sz-tag">xxx-large</span> Biggest</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WEIGHTS ===== -->
+    <section id="weights" class="section">
+      <h2>Font Weights</h2>
+      <p class="section-intro">Numerical values 100–900. Keywords are aliases.</p>
+
+      <div class="card">
+        <h3>Numeric Scale</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-weight</span>: <span class="val">100</span>; <span class="comment">/* Thin */</span>
+<span class="prop">font-weight</span>: <span class="val">200</span>; <span class="comment">/* Extra Light */</span>
+<span class="prop">font-weight</span>: <span class="val">300</span>; <span class="comment">/* Light */</span>
+<span class="prop">font-weight</span>: <span class="val">400</span>; <span class="comment">/* Regular (normal) */</span>
+<span class="prop">font-weight</span>: <span class="val">500</span>; <span class="comment">/* Medium */</span>
+<span class="prop">font-weight</span>: <span class="val">600</span>; <span class="comment">/* Semi Bold */</span>
+<span class="prop">font-weight</span>: <span class="val">700</span>; <span class="comment">/* Bold */</span>
+<span class="prop">font-weight</span>: <span class="val">800</span>; <span class="comment">/* Extra Bold */</span>
+<span class="prop">font-weight</span>: <span class="val">900</span>; <span class="comment">/* Black */</span></code></pre>
+        </div>
+        <div class="demo">
+          <p class="weight-demo" style="font-weight:100"><span class="w-tag">100</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:200"><span class="w-tag">200</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:300"><span class="w-tag">300</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:400"><span class="w-tag">400</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:500"><span class="w-tag">500</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:600"><span class="w-tag">600</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:700"><span class="w-tag">700</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:800"><span class="w-tag">800</span> The quick brown fox jumps over the lazy dog.</p>
+          <p class="weight-demo" style="font-weight:900"><span class="w-tag">900</span> The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Keywords</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-weight</span>: <span class="val">normal</span>;  <span class="comment">/* 400 */</span>
+<span class="prop">font-weight</span>: <span class="val">bold</span>;    <span class="comment">/* 700 */</span>
+<span class="prop">font-weight</span>: <span class="val">lighter</span>; <span class="comment">/* one step lighter than parent */</span>
+<span class="prop">font-weight</span>: <span class="val">bolder</span>;  <span class="comment">/* one step heavier than parent */</span></code></pre>
+        </div>
+        <div class="demo">
+          <p class="weight-demo" style="font-weight:normal"><span class="w-tag">normal</span> Maps to 400.</p>
+          <p class="weight-demo" style="font-weight:bold"><span class="w-tag">bold</span> Maps to 700.</p>
+          <p class="weight-demo" style="font-weight:700">
+            <span class="w-tag">parent 700</span> Normal text
+            <span style="font-weight:lighter"> · lighter child</span>
+            <span style="font-weight:bolder"> · bolder child</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STYLES ===== -->
+    <section id="styles" class="section">
+      <h2>Font Style &amp; Variant</h2>
+
+      <div class="card">
+        <h3>Style</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-style</span>: <span class="val">normal</span>;
+<span class="prop">font-style</span>: <span class="val">italic</span>;
+<span class="prop">font-style</span>: <span class="val">oblique</span>;
+<span class="prop">font-style</span>: <span class="val">oblique 15deg</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="style-demo" style="font-style:normal"><span class="st-tag">normal</span> The quick brown fox.</p>
+          <p class="style-demo" style="font-style:italic"><span class="st-tag">italic</span> The quick brown fox.</p>
+          <p class="style-demo" style="font-style:oblique"><span class="st-tag">oblique</span> The quick brown fox.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Variant &amp; Stretch</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-variant</span>: <span class="val">small-caps</span>;
+<span class="prop">font-variant</span>: <span class="val">tabular-nums</span>;
+<span class="prop">font-variant</span>: <span class="val">slashed-zero</span>;
+<span class="prop">font-stretch</span>: <span class="val">condensed</span>;
+<span class="prop">font-stretch</span>: <span class="val">75%</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="style-demo" style="font-variant:small-caps"><span class="st-tag">small-caps</span> The Quick Brown Fox</p>
+          <p class="style-demo" style="font-variant-numeric:tabular-nums;font-family:'JetBrains Mono',monospace"><span class="st-tag">tabular-nums</span> 11111111 · 99999999</p>
+          <p class="style-demo" style="font-variant-numeric:slashed-zero;font-family:'JetBrains Mono',monospace"><span class="st-tag">slashed-zero</span> 0 1 0 1 0 1</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WEBSAFE ===== -->
+    <section id="websafe" class="section">
+      <h2>Web-Safe Fonts</h2>
+      <p class="section-intro">Native on virtually every OS. Each line is rendered in the font it names.</p>
+
+      <div class="card">
+        <h3>Sans-Serif</h3>
+        <div class="demo">
+          <p class="font-line ff-arial"       style="font-family:Arial, sans-serif">Arial — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line ff-helvetica"   style="font-family:Helvetica, Arial, sans-serif">Helvetica — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line ff-verdana"     style="font-family:Verdana, Geneva, sans-serif">Verdana — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line ff-tahoma"      style="font-family:Tahoma, Geneva, sans-serif">Tahoma — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line ff-trebuchet"   style="font-family:'Trebuchet MS', Helvetica, sans-serif">Trebuchet MS — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line ff-calibri"     style="font-family:Calibri, Candara, sans-serif">Calibri — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line ff-segoe"       style="font-family:'Segoe UI', Tahoma, sans-serif">Segoe UI — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line ff-system"      style="font-family:system-ui, sans-serif">system-ui — The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Serif</h3>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Times New Roman', Times, serif">Times New Roman — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line" style="font-family:Times, serif">Times — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line" style="font-family:Georgia, 'Times New Roman', serif">Georgia — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line" style="font-family:Garamond, Georgia, serif">Garamond — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line" style="font-family:Palatino, 'Palatino Linotype', Georgia, serif">Palatino — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line" style="font-family:Cambria, Georgia, serif">Cambria — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line" style="font-family:'Book Antiqua', Palatino, serif">Book Antiqua — The quick brown fox jumps over the lazy dog.</p>
+          <p class="font-line" style="font-family:Baskerville, Georgia, serif">Baskerville — The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Monospace</h3>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Courier New', Courier, monospace">Courier New — The quick brown fox 0 1 2 3 4 5 6 7 8 9</p>
+          <p class="font-line" style="font-family:Courier, monospace">Courier — The quick brown fox 0 1 2 3 4 5 6 7 8 9</p>
+          <p class="font-line" style="font-family:Consolas, Monaco, monospace">Consolas — The quick brown fox 0 1 2 3 4 5 6 7 8 9</p>
+          <p class="font-line" style="font-family:Monaco, Consolas, monospace">Monaco — The quick brown fox 0 1 2 3 4 5 6 7 8 9</p>
+          <p class="font-line" style="font-family:Menlo, Monaco, monospace">Menlo — The quick brown fox 0 1 2 3 4 5 6 7 8 9</p>
+          <p class="font-line" style="font-family:'Lucida Console', Monaco, monospace">Lucida Console — The quick brown fox 0 1 2 3 4 5 6 7 8 9</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Cursive &amp; Fantasy</h3>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Brush Script MT', cursive;font-size:1.5rem">Brush Script MT — The quick brown fox</p>
+          <p class="font-line" style="font-family:'Comic Sans MS', 'Comic Sans', cursive">Comic Sans MS — The quick brown fox</p>
+          <p class="font-line" style="font-family:'Lucida Handwriting', cursive;font-size:1.4rem">Lucida Handwriting — The quick brown fox</p>
+          <p class="font-line" style="font-family:Impact, 'Arial Black', sans-serif;font-size:1.5rem;letter-spacing:1px">Impact — The quick brown fox</p>
+          <p class="font-line" style="font-family:Copperplate, 'Copperplate Gothic Light', fantasy;font-size:1.3rem">Copperplate — The quick brown fox</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GOOGLE FONTS ===== -->
+    <section id="google" class="section">
+      <h2>Google Fonts</h2>
+      <p class="section-intro">
+        Loaded via <code>&lt;link&gt;</code>. Use <code>&amp;display=swap</code> and <code>preconnect</code> for speed.
+      </p>
+
+      <div class="card">
+        <h3>Loading Snippet</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">&lt;link</span> <span class="prop">rel</span>=<span class="val">"preconnect"</span> <span class="prop">href</span>=<span class="val">"https://fonts.googleapis.com"</span><span class="sel">&gt;</span>
+<span class="sel">&lt;link</span> <span class="prop">rel</span>=<span class="val">"preconnect"</span> <span class="prop">href</span>=<span class="val">"https://fonts.gstatic.com"</span> <span class="prop">crossorigin</span><span class="sel">&gt;</span>
+<span class="sel">&lt;link</span> <span class="prop">href</span>=<span class="val">"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"</span> <span class="prop">rel</span>=<span class="val">"stylesheet"</span><span class="sel">&gt;</span></code></pre>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Inter — UI Sans</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-family</span>: <span class="val">'Inter', sans-serif</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Inter', sans-serif;font-size:1.1rem">
+            The quick brown fox jumps over the lazy dog — 0123456789
+          </p>
+          <p class="font-line" style="font-family:'Inter', sans-serif;font-weight:300;font-size:1.1rem">
+            Light 300 — variable axis at work.
+          </p>
+          <p class="font-line" style="font-family:'Inter', sans-serif;font-weight:700;font-size:1.1rem">
+            Bold 700 — same file, different weight.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Playfair Display — Editorial Serif</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-family</span>: <span class="val">'Playfair Display', serif</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Playfair Display', serif;font-size:1.6rem;font-weight:500">
+            The quick brown fox jumps over the lazy dog
+          </p>
+          <p class="font-line" style="font-family:'Playfair Display', serif;font-size:1.6rem;font-style:italic">
+            The quick brown fox jumps over the lazy dog
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>JetBrains Mono — Code</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-family</span>: <span class="val">'JetBrains Mono', monospace</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font-family:'JetBrains Mono', monospace;font-size:1rem">
+            const greeting = "Hello, world"; // 0123456789
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Bebas Neue — Display</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-family</span>: <span class="val">'Bebas Neue', sans-serif</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Bebas Neue', sans-serif;font-size:2.5rem;letter-spacing:2px">
+            The Quick Brown Fox Jumps Over The Lazy Dog
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Fraunces — Variable Serif</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-family</span>: <span class="val">'Fraunces', serif</span>;
+<span class="prop">font-variation-settings</span>: <span class="val">'opsz' 32, 'SOFT' 100</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Fraunces', serif;font-size:1.6rem;font-weight:300">
+            Weight 300 — delicate.
+          </p>
+          <p class="font-line" style="font-family:'Fraunces', serif;font-size:1.6rem;font-weight:900">
+            Weight 900 — heavy.
+          </p>
+          <p class="font-line" style="font-family:'Fraunces', serif;font-size:1.6rem;font-style:italic">
+            Italic — variable italic axis.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Caveat — Handwritten</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-family</span>: <span class="val">'Caveat', cursive</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font-family:'Caveat', cursive;font-size:1.8rem">
+            The quick brown fox jumps over the lazy dog
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>DM Serif Display — Headline</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">font-family</span>: <span class="val">'DM Serif Display', serif</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font-family:'DM Serif Display', serif;font-size:1.8rem">
+            The quick brown fox jumps over the lazy dog
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHORTHAND ===== -->
+    <section id="shorthand" class="section">
+      <h2>Font Shorthand</h2>
+      <p class="section-intro">
+        Order matters. <code>font-size</code> and <code>font-family</code> are required.
+      </p>
+
+      <div class="card">
+        <h3>Full Syntax</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="comment">/* style  variant  weight  stretch  size/line-height  family */</span>
+<span class="prop">font</span>: <span class="val">italic small-caps bold 16px/1.5 'Inter', sans-serif</span>;
+
+<span class="comment">/* minimal */</span>
+<span class="prop">font</span>: <span class="val">16px 'Inter', sans-serif</span>;
+
+<span class="comment">/* system shortcuts */</span>
+<span class="prop">font</span>: <span class="val">menu</span>;
+<span class="prop">font</span>: <span class="val">caption</span>;
+<span class="prop">font</span>: <span class="val">icon</span>;
+<span class="prop">font</span>: <span class="val">message-box</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="font:italic small-caps bold 16px/1.5 'Inter', sans-serif">
+            italic small-caps bold 16px/1.5 'Inter', sans-serif
+          </p>
+          <p class="font-line" style="font:20px 'Playfair Display', serif">
+            20px 'Playfair Display', serif
+          </p>
+          <p class="font-line" style="font:menu">
+            font: menu — uses the OS menu font
+          </p>
+          <p class="font-line" style="font:caption">
+            font: caption — uses the OS caption font
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Related Typography Properties</h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="prop">line-height</span>: <span class="val">1.5</span>;
+<span class="prop">letter-spacing</span>: <span class="val">0.02em</span>;
+<span class="prop">word-spacing</span>: <span class="val">0.1em</span>;
+<span class="prop">text-align</span>: <span class="val">center</span>;
+<span class="prop">text-transform</span>: <span class="val">uppercase</span>;
+<span class="prop">text-decoration</span>: <span class="val">underline</span>;
+<span class="prop">text-indent</span>: <span class="val">2em</span>;
+<span class="prop">text-shadow</span>: <span class="val">0 1px 2px rgba(0,0,0,0.2)</span>;
+<span class="prop">white-space</span>: <span class="val">nowrap</span>;
+<span class="prop">-webkit-font-smoothing</span>: <span class="val">antialiased</span>;
+<span class="prop">text-rendering</span>: <span class="val">optimizeLegibility</span>;</code></pre>
+        </div>
+        <div class="demo">
+          <p class="font-line" style="letter-spacing:0.3em;text-transform:uppercase">
+            letter-spacing · text-transform
+          </p>
+          <p class="font-line" style="text-decoration:underline;text-decoration-color:#e67c61;text-decoration-thickness:3px">
+            Colored, thick underline
+          </p>
+          <p class="font-line" style="text-shadow:0 2px 8px #e67c61">
+            Text with a soft coral glow
+          </p>
+          <p class="font-line" style="text-indent:2em">
+            This paragraph is indented by two ems on the first line — standard editorial style.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Colors &amp; Typography Playground · made with the Purple Monkey palette</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

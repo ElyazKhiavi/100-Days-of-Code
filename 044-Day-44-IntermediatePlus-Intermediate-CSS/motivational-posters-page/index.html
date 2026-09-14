@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivational Posters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="page">
+
+    <header class="page-header">
+      <p class="eyebrow">Daily Motivation</p>
+      <h1>Motivational Posters</h1>
+      <p class="subtitle">Click for a new poster, or download it as an image.</p>
+    </header>
+
+    <section class="poster-stage" id="posterStage">
+      <!-- Poster gets injected here by JS -->
+    </section>
+
+    <div class="controls">
+      <button id="nextBtn" class="btn" type="button">
+        <span class="btn-icon">🎲</span> New Poster
+      </button>
+      <button id="downloadBtn" class="btn btn-secondary" type="button">
+        <span class="btn-icon">⬇</span> Download
+      </button>
+      <span id="counter" class="counter">1 / 15</span>
+    </div>
+
+    <p id="toast" class="toast" role="status" aria-live="polite"></p>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Images from Unsplash · Free to use under the Unsplash License</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
