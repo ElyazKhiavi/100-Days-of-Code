@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Day 42/100 — Beginner ✅ | Intermediate ✅ | Intermediate+ In Progress (5/27 days)
+### 🚀 Status: Day 43/100 — Beginner ✅ | Intermediate ✅ | Intermediate+ In Progress (5/27 days)
 
 ---
 
@@ -84,6 +84,7 @@ Daily folders use zero-padded prefixes; structure evolved at Day 15 for multi-fi
 | 40  | [Capstone Pt 2 — Flight Club (Customer List + Fan-Out Alerts)](040-Day-40-IntermediatePlus-Capstone-Part-2-Flight-Club/day-040.md)                                                        | ✅ Complete |
 | 41  | [Introduction to HTML — Semantic Structure, Tailwind v4, Vanilla JS (Movie Ranking, Tic-Tac-Toe)](041-Day-41-IntermediatePlus-Introduction-to-HTML/day-041.md)                            | ✅ Complete |
 | 42  | [Intermediate HTML — Boilerplate, Emmet, TMDB-Powered Movie Grid](042-Day-42-IntermediatePlus-Intermediate-HTML/day-042.md)                                                               | ✅ Complete |
+| 43  | [Introduction to CSS — Cascade & Specificity, Selectors Playground, Color Flashcards](043-Day-43-IntermediatePlus-Introduction-to-CSS/day-043.md)                                         | ✅ Complete |
 
 ## 🛠️ Tech Stack
 

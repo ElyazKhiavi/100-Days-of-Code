@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors — Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header id="hero" class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Live Playground</span>
+      <h1>CSS Selectors</h1>
+      <p class="hero-sub">Every selector you actually use — with a live demo and a code snippet for each.</p>
+      <nav class="hero-nav" aria-label="Section navigation">
+        <a href="#basic">Basic</a>
+        <a href="#combining">Combining</a>
+        <a href="#attribute">Attribute</a>
+        <a href="#state">State</a>
+        <a href="#position">Position</a>
+        <a href="#pseudo-el">Pseudo-elements</a>
+        <a href="#modern">Modern</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- ===== BASIC ===== -->
+    <section id="basic" class="section accent-blue">
+      <h2>Basic Selectors</h2>
+
+      <div class="card">
+        <h3>Tag <code>p</code></h3>
+        <p class="desc">Selects every element of that name (scoped here to the demo).</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button" aria-label="Copy code">Copy</button>
+          <pre><code><span class="sel">p</span> { <span class="prop">color</span>: <span class="val">#2b2b2b</span>; <span class="prop">line-height</span>: <span class="val">1.6</span>; }</code></pre>
+        </div>
+        <div class="demo demo-tag">
+          <p>This paragraph is styled by the tag selector.</p>
+          <p>So is this one.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Class <code>.tag</code></h3>
+        <p class="desc">Selects every element with that class — reusable.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.tag</span> { <span class="prop">background</span>: <span class="val">#bae1ff</span>; <span class="prop">border-radius</span>: <span class="val">999px</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <span class="tag">Design</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Frontend</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>ID <code>#hero</code></h3>
+        <p class="desc">Selects one unique element on the page.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">#hero</span> { <span class="prop">background</span>: <span class="val">linear-gradient(...)</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <p>The hero at the top of this page uses <code>#hero</code>.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Universal <code>*</code></h3>
+        <p class="desc">Selects every element. Usually for resets.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">*</span> { <span class="prop">box-sizing</span>: <span class="val">border-box</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <p>This page uses <code>*</code> to reset margin and padding.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMBINING ===== -->
+    <section id="combining" class="section accent-green">
+      <h2>Grouping &amp; Combining</h2>
+
+      <div class="card">
+        <h3>Group <code>a, b</code></h3>
+        <p class="desc">Apply the same styles to several selectors.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">h1, h2, h3</span> { <span class="prop">font-family</span>: <span class="val">Georgia</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <h3>Heading 3</h3>
+          <h4>Heading 4 (not grouped)</h4>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Descendant <code>a b</code></h3>
+        <p class="desc">Anywhere inside, at any depth.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.demo-desc p</span> { <span class="prop">color</span>: <span class="val">#03396c</span>; }</code></pre>
+        </div>
+        <div class="demo demo-desc">
+          <p>Direct paragraph.</p>
+          <div><p>Nested paragraph — still matched.</p></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Child <code>a &gt; b</code></h3>
+        <p class="desc">Direct child only.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.demo-child &gt; p</span> { <span class="prop">border-left</span>: <span class="val">4px solid #ffb3ba</span>; }</code></pre>
+        </div>
+        <div class="demo demo-child">
+          <p>Direct — gets border.</p>
+          <div><p>Nested — no border.</p></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Adjacent <code>a + b</code></h3>
+        <p class="desc">The very next sibling.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.adj + p</span> { <span class="prop">color</span>: <span class="val">#c1272d</span>; }</code></pre>
+        </div>
+        <div class="demo demo-adj">
+          <h4 class="adj">Heading</h4>
+          <p>Adjacent paragraph — matched.</p>
+          <p>Second paragraph — not matched.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>General sibling <code>a ~ b</code></h3>
+        <p class="desc">All following siblings.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.gen ~ p</span> { <span class="prop">color</span>: <span class="val">#0f5c26</span>; }</code></pre>
+        </div>
+        <div class="demo demo-gen">
+          <h4 class="gen">Heading</h4>
+          <p>First sibling — matched.</p>
+          <p>Second sibling — matched.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ATTRIBUTE ===== -->
+    <section id="attribute" class="section accent-yellow">
+      <h2>Attribute Selectors</h2>
+
+      <div class="card">
+        <h3>Has attribute <code>[attr]</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">[data-badge]</span> { <span class="prop">outline</span>: <span class="val">2px dashed #2f004d</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <span data-badge="new">New</span>
+          <span>Plain</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Exact match <code>[attr="value"]</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">[data-kind="primary"]</span> { <span class="prop">background</span>: <span class="val">#bae1ff</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <span data-kind="primary">Primary</span>
+          <span data-kind="secondary">Secondary</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Starts with <code>[attr^="value"]</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">a[href^="https"]</span> { <span class="prop">color</span>: <span class="val">#0f5c26</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <a href="https://example.com">https://example.com</a>
+          <a href="/local">/local</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Ends with <code>[attr$="value"]</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">a[href$=".pdf"]</span> { <span class="prop">color</span>: <span class="val">#c1272d</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <a href="/report.pdf">report.pdf</a>
+          <a href="/page">page</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Contains <code>[attr*="value"]</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">[class*="chip"]</span> { <span class="prop">background</span>: <span class="val">#ffdfba</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <span class="chip-large">chip-large</span>
+          <span class="chip-small">chip-small</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATE ===== -->
+    <section id="state" class="section accent-pink">
+      <h2>State Pseudo-classes</h2>
+
+      <div class="card">
+        <h3><code>:hover</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.hover-btn:hover</span> { <span class="prop">transform</span>: <span class="val">scale(1.05)</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <button class="hover-btn" type="button">Hover me</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:focus</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.focus-input:focus</span> { <span class="prop">border-color</span>: <span class="val">#2f004d</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <input class="focus-input" type="text" placeholder="Click me" />
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:checked</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.check + label</span> { <span class="prop">opacity</span>: <span class="val">.5</span>; }
+<span class="sel">.check:checked + label</span> { <span class="prop">opacity</span>: <span class="val">1</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <input type="checkbox" id="c1" class="check">
+          <label for="c1">Toggle me</label>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:disabled</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">button:disabled</span> { <span class="prop">opacity</span>: <span class="val">.4</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <button type="button">Enabled</button>
+          <button type="button" disabled>Disabled</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:valid</code> / <code>:invalid</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">input:valid</span> { <span class="prop">border-color</span>: <span class="val">#1a7f37</span>; }
+<span class="sel">input:invalid</span> { <span class="prop">border-color</span>: <span class="val">#c1272d</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <input type="email" placeholder="type an email..." />
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>::placeholder</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">input::placeholder</span> { <span class="prop">color</span>: <span class="val">#99aab5</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <input type="text" placeholder="I am placeholder text" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POSITION ===== -->
+    <section id="position" class="section accent-peach">
+      <h2>Position Pseudo-classes</h2>
+
+      <div class="card">
+        <h3><code>:first-child</code> / <code>:last-child</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.list li:first-child</span> { <span class="prop">font-weight</span>: <span class="val">700</span>; }
+<span class="sel">.list li:last-child</span> { <span class="prop">color</span>: <span class="val">#c1272d</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <ul class="list">
+            <li>First item</li>
+            <li>Middle item</li>
+            <li>Last item</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:nth-child(odd / even)</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.zebra li:nth-child(odd)</span> { <span class="prop">background</span>: <span class="val">#f5f5f5</span>; }
+<span class="sel">.zebra li:nth-child(even)</span> { <span class="prop">background</span>: <span class="val">#bae1ff</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <ul class="zebra">
+            <li>Row 1</li><li>Row 2</li><li>Row 3</li><li>Row 4</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:nth-child(3n)</code></h3>
+        <p class="desc">Every 3rd element.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.third li:nth-child(3n)</span> { <span class="prop">color</span>: <span class="val">#2f004d</span>; <span class="prop">font-weight</span>: <span class="val">700</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <ul class="third">
+            <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:not(selector)</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.not li:not(.skip)</span> { <span class="prop">color</span>: <span class="val">#0f5c26</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <ul class="not">
+            <li>Normal</li>
+            <li class="skip">Skip me</li>
+            <li>Normal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PSEUDO-ELEMENTS ===== -->
+    <section id="pseudo-el" class="section accent-blue">
+      <h2>Pseudo-elements</h2>
+
+      <div class="card">
+        <h3><code>::before</code> / <code>::after</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.deco::before</span> { <span class="prop">content</span>: <span class="val">"→ "</span>; }
+<span class="sel">.deco::after</span>  { <span class="prop">content</span>: <span class="val">" ←"</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <p class="deco">Arrows are added by CSS</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>::first-letter</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.dropcap::first-letter</span> {
+  <span class="prop">font-size</span>: <span class="val">2.5rem</span>;
+  <span class="prop">float</span>: <span class="val">left</span>;
+}</code></pre>
+        </div>
+        <div class="demo">
+          <p class="dropcap">Once upon a time, a stylesheet was born.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>::first-line</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.firstline::first-line</span> { <span class="prop">color</span>: <span class="val">#c1272d</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <p class="firstline">The first line of this paragraph is colored red by the ::first-line pseudo-element. Try resizing the window and see how it moves.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>::selection</code></h3>
+        <p class="desc">Highlight the text below to see it.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.sel-demo::selection</span> { <span class="prop">background</span>: <span class="val">#baffc9</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <p class="sel-demo">Select me with your mouse.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>::marker</code></h3>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.marker li::marker</span> { <span class="prop">color</span>: <span class="val">#2f004d</span>; <span class="prop">content</span>: <span class="val">"★ "</span>; }</code></pre>
+        </div>
+        <div class="demo">
+          <ul class="marker">
+            <li>Styled bullet</li>
+            <li>Styled bullet</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MODERN ===== -->
+    <section id="modern" class="section accent-green">
+      <h2>Modern Selectors</h2>
+
+      <div class="card">
+        <h3><code>:is(a, b, c)</code></h3>
+        <p class="desc">Matches any of the listed selectors.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.is-demo :is(h4, p)</span> { <span class="prop">color</span>: <span class="val">#09005b</span>; }</code></pre>
+        </div>
+        <div class="demo is-demo">
+          <h4>Heading</h4>
+          <p>Paragraph</p>
+          <span>Span (not matched)</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:where(a, b)</code></h3>
+        <p class="desc">Like <code>:is()</code> but zero specificity.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.where-demo :where(h4, p)</span> { <span class="prop">border-left</span>: <span class="val">4px solid #ffdfba</span>; }</code></pre>
+        </div>
+        <div class="demo where-demo">
+          <h4>Heading</h4>
+          <p>Paragraph</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:has(selector)</code></h3>
+        <p class="desc">Parent selector — styles an element that contains a match.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.has-demo:has(.star)</span> {
+  <span class="prop">background</span>: <span class="val">#ffffba</span>;
+}</code></pre>
+        </div>
+        <div class="demo">
+          <div class="has-demo">Plain box (no star inside)</div>
+          <div class="has-demo" style="margin-top:0.5rem">
+            Box with <span class="star">★</span> inside — highlighted.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:focus-visible</code></h3>
+        <p class="desc">Only when focused via keyboard (Tab key).</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.kv-btn:focus-visible</span> {
+  <span class="prop">outline</span>: <span class="val">3px solid #2f004d</span>;
+}</code></pre>
+        </div>
+        <div class="demo">
+          <button class="kv-btn" type="button">Click me vs Tab to me</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3><code>:focus-within</code></h3>
+        <p class="desc">Parent gets styled when any child is focused.</p>
+        <div class="code-block">
+          <button class="copy-btn" type="button">Copy</button>
+          <pre><code><span class="sel">.fw:focus-within</span> {
+  <span class="prop">background</span>: <span class="val">#ffdfba</span>;
+}</code></pre>
+        </div>
+        <div class="demo">
+          <div class="fw" style="padding:0.75rem;border-radius:8px;transition:background .2s">
+            <input type="text" placeholder="Focus me..." style="padding:0.4rem;border:1px solid #ddd;border-radius:6px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CHEAT SHEET ===== -->
+    <section id="cheat" class="section accent-yellow">
+      <h2>Combinator Cheat Sheet</h2>
+
+      <div class="card">
+        <table class="cheat">
+          <thead>
+            <tr><th>Symbol</th><th>Meaning</th><th>Example</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>&nbsp;</code></td><td>Descendant</td><td><code>div p</code></td></tr>
+            <tr><td><code>&gt;</code></td><td>Child</td><td><code>ul &gt; li</code></td></tr>
+            <tr><td><code>+</code></td><td>Next sibling</td><td><code>h1 + p</code></td></tr>
+            <tr><td><code>~</code></td><td>General sibling</td><td><code>h1 ~ p</code></td></tr>
+            <tr><td><code>,</code></td><td>Group</td><td><code>h1, h2, h3</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Made with pastel love · CSS Selectors Playground</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
