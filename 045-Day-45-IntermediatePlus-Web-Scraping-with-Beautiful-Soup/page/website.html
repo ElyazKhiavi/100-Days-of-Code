@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <p class="eyebrow">Collection</p>
+      <h1>Movie Gallery</h1>
+      <p class="subtitle">Populated by Python · one card at a time.</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="grid" id="movieGrid">
+
+      <!-- ===== MOVIE CARD TEMPLATE =====
+           Python will duplicate this block per movie.
+           Data lives in the data-* attributes and text nodes. -->
+      <article class="movie-card" data-movie-id="placeholder-1">
+        <div class="poster">
+          <img
+            src="https://via.placeholder.com/500x750/3d2657/cca3ff?text=Poster"
+            alt="Movie poster"
+            class="poster-img"
+            loading="lazy">
+          <span class="rating" data-rating="8">8.0</span>
+        </div>
+        <div class="movie-body">
+          <h2 class="movie-title" data-title>The Placeholder Movie</h2>
+          <p class="movie-meta">
+            <span class="year" data-year>2026</span>
+            <span class="dot">·</span>
+            <span class="genre" data-genre>Drama</span>
+          </p>
+          <p class="movie-desc" data-desc>
+            This is where the description goes. Python will replace this text
+            with the real synopsis fetched from the API.
+          </p>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>Movie Gallery · powered by Python + a little CSS magic</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
