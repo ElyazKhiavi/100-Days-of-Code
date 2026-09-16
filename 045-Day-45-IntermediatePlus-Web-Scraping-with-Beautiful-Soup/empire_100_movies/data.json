@@ -1,0 +1,804 @@
+{
+    "data": [
+        {
+            "rank": 1,
+            "title": "Jaws",
+            "year": 1975,
+            "img_url": "https://images.bauerhosting.com/empire/2023/01/jaws.jpg?auto=format&w=2560&q=80",
+            "director": "Steven Spielberg",
+            "starring": "Roy Scheider, Robert Shaw, Richard Dreyfuss"
+        },
+        {
+            "rank": 2,
+            "title": "The Godfather",
+            "year": 1972,
+            "img_url": "https://images.bauerhosting.com/empire/2022/01/the-godfather.jpg?auto=format&w=2560&q=80",
+            "director": "Francis Ford Coppola",
+            "starring": "Marlon Brando, Al Pacino, James Caan, John Cazale, Talia Shire"
+        },
+        {
+            "rank": 3,
+            "title": "The Shawshank Redemption",
+            "year": 1994,
+            "img_url": "https://images.bauerhosting.com/empire/2023/06/2-shawshank-redemption.jpg?auto=format&w=2560&q=80",
+            "director": "Frank Darabont",
+            "starring": "Tim Robbins, Morgan Freeman, William Sadler"
+        },
+        {
+            "rank": 4,
+            "title": "Star Wars: The Empire Strikes Back",
+            "year": 1980,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/57641535823490d06264a8e0/Empire-Strikes-Back.jpg?auto=format&w=2560&q=80",
+            "director": "Irvin Kershner",
+            "starring": "Mark Hamill, Harrison Ford, Carrie Fisher, Billy Dee Williams, David Prowse"
+        },
+        {
+            "rank": 5,
+            "title": "Aliens",
+            "year": 1986,
+            "img_url": "https://images.bauerhosting.com/empire/2024/08/aliens-main.jpg?auto=format&w=2560&q=80",
+            "director": "James Cameron",
+            "starring": "Sigourney Weaver, Michael Biehn, Carrie Henn, Paul Reiser, Bill Paxton"
+        },
+        {
+            "rank": 6,
+            "title": "Inception",
+            "year": 2010,
+            "img_url": "https://images.bauerhosting.com/empire/2023/10/Inception.jpg?auto=format&w=2560&q=80",
+            "director": "Christopher Nolan",
+            "starring": "Leonardo DiCaprio, Cillian Murphy, Tom Hardy, Elliot Page, Joseph Gordon-Levitt"
+        },
+        {
+            "rank": 7,
+            "title": "Goodfellas",
+            "year": 1990,
+            "img_url": "https://images.bauerhosting.com/empire/2023/11/goodfellas-1.jpg?auto=format&w=2560&q=80",
+            "director": "Martin Scorsese",
+            "starring": "Robert De Niro, Ray Liotta, Joe Pesci, Lorraine Bracco, Paul Sorvino"
+        },
+        {
+            "rank": 8,
+            "title": "Star Wars: Episode IV – A New Hope",
+            "year": 1977,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/57641535823490d06264a8e0/A-New-Hope.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 9,
+            "title": "The Lord Of The Rings: The Fellowship Of The Ring",
+            "year": 2001,
+            "img_url": "https://images.bauerhosting.com/empire/2024/05/lord-of-the-rings-fellowship.jpg?auto=format&w=2560&q=80",
+            "director": "Peter Jackson",
+            "starring": "Elijah Wood, Sean Astin, Ian McKellen, Viggo Mortensen, Orlando Bloom, Sean Bean, Cate Blanchett, Liv Tyler"
+        },
+        {
+            "rank": 10,
+            "title": "The Dark Knight",
+            "year": 2008,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/articles/5b71a3a625ad1b591a09a89e/dark-knight.jpg?auto=format&w=2560&q=80",
+            "director": "Christopher Nolan",
+            "starring": "Christian Bale, Heath Ledger, Aaron Eckhart, Maggie Gyllenhaal, Gary Oldman"
+        },
+        {
+            "rank": 11,
+            "title": "Pulp Fiction",
+            "year": 1994,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/560ebc9b50e6c513721c30e0/pulp-fiction-tarantino.jpg?auto=format&w=2560&q=80",
+            "director": "Quentin Tarantino",
+            "starring": "Samuel L. Jackson, John Travolta, Uma Thurman, Bruce Willis"
+        },
+        {
+            "rank": 12,
+            "title": "Back To The Future",
+            "year": 1985,
+            "img_url": "https://images.bauerhosting.com/empire/2023/05/back-to-the-future.jpg?auto=format&w=2560&q=80",
+            "director": "Robert Zemeckis",
+            "starring": "Michael J. Fox, Christopher Lloyd, Lea Thompson, Crispin Glover"
+        },
+        {
+            "rank": 13,
+            "title": "Jurassic Park",
+            "year": 1993,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/560ebbde50e6c513721c2f6a/jurassic-6.jpg?auto=format&w=2560&q=80",
+            "director": "Steven Spielberg",
+            "starring": "Sam Neill, Laura Dern, Jeff Goldblum, Richard Attenborough"
+        },
+        {
+            "rank": 14,
+            "title": "Raiders Of The Lost Ark",
+            "year": 1981,
+            "img_url": "https://images.bauerhosting.com/empire/2023/01/raiders-of-the-lost-ark.jpg?auto=format&w=2560&q=80",
+            "director": "Steven Spielberg",
+            "starring": "Harrison Ford, Karen Allen, Paul Freeman, John Rhys-Davies"
+        },
+        {
+            "rank": 15,
+            "title": "Blade Runner",
+            "year": 1982,
+            "img_url": "https://images.bauerhosting.com/empire/2023/07/3-blade-runner.jpg?auto=format&w=2560&q=80",
+            "director": "Ridley Scott",
+            "starring": "Harrison Ford, Rutger Hauer, Sean Young, Daryl Hannah"
+        },
+        {
+            "rank": 16,
+            "title": "The Godfather Part II",
+            "year": 1974,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-tmdb/films/240/images/gLbBRyS7MBrmVUNce91Hmx9vzqI.jpg?auto=format&w=2560&q=80",
+            "director": "Francis Ford Coppola",
+            "starring": "Al Pacino, Robert De Niro, John Cazale, Diane Keaton"
+        },
+        {
+            "rank": 17,
+            "title": "Alien",
+            "year": 1979,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/571f98677211b7171ffcf68c/Alien%20Chestburster2.jpg?auto=format&w=2560&q=80",
+            "director": "Ridley Scott",
+            "starring": "Sigourney Weaver, Tom Skerritt, John Hurt, Ian Holm, Harry Dean Stanton"
+        },
+        {
+            "rank": 18,
+            "title": "Terminator 2: Judgment Day",
+            "year": 1991,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d2d/f19f/e8e2/04ce/3284/ba8c/terminator-2-jd.jpg?auto=format&w=2560&q=80",
+            "director": "James Cameron",
+            "starring": "Arnold Schwarzenegger, Linda Hamilton, Edward Furlong, Robert Patrick"
+        },
+        {
+            "rank": 19,
+            "title": "Interstellar",
+            "year": 2014,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5f3e/61b3/7a79/8ed3/aff1/e939/interstellar-mcconaughey-hathaway.jpg?auto=format&w=2560&q=80",
+            "director": "Christopher Nolan",
+            "starring": "Matthew McConaughey, Anne Hathaway, Jessica Chastain"
+        },
+        {
+            "rank": 20,
+            "title": "Heat",
+            "year": 1995,
+            "img_url": "https://images.bauerhosting.com/empire/2022/08/heat-al-pacino.jpg?auto=format&w=2560&q=80",
+            "director": "Michael Mann",
+            "starring": "Al Pacino, Robert De Niro, Val Kilmer, Jon Voight"
+        },
+        {
+            "rank": 21,
+            "title": "The Lord Of The Rings: The Return Of The King",
+            "year": 2003,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/Lord%20of%20the%20Rings%20The%20Return%20of%20the%20King.jpg?auto=format&w=2560&q=80",
+            "director": "Peter Jackson",
+            "starring": "Elijah Wood, Sean Astin, Viggo Mortensen, Ian McKellen, Orlando Bloom"
+        },
+        {
+            "rank": 22,
+            "title": "The Matrix",
+            "year": 1999,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/The%20Matrix.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 23,
+            "title": "Die Hard",
+            "year": 1988,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/Die%20Hard.jpg?auto=format&w=2560&q=80",
+            "director": "John McTiernan",
+            "starring": "Bruce Willis, Alan Rickman, Bonnie Bedelia, Reginald VelJohnson"
+        },
+        {
+            "rank": 24,
+            "title": "There Will Be Blood",
+            "year": 2007,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e20/9884/9d29/9bea/5c5c/323d/11-there-will-be-blood.jpg?auto=format&w=2560&q=80",
+            "director": "Paul Thomas Anderson",
+            "starring": "Daniel Day-Lewis, Paul Dano, Ciarán Hinds"
+        },
+        {
+            "rank": 25,
+            "title": "2001: A Space Odyssey",
+            "year": 1968,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5ece/bbdc/4f0b/d847/b187/bffb/5-2001.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 26,
+            "title": "Gladiator",
+            "year": 2000,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d51/93e4/0932/4a14/65fa/8fbc/30-gladiator.jpg?auto=format&w=2560&q=80",
+            "director": "Ridley Scott",
+            "starring": "Russell Crowe, Joaquin Phoenix, Connie Nielsen, Djimon Hounsou"
+        },
+        {
+            "rank": 27,
+            "title": "Parasite",
+            "year": 2019,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e38/0dca/fcc7/1576/23e8/cda2/parasite-1.jpg?auto=format&w=2560&q=80",
+            "director": "Bong Joon Ho",
+            "starring": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong, Park So-dam, Choi Woo-sik"
+        },
+        {
+            "rank": 28,
+            "title": "Apocalypse Now",
+            "year": 1979,
+            "img_url": "https://images.bauerhosting.com/legacy/media/6052/42a7/213d/7614/b608/682e/apocalypse-now.jpg?auto=format&w=2560&q=80",
+            "director": "Francis Ford Coppola",
+            "starring": "Martin Sheen, Marlon Brando, Robert Duvall"
+        },
+        {
+            "rank": 29,
+            "title": "12 Angry Men",
+            "year": 1957,
+            "img_url": "https://images.bauerhosting.com/legacy/media/619d/9aee/dbee/af39/3368/ffcb/42%2012%20Angry%20Men.jpg?auto=format&w=2560&q=80",
+            "director": "Sidney Lumet",
+            "starring": "Henry Fonda, Lee J. Cobb, Martin Balsam"
+        },
+        {
+            "rank": 30,
+            "title": "Casablanca",
+            "year": 1942,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/5a84102108d1e196265a9d4f/2-casablanca.jpg?auto=format&w=2560&q=80",
+            "director": "Michael Curtiz",
+            "starring": "Humphrey Bogart, Ingrid Bergman, Paul Henreid, Claude Rains"
+        },
+        {
+            "rank": 31,
+            "title": "The Thing",
+            "year": 1982,
+            "img_url": "https://images.bauerhosting.com/empire/2022/10/thing.jpg?auto=format&w=2560&q=80",
+            "director": "John Carpenter",
+            "starring": "Kurt Russell, Wilford Brimley, Keith David, Richard Masur"
+        },
+        {
+            "rank": 32,
+            "title": "Seven",
+            "year": 1995,
+            "img_url": "https://images.bauerhosting.com/empire/2023/09/se7en.jpg?auto=format&w=2560&q=80",
+            "director": "David Fincher",
+            "starring": "Morgan Freeman, Brad Pitt, Kevin Spacey, Gwyneth Paltrow"
+        },
+        {
+            "rank": 33,
+            "title": "The Lord Of The Rings: The Two Towers",
+            "year": 2002,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e1a/1b90/f8b0/697d/6205/a5c0/53-lotr-two-towers.jpg?auto=format&w=2560&q=80",
+            "director": "Peter Jackson",
+            "starring": "Elijah Wood, Sean Astin, Andy Serkis, Ian McKellen, Viggo Mortensen, Orlando Bloom"
+        },
+        {
+            "rank": 34,
+            "title": "The Shining",
+            "year": 1980,
+            "img_url": "https://images.bauerhosting.com/empire/2020/10/shining.jpg?auto=format&w=2560&q=80",
+            "director": "Stanley Kubrick",
+            "starring": "Jack Nicholson, Shelley Duvall, Danny Lloyd"
+        },
+        {
+            "rank": 35,
+            "title": "Mad Max: Fury Road",
+            "year": 2015,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e21/db05/81fe/b312/e5af/44ec/1-mad-max-fury-road.jpg?auto=format&w=2560&q=80",
+            "director": "George Miller",
+            "starring": "Tom Hardy, Charlize Theron, Nicholas Hoult, Riley Keough"
+        },
+        {
+            "rank": 36,
+            "title": "Point Break",
+            "year": 1991,
+            "img_url": "https://images.bauerhosting.com/empire/2023/03/3-point-break.jpg?auto=format&w=2560&q=80",
+            "director": "Kathryn Bigelow",
+            "starring": "Keanu Reeves, Patrick Swayze, Gary Busey, Lori Petty"
+        },
+        {
+            "rank": 37,
+            "title": "Fight Club",
+            "year": 1999,
+            "img_url": "https://images.bauerhosting.com/empire/2022/08/fight-club.jpg?auto=format&w=2560&q=80",
+            "director": "David Fincher",
+            "starring": "Edward Norton, Brad Pitt, Helena Bonham Carter, Jared Leto"
+        },
+        {
+            "rank": 38,
+            "title": "The Good, The Bad And The Ugly",
+            "year": 1966,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/The%20Good%2C%20The%20Bad%20And%20The%20Ugly.jpg?auto=format&w=2560&q=80",
+            "director": "Sergio Leone",
+            "starring": "Clint Eastwood, Eli Wallach, Lee Van Cleef"
+        },
+        {
+            "rank": 39,
+            "title": "Lawrence Of Arabia",
+            "year": 1962,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/Lawrence%20of%20Arabia.jpg?auto=format&w=2560&q=80",
+            "director": "David Lean",
+            "starring": "Peter O’Toole, Alec Guinness, Omar Sharif"
+        },
+        {
+            "rank": 40,
+            "title": "Mulholland Drive",
+            "year": 2001,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d2d/e05f/e8e2/04d6/0b84/b8e7/mulholland-dr.jpg?auto=format&w=2560&q=80",
+            "director": "David Lynch",
+            "starring": "Naomi Watts, Laura Harring, Justin Theroux"
+        },
+        {
+            "rank": 41,
+            "title": "Schindler's List",
+            "year": 1993,
+            "img_url": "https://images.bauerhosting.com/legacy/media/619d/9866/f590/5e19/e406/4898/46%20schindler's%20list.jpg?auto=format&w=2560&q=80",
+            "director": "Steven Spielberg",
+            "starring": "Liam Neeson, Ralph Fiennes, Ben Kingsley, Caroline Goodall"
+        },
+        {
+            "rank": 42,
+            "title": "Saving Private Ryan",
+            "year": 1998,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/560ec10f50e6c513721c390b/Saving-Private-Ryan.jpg?auto=format&w=2560&q=80",
+            "director": "Steven Spielberg",
+            "starring": "Tom Hanks, Matt Damon, Giovanni Ribisi, Adam Goldberg"
+        },
+        {
+            "rank": 43,
+            "title": "La La Land",
+            "year": 2016,
+            "img_url": "https://images.bauerhosting.com/empire/2023/02/la-la-land.jpg?auto=format&w=2560&q=80",
+            "director": "Damien Chazelle",
+            "starring": "Emma Stone, Ryan Gosling, J.K. Simmons"
+        },
+        {
+            "rank": 44,
+            "title": "Taxi Driver",
+            "year": 1976,
+            "img_url": "https://images.bauerhosting.com/empire/2022/11/taxi-driver-1.jpg?auto=format&w=2560&q=80",
+            "director": "Martin Scorsese",
+            "starring": "Robert De Niro, Jodie Foster, Cybill Shepherd, Albert Brooks"
+        },
+        {
+            "rank": 45,
+            "title": "Past Lives",
+            "year": 2023,
+            "img_url": "https://images.bauerhosting.com/empire/2023/09/past-lives-1.jpg?auto=format&w=2560&q=80",
+            "director": "Celine Song",
+            "starring": "Greta Lee, Teo Yoo, John Magaro"
+        },
+        {
+            "rank": 46,
+            "title": "Whiplash",
+            "year": 2014,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/Whiplash.jpg?auto=format&w=2560&q=80",
+            "director": "Damien Chazelle",
+            "starring": "Miles Teller, J.K. Simmons"
+        },
+        {
+            "rank": 47,
+            "title": "It's A Wonderful Life",
+            "year": 1946,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d2d/e6d4/853e/7cec/ebcc/fba7/its-a-wonderful-life.jpg?auto=format&w=2560&q=80",
+            "director": "Frank Capra",
+            "starring": "James Stewart, Donna Reed, Lionel Barryone, Thomas Mitchell, Henry Travers"
+        },
+        {
+            "rank": 48,
+            "title": "Avengers: Infinity War",
+            "year": 2018,
+            "img_url": "https://images.bauerhosting.com/empire/2023/05/2-infinity-war.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 49,
+            "title": "Psycho",
+            "year": 1960,
+            "img_url": "https://images.bauerhosting.com/empire/2023/10/Psycho.jpg?auto=format&w=2560&q=80",
+            "director": "Alfred Hitchcock",
+            "starring": "Janet Leigh, Anthony Perkins"
+        },
+        {
+            "rank": 50,
+            "title": "No Country For Old Men",
+            "year": 2007,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e20/987c/ec7e/5492/ffd5/9229/12-no-country-for-old-men.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 51,
+            "title": "Rear Window",
+            "year": 1954,
+            "img_url": "https://images.bauerhosting.com/empire/2024/04/rear-window-1.jpg?auto=format&w=2560&q=80",
+            "director": "Alfred Hitchcock",
+            "starring": "James Stewart, Grace Kelly"
+        },
+        {
+            "rank": 52,
+            "title": "Citizen Kane",
+            "year": 1941,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d2d/e824/e8e2/04b1/a384/b9a4/citizen-kane.jpg?auto=format&w=2560&q=80",
+            "director": "Orson Welles",
+            "starring": "Orson Welles, Joseph Cotten, Dorothy Comingore, Agnes Moorehead"
+        },
+        {
+            "rank": 53,
+            "title": "Vertigo",
+            "year": 1958,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/Vertigo.jpg?auto=format&w=2560&q=80",
+            "director": "Alfred Hitchcock",
+            "starring": "James Stewart, Kim Novak"
+        },
+        {
+            "rank": 54,
+            "title": "Get Out",
+            "year": 2017,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/articles/58b3205ddc06d4c716de0d8e/get-out.jpg?auto=format&w=2560&q=80",
+            "director": "Jordan Peele",
+            "starring": "Daniel Kaluuya, Alison Williams, Bradley Whitford, Catherine Keener"
+        },
+        {
+            "rank": 55,
+            "title": "Hot Fuzz",
+            "year": 2007,
+            "img_url": "https://images.bauerhosting.com/empire/2023/09/hot-fuzz.jpg?auto=format&w=2560&q=80",
+            "director": "Edgar Wright",
+            "starring": "Simon Pegg, Nick Frost, Timothy Dalton, Rafe Spall, Paddy Considine"
+        },
+        {
+            "rank": 56,
+            "title": "Spirited Away",
+            "year": 2001,
+            "img_url": "https://images.bauerhosting.com/empire/2024/11/Spirited-Away.jpg?auto=format&w=2560&q=80",
+            "director": "Hayao Miyazaki",
+            "starring": "Miyu Irino, Rumi Hiiragi"
+        },
+        {
+            "rank": 57,
+            "title": "Seven Samurai",
+            "year": 1954,
+            "img_url": "https://images.bauerhosting.com/legacy/media/619d/8ae9/3ebe/473d/239c/e2f5/qvZ91FwMq6O47VViAr8vZNQz3WI.jpg?auto=format&w=2560&q=80",
+            "director": "Akira Kurosawa",
+            "starring": "Toshiro Mifune, Takashi Shimura, Keiko Tsushima"
+        },
+        {
+            "rank": 58,
+            "title": "Titanic",
+            "year": 1997,
+            "img_url": "https://images.bauerhosting.com/empire/2023/02/titanic-1.jpg?auto=format&w=2560&q=80",
+            "director": "James Cameron",
+            "starring": "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates"
+        },
+        {
+            "rank": 59,
+            "title": "The Exorcist",
+            "year": 1973,
+            "img_url": "https://images.bauerhosting.com/empire/2023/10/The-Exorcist.jpg?auto=format&w=2560&q=80",
+            "director": "William Friedkin",
+            "starring": "Linda Blair, Ellen Burstyn, Max von Sydow"
+        },
+        {
+            "rank": 60,
+            "title": "Fargo",
+            "year": 1996,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/fargo.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 61,
+            "title": "The Social Network",
+            "year": 2010,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/59395a49f68e659c7aa3a1a8/The%20Social%20Network.jpg?auto=format&w=2560&q=80",
+            "director": "David Fincher",
+            "starring": "Jesse Eisenberg, Andrew Garfield, Justin Timberlake, Armie Hammer"
+        },
+        {
+            "rank": 62,
+            "title": "Eternal Sunshine Of The Spotless Mind",
+            "year": 2004,
+            "img_url": "https://images.bauerhosting.com/legacy/media/619d/a401/5909/d056/5f4c/884e/36%20Eternal%20Sunshine.jpg?auto=format&w=2560&q=80",
+            "director": "Michel Gondry",
+            "starring": "Jim Carrey, Kate Winslet, Tom Wilkinson, Elijah Wood, Mark Ruffalo"
+        },
+        {
+            "rank": 63,
+            "title": "The Big Lebowski",
+            "year": 1998,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/articles/5c49f8e2fd0c0bc8444a0790/dude-big-lebowski.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 64,
+            "title": "Oppenheimer",
+            "year": 2023,
+            "img_url": "https://images.bauerhosting.com/empire/2023/07/oppenheimer-bomb-1.jpg?auto=format&w=2560&q=80",
+            "director": "Christopher Nolan",
+            "starring": "Cillian Murphy, Emily Blunt, Robert Downey Jr., Matt Damon, Florence Pugh"
+        },
+        {
+            "rank": 65,
+            "title": "Predator",
+            "year": 1987,
+            "img_url": "https://images.bauerhosting.com/empire/2022/08/predator-1.jpg?auto=format&w=2560&q=80",
+            "director": "John McTiernan",
+            "starring": "Arnold Schwarzenegger, Carl Weathers, Elpidia Carrillo, Kevin Peter Hall"
+        },
+        {
+            "rank": 66,
+            "title": "Indiana Jones And The Last Crusade",
+            "year": 1989,
+            "img_url": "https://images.bauerhosting.com/empire/2023/01/indiana-jones-and-the-last-crusade.jpg?auto=format&w=2560&q=80",
+            "director": "Steven Spielberg",
+            "starring": "Harrison Ford, Sean Connery, Alison Doody, Denholm Elliott, John Rhys-Davies"
+        },
+        {
+            "rank": 67,
+            "title": "Do The Right Thing",
+            "year": 1989,
+            "img_url": "https://images.bauerhosting.com/legacy/media/619d/97c2/f590/5e65/9506/4892/47%20Do%20The%20Right%20THing.jpg?auto=format&w=2560&q=80",
+            "director": "Spike Lee",
+            "starring": "Danny Aiello, Ossie Davis, Ruby Dee, John Turturro"
+        },
+        {
+            "rank": 68,
+            "title": "Avengers: Endgame",
+            "year": 2019,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d94/d550/c11f/b23b/b031/c3cb/avengers-endgame.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 69,
+            "title": "The Babadook",
+            "year": 2014,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/the-babadook.jpg?auto=format&w=2560&q=80",
+            "director": "Jennifer Kent",
+            "starring": "Essie Davis, Noah Wiseman"
+        },
+        {
+            "rank": 70,
+            "title": "Children Of Men",
+            "year": 2006,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d4c/3adf/e091/dbc1/c38b/22c4/children-of-men-3.jpg?auto=format&w=2560&q=80",
+            "director": "Alfonso Cuarón",
+            "starring": "Clive Owen, Clare-Hope Ashitey, Julianne Moore, Michael Caine"
+        },
+        {
+            "rank": 71,
+            "title": "Arrival",
+            "year": 2016,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-tmdb/films/329865/images/z3dFr6KAJt07hxWZ7g8h7i4Dp50.jpg?auto=format&w=2560&q=80",
+            "director": "Denis Villeneuve",
+            "starring": "Amy Adams, Jeremy Renner, Forest Whitaker, Michael Stuhlbarg"
+        },
+        {
+            "rank": 72,
+            "title": "Magnolia",
+            "year": 1999,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/magnolia.jpg?auto=format&w=2560&q=80",
+            "director": "Paul Thomas Anderson",
+            "starring": "John C. Reilly, Tom Cruise, Julianne Moore, Philip Seymour Hoffman"
+        },
+        {
+            "rank": 73,
+            "title": "The Lion King",
+            "year": 1994,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/the-lion-king.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 74,
+            "title": "Trainspotting",
+            "year": 1996,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-tmdb/films/627/images/yfNhWKqJFWTRvSo3Qf2x1IFteG3.jpg?auto=format&w=2560&q=80",
+            "director": "Danny Boyle",
+            "starring": "Ewan McGregor, Ewen Bremner, Jonny Lee Miller, Robert Carlyle, Kelly Macdonald"
+        },
+        {
+            "rank": 75,
+            "title": "The Silence Of The Lambs",
+            "year": 1991,
+            "img_url": "https://images.bauerhosting.com/empire/2024/07/Silence-Of-The-Lambs.jpg?auto=format&w=2560&q=80",
+            "director": "Jonathan Demme",
+            "starring": "Jodie Foster, Anthony Hopkins, Scott Glenn, Ted Levine"
+        },
+        {
+            "rank": 76,
+            "title": "Once Upon A Time In Hollywood",
+            "year": 2019,
+            "img_url": "https://images.bauerhosting.com/empire/2022/08/ouatih-2.jpg?auto=format&w=2560&q=80",
+            "director": "Quentin Tarantino",
+            "starring": "Leonardo DiCaprio, Brad Pitt, Margot Robbie"
+        },
+        {
+            "rank": 77,
+            "title": "In The Mood For Love",
+            "year": 2000,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e16/0bfe/1d27/5da1/db26/4da8/91-mood-love.jpg?auto=format&w=2560&q=80",
+            "director": "Wong Kar Wai",
+            "starring": "Tony Leung, Maggie Cheung"
+        },
+        {
+            "rank": 78,
+            "title": "Ghostbusters",
+            "year": 1984,
+            "img_url": "https://images.bauerhosting.com/legacy/empire-images/features/56e0099916b6dfb5649a0604/peter-venkman-murray-ghostbusters.jpeg?auto=format&w=2560&q=80",
+            "director": "Ivan Reitman",
+            "starring": "Dan Aykroyd, Harold Ramis, Bill Murray, Ernie Hudson, Sigourney Weaver"
+        },
+        {
+            "rank": 79,
+            "title": "Paddington 2",
+            "year": 2017,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e1a/1bb7/d69f/1cb9/e380/fb8f/51-paddington-2.jpg?auto=format&w=2560&q=80",
+            "director": "Paul King",
+            "starring": "Ben Whishaw, Hugh Bonneville, Sally Hawkins, Hugh Grant, Brendan Gleeson"
+        },
+        {
+            "rank": 80,
+            "title": "Spider-Man: Into The Spider-Verse",
+            "year": 2018,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e20/984a/f7e2/c731/20cd/709c/16-spider-verse.jpg?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 81,
+            "title": "Everything Everywhere All At Once",
+            "year": 2022,
+            "img_url": "https://images.bauerhosting.com/legacy/media/61b8/ac2d/fe36/6998/c1ad/1fbf/everything-everywhere-all-at-once.png?auto=format&w=2560&q=80",
+            "director": null,
+            "starring": null
+        },
+        {
+            "rank": 82,
+            "title": "Brokeback Mountain",
+            "year": 2005,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e1a/1b87/f8b0/692c/5005/a5bf/54-brokeback-mountain.jpg?auto=format&w=2560&q=80",
+            "director": "Ang Lee",
+            "starring": "Heath Ledger, Jake Gyllenhaal, Anne Hathaway, Michelle Williams"
+        },
+        {
+            "rank": 83,
+            "title": "Inglourious Basterds",
+            "year": 2009,
+            "img_url": "https://images.bauerhosting.com/empire/2023/09/Inglourious-Basterds.jpg?auto=format&w=2560&q=80",
+            "director": "Quentin Tarantino",
+            "starring": "Melanie Laurent, Brad Pitt, Michael Fassbender, Christoph Waltz"
+        },
+        {
+            "rank": 84,
+            "title": "Pan's Labyrinth",
+            "year": 2006,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5d48/2fe2/d6e0/85d9/6581/62d3/30-films-feature-18.jpg?auto=format&w=2560&q=80",
+            "director": "Guillermo del Toro",
+            "starring": "Ivana Baquero, Ariadna Gil, Doug Jones"
+        },
+        {
+            "rank": 85,
+            "title": "Rocky",
+            "year": 1976,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/rocky.jpg?auto=format&w=2560&q=80",
+            "director": "John G. Avildsen",
+            "starring": "Sylvester Stallone, Talia Shire, Carl Weathers"
+        },
+        {
+            "rank": 86,
+            "title": "Lady Bird",
+            "year": 2017,
+            "img_url": "https://images.bauerhosting.com/empire/2023/05/9-lady-bird.jpg?auto=format&w=2560&q=80",
+            "director": "Greta Gerwig",
+            "starring": "Saoirse Ronan, Timothée Chalamet, Lucas Hedges, Laurie Metcalf"
+        },
+        {
+            "rank": 87,
+            "title": "Raging Bull",
+            "year": 1980,
+            "img_url": "https://images.bauerhosting.com/empire/2025/03/1-raging-bull.jpg?auto=format&w=2560&q=80",
+            "director": "Martin Scorsese",
+            "starring": "Robert De Niro, Cathy Moriarty, Joe Pesci"
+        },
+        {
+            "rank": 88,
+            "title": "The Piano",
+            "year": 1993,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/the-piano.jpg?auto=format&w=2560&q=80",
+            "director": "Jane Campion",
+            "starring": "Holly Hunter, Harvey Keitel, Anna Paquin, Sam Neill"
+        },
+        {
+            "rank": 89,
+            "title": "American Psycho",
+            "year": 2000,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/american-psycho.jpg?auto=format&w=2560&q=80",
+            "director": "Mary Harron",
+            "starring": "Christian Bale, Jared Leto, Willem Dafoe, Justin Theroux"
+        },
+        {
+            "rank": 90,
+            "title": "Groundhog Day",
+            "year": 1993,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e67/b5d6/d5e0/0a70/f606/0d1a/2-groundhog-day.jpg?auto=format&w=2560&q=80",
+            "director": "Harold Ramis",
+            "starring": "Bill Murray, Andie McDowell, Chris Elliott, Stephen Tobolowsky"
+        },
+        {
+            "rank": 91,
+            "title": "The Grand Budapest Hotel",
+            "year": 2014,
+            "img_url": "https://images.bauerhosting.com/empire/2023/07/2-grand-budapest-hotel.jpg?auto=format&w=2560&q=80",
+            "director": "Wes Anderson",
+            "starring": "Ralph Fiennes, Tony Revolori, Saoirse Ronan,"
+        },
+        {
+            "rank": 92,
+            "title": "One Flew Over The Cuckoo's Nest",
+            "year": 1975,
+            "img_url": "https://images.bauerhosting.com/legacy/media/619d/8874/f590/5eaa/9306/4815/IMG_0266.jpeg?auto=format&w=2560&q=80",
+            "director": "Milos Forman",
+            "starring": "Jack Nicholson, Louise Fletcher, Michael Berryman"
+        },
+        {
+            "rank": 93,
+            "title": "Lost In Translation",
+            "year": 2003,
+            "img_url": "https://images.bauerhosting.com/empire/2023/09/lost-translation-4.jpg?auto=format&w=2560&q=80",
+            "director": "Sofia Coppola",
+            "starring": "Bill Murray, Scarlett Johansson, Giovanni Ribisi"
+        },
+        {
+            "rank": 94,
+            "title": "Moonlight",
+            "year": 2016,
+            "img_url": "https://images.bauerhosting.com/empire/2024/06/moonlight-1.png?auto=format&w=2560&q=80",
+            "director": "Barry Jenkins",
+            "starring": "Trevante Rhodes, Mahershala Ali, Naomie Harris, Alex R. Hibbert, Ashton Sanders"
+        },
+        {
+            "rank": 95,
+            "title": "Memento",
+            "year": 2000,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e1f/4716/d69f/1c0a/fd81/196e/26-memento.jpg?auto=format&w=2560&q=80",
+            "director": "Christopher Nolan",
+            "starring": "Guy Pearce, Carrie-Anne Moss, Joe Pantoliano"
+        },
+        {
+            "rank": 96,
+            "title": "E.T. The Extra Terrestrial",
+            "year": 1982,
+            "img_url": "https://images.bauerhosting.com/empire/2023/01/et-the-extra-terrestrial.jpg?auto=format&w=2560&q=80",
+            "director": "Steven Spielberg",
+            "starring": "Henry Thomas, Drew Barrymore"
+        },
+        {
+            "rank": 97,
+            "title": "Barbie",
+            "year": 2023,
+            "img_url": "https://images.bauerhosting.com/empire/2024/01/Barbie.jpg?auto=format&w=2560&q=80",
+            "director": "Greta Gerwig",
+            "starring": "Margot Robbie, Ryan Gosling, America Ferrera, Ariana Greenblatt"
+        },
+        {
+            "rank": 98,
+            "title": "When Harry Met Sally...",
+            "year": 1989,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/when-harry-met-sally.jpg?auto=format&w=2560&q=80",
+            "director": "Rob Reiner",
+            "starring": "Billy Crystal, Meg Ryan, Carrie Fisher"
+        },
+        {
+            "rank": 99,
+            "title": "Portrait Of A Lady On Fire",
+            "year": 2020,
+            "img_url": "https://images.bauerhosting.com/legacy/media/5e53/c0ce/a5ac/a95a/cd90/caaf/portrait-of-a-lady-1.jpg?auto=format&w=2560&q=80",
+            "director": "Céline Sciamma",
+            "starring": "Noémie Merlant, Adèle Haenel"
+        },
+        {
+            "rank": 100,
+            "title": "Avatar",
+            "year": 2009,
+            "img_url": "https://images.bauerhosting.com/empire/2025/12/avatar.jpg?auto=format&w=2560&q=80",
+            "director": "James Cameron",
+            "starring": "Sam Worthington, Zoe Saldaña, Stephen Lang, Sigourney Weaver"
+        }
+    ]
+}

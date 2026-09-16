@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <p class="eyebrow">Top 100</p>
+        <h1>Movie Gallery</h1>
+        <p class="subtitle">Click any card to mark it watched.</p>
+        <p class="watched-counter" id="watchedCounter">
+          0 watched · 0 remaining
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="grid" id="movieGrid">
+        <p class="loading" id="loadingMsg">Loading movies…</p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="container">
+        <p>Movie Gallery · powered by Python + a little CSS magic</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

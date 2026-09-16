@@ -2,7 +2,7 @@
 
 > Daily progress through **[100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/)** by Dr. Angela Yu (App Brewery).
 
-### 🚀 Status: Day 44/100 — Beginner ✅ | Intermediate ✅ | Intermediate+ In Progress (5/27 days)
+### 🚀 Status: Day 45/100 — Beginner ✅ | Intermediate ✅ | Intermediate+ In Progress (5/27 days)
 
 ---
 
@@ -86,6 +86,7 @@ Daily folders use zero-padded prefixes; structure evolved at Day 15 for multi-fi
 | 42  | [Intermediate HTML — Boilerplate, Emmet, TMDB-Powered Movie Grid](042-Day-42-IntermediatePlus-Intermediate-HTML/day-042.md)                                                               | ✅ Complete |
 | 43  | [Introduction to CSS — Cascade & Specificity, Selectors Playground, Color Flashcards](043-Day-43-IntermediatePlus-Introduction-to-CSS/day-043.md)                                         | ✅ Complete |
 | 44  | [Intermediate CSS — Box Model, Flexbox, Grid, Typography, Canvas Poster Export](044-Day-44-IntermediatePlus-Intermediate-CSS/day-044.md)                                                  | ✅ Complete |
+| 45  | [Web Scraping with Beautiful Soup — HN Scraper, Empire 100 (Next.js `__NEXT_DATA__` extraction)](045-Day-45-IntermediatePlus-Web-Scraping-with-Beautiful-Soup/day-045.md)                 | ✅ Complete |
 
 ## 🛠️ Tech Stack
 
